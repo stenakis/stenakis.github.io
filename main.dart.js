@@ -68807,7 +68807,7 @@ A.a1R.prototype={
 $0(){return A.QV(this.a.d)},
 $S:0}
 A.ER.prototype={
-W(a){return new A.uR(B.IA,"Flutter Demo",A.aiH(B.af,"Lufga",!0),null)}}
+W(a){return new A.uR(B.IA,"Evans Stenakis",A.aiH(B.af,"Lufga",!0),null)}}
 A.v3.prototype={
 aq(){return new A.M3(B.n)}}
 A.M3.prototype={
