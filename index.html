@@ -56,7 +56,7 @@
   </script>
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3047285657";
+    const serviceWorkerVersion = "3127100618";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -69,9 +69,12 @@
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
+        onEntrypointLoaded: async function (engineInitializer) {
+          let appRunner = await engineInitializer.initializeEngine({
+            hostElement: document.querySelector("#flutter_app"),
+            renderer: "html"
+          }).then(function (appRunner) {
+            return appRunner.runApp();
           });
         }
       });
