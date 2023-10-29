@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "76a2237b570e9921015840c571052f4e",
-"assets/AssetManifest.bin.json": "17f8fd834d1f3e641d9d70a0359fb912",
-"assets/AssetManifest.json": "e7eaa69b15de37da80dc17296f4a399f",
+const RESOURCES = {"assets/AssetManifest.bin": "52da948acb5a60cab82240925d93ca48",
+"assets/AssetManifest.bin.json": "8f612f18e4255a4f5d2fbc6f51fdc277",
+"assets/AssetManifest.json": "158111e851a165938b71979180389d30",
 "assets/assets/fonts/Gabarito-Black.ttf": "8fb447e704de643ca45d0bcd4874dca1",
 "assets/assets/fonts/Gabarito-Bold.ttf": "478f0cbda0dca1a407fd4ffa59f8bfa4",
 "assets/assets/fonts/Gabarito-ExtraBold.ttf": "3c543e6950d07f6337e32ad940b57640",
@@ -24,6 +24,16 @@ const RESOURCES = {"assets/AssetManifest.bin": "76a2237b570e9921015840c571052f4e
 "assets/assets/products/klonos/6.jpg": "cf4e06a7be405c1d71a08276e3d88535",
 "assets/assets/products/main_logo.png": "a434fffdbc3a83807e1c9fbdbf049386",
 "assets/assets/products/open_mall.png": "614a14cc58e737de0301db8a20cce64a",
+"assets/assets/products/phase10/2.png": "3fd7c323dc10c6f575cd09be2b89d577",
+"assets/assets/products/phase10/3.png": "7e20e1eac99d01e1e5214640c857c3ce",
+"assets/assets/products/phase10/GameModeLab.png": "db5d9db98e2a53aa475bd4bbb2fd9cca",
+"assets/assets/products/phase10/game_expert.png": "24d0a35b35863a84a478e73678e10521",
+"assets/assets/products/phase10/google_play_button.png": "309cdf36da349a281e546b0862fc66f1",
+"assets/assets/products/phase10/icon_modes.png": "87a551e6247a722af7444a18b4bb62a5",
+"assets/assets/products/phase10/phone_expert.png": "aa608ae77252958b2cfe2d3696b92425",
+"assets/assets/products/phase10/phone_lab.png": "58d8df6ec09c555d9f5ed303125d79d8",
+"assets/assets/products/phase10/phone_play.png": "b885efa78cd8344cd5a74dd2e5190742",
+"assets/assets/products/phase10/web_button.png": "076358dc682abac96cfbc26109d0d844",
 "assets/assets/products/phase_10.png": "96e34e4b2a846a5f9ad4b528f58e2d19",
 "assets/assets/products/pianist.png": "ad00c05144181dcf2e45739f52a26234",
 "assets/assets/products/placeholder_phase10.png": "07b0924ed94bb197d7e57c8f5ac5d4c6",
@@ -62,9 +72,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "76a2237b570e9921015840c571052f4e
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "2bb40e97451775305ca5bef5a86961d1",
-"/": "2bb40e97451775305ca5bef5a86961d1",
-"main.dart.js": "04424304f97661d497b9f2ba966043f2",
+"index.html": "a0fd00d6ca94f67642a108812b1394b8",
+"/": "a0fd00d6ca94f67642a108812b1394b8",
+"main.dart.js": "6c935671c49895e77fe7dcdf4f4ca0c8",
 "manifest.json": "136936b7dd341c6433f45ef52be168ae",
 "version.json": "980547175e325fe622a3362b84d55b6a"};
 // The application shell files that are downloaded before a service worker can
