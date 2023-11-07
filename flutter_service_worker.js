@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "e806e6cb378b03983a8333c214054b32",
-"assets/AssetManifest.bin.json": "88277429e740f71ebfe79fd7c6bd3d3f",
-"assets/AssetManifest.json": "aff9a0812e4d37bcb9f34de84d491cf7",
+const RESOURCES = {"assets/AssetManifest.bin": "68d561c2d69645f69d3ca1d91a8cf3f7",
+"assets/AssetManifest.bin.json": "88cc59b2e987cc268dee8eee59fe3f5d",
+"assets/AssetManifest.json": "f7df1b88832cc81b29bccfea78a4d30b",
 "assets/assets/fonts/Gabarito-Black.ttf": "8fb447e704de643ca45d0bcd4874dca1",
 "assets/assets/fonts/Gabarito-Bold.ttf": "478f0cbda0dca1a407fd4ffa59f8bfa4",
 "assets/assets/fonts/Gabarito-ExtraBold.ttf": "3c543e6950d07f6337e32ad940b57640",
@@ -24,6 +24,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "e806e6cb378b03983a8333c214054b32
 "assets/assets/products/klonos/6.jpg": "cf4e06a7be405c1d71a08276e3d88535",
 "assets/assets/products/main_logo.png": "a434fffdbc3a83807e1c9fbdbf049386",
 "assets/assets/products/music_festival/cover.jpg": "2cc4d3e04121338e329ba13a0c50750e",
+"assets/assets/products/open_mall/badge.png": "48289a9fea536d0ec7438ed3afe13c1a",
 "assets/assets/products/open_mall/cover.jpg": "d96774f9848245afa146cc29ed0f3ad9",
 "assets/assets/products/open_mall.png": "614a14cc58e737de0301db8a20cce64a",
 "assets/assets/products/phase10/2.png": "3fd7c323dc10c6f575cd09be2b89d577",
@@ -75,9 +76,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "e806e6cb378b03983a8333c214054b32
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "725b1141481d21f9291603a179969375",
-"/": "725b1141481d21f9291603a179969375",
-"main.dart.js": "e4efb91a87dca7bda8a2e41d066e4a1a",
+"index.html": "43ad4954516ad666fae86206ef541141",
+"/": "43ad4954516ad666fae86206ef541141",
+"main.dart.js": "809571df55523793d28a1efbf46bdd2e",
 "manifest.json": "136936b7dd341c6433f45ef52be168ae",
 "version.json": "980547175e325fe622a3362b84d55b6a"};
 // The application shell files that are downloaded before a service worker can
