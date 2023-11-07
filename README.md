@@ -1,6 +1,4 @@
 # Privacy Policy
-Privacy Policy
-
 This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information. By using our website and services, you consent to the practices described in this policy.
 
 Information We Collect
