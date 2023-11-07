@@ -25260,7 +25260,7 @@ c4.a=A.a([],c1)
 c4.b=!0
 return A.cD(b8.buffer,0,b9)},
 cp(a){var s=t.w
-if(A.cm(a,null,s).w.a.a<=1000&&A.cm(a,null,s).w.a.a<A.cm(a,null,s).w.a.b)return!0
+if(A.cm(a,null,s).w.a.a<=1000||A.cm(a,null,s).w.a.a<A.cm(a,null,s).w.a.b)return!0
 else return!1}},B={}
 var w=[A,J,B]
 var $={}
