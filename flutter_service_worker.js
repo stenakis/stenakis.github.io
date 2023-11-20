@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "d1bd9fb75d616edb423df95df6fb0b10",
-"assets/AssetManifest.bin.json": "1074c7586b98d8b8945404eab1acfc75",
-"assets/AssetManifest.json": "0219cad1bbb6791e3b250f73c323218c",
+const RESOURCES = {"assets/AssetManifest.bin": "85821eb64753c1b12af1a3ef1f9388d3",
+"assets/AssetManifest.bin.json": "1d0a24dbbafdfc0838f8dcc73e81988b",
+"assets/AssetManifest.json": "8e50e284efafa0a96540e508f9e1ea57",
 "assets/assets/fonts/Gabarito-Black.ttf": "8fb447e704de643ca45d0bcd4874dca1",
 "assets/assets/fonts/Gabarito-Bold.ttf": "478f0cbda0dca1a407fd4ffa59f8bfa4",
 "assets/assets/fonts/Gabarito-ExtraBold.ttf": "3c543e6950d07f6337e32ad940b57640",
@@ -16,6 +16,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "d1bd9fb75d616edb423df95df6fb0b10
 "assets/assets/icons/facebook.svg": "cc2005cd7345c88a127ef072ce5746e5",
 "assets/assets/icons/instagram.svg": "8190dbde6acb058af80b3a9801dc2912",
 "assets/assets/icons/linkedin.svg": "66be765d434023c6aeffdbe5c72515be",
+"assets/assets/products/CV.jpg": "307d963a596c632b2302fcc57a744fd0",
 "assets/assets/products/klonos/1.jpg": "7a4d5feffe39cb273e6759602049771a",
 "assets/assets/products/klonos/2.jpg": "44b1304b6b1cb65d3b4c9d7c3987d4d8",
 "assets/assets/products/klonos/3.jpg": "6f7538a290cdbff31725a0aab8b0591b",
@@ -25,7 +26,6 @@ const RESOURCES = {"assets/AssetManifest.bin": "d1bd9fb75d616edb423df95df6fb0b10
 "assets/assets/products/main_logo.png": "a434fffdbc3a83807e1c9fbdbf049386",
 "assets/assets/products/music_festival/brochure.jpg": "4494ade3b462e7479c36b9a5d605b0fd",
 "assets/assets/products/music_festival/colors.svg": "864adfa07f1b2e8e1b6677a44c741911",
-"assets/assets/products/music_festival/cover.jpg": "2cc4d3e04121338e329ba13a0c50750e",
 "assets/assets/products/music_festival/insta.jpg": "f1a6a6daa2e7689bf3c59b17b4260563",
 "assets/assets/products/music_festival/photo1.jpg": "129f9feee589a620f47dfcf526a04241",
 "assets/assets/products/music_festival/photo2.jpg": "d2b02c3f3ddd8c6963da41497ce6411f",
@@ -85,7 +85,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "d1bd9fb75d616edb423df95df6fb0b10
 "assets/assets/products/youtube/title.png": "7df7f33bed95da771faef44b7a9b8184",
 "assets/FontManifest.json": "ab16a6f8eb96db13b20e52bf92b973ad",
 "assets/fonts/MaterialIcons-Regular.otf": "4a605f5da94f25c87a21ab9601e256e1",
-"assets/NOTICES": "ee4ecab2385b3b49fff4f348f15f1f68",
+"assets/NOTICES": "ea5d06c3ab5bf0de0beded4e6a921073",
 "assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
 "canvaskit/canvaskit.js": "eb8797020acdbdf96a12fb0405582c1b",
 "canvaskit/canvaskit.wasm": "64edb91684bdb3b879812ba2e48dd487",
@@ -100,9 +100,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "d1bd9fb75d616edb423df95df6fb0b10
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "d081e88365ff0dcd2b09f0b185e42c4c",
-"/": "d081e88365ff0dcd2b09f0b185e42c4c",
-"main.dart.js": "c09a96be5bf054132fc1e07fb0ea7447",
+"index.html": "35093f8b954f5e8465dfb8d2913879e8",
+"/": "35093f8b954f5e8465dfb8d2913879e8",
+"main.dart.js": "cd23dd1974a80bbb6daefd858117dd68",
 "manifest.json": "136936b7dd341c6433f45ef52be168ae",
 "version.json": "980547175e325fe622a3362b84d55b6a"};
 // The application shell files that are downloaded before a service worker can
