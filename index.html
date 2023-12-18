@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Evans Stenakis' website">
+  <meta name="description" content="Evans Stenakis">
+
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="website">
+  <meta name="apple-mobile-web-app-title" content="afvsdfsdvf">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>website</title>
+  <title>Evans Stenakis</title>
   <link rel="manifest" href="manifest.json">
 
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1138698668";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+
   <script type="module">
- import { initializeApp } from "firebase/app";
+    import { initializeApp } from "firebase/app";
     import { getAnalytics } from "firebase/analytics";
     const firebaseConfig = {
       apiKey: "AIzaSyCn6MaPL-GlEsu1f8Vlxsyc0MhgNEKe1m0",
@@ -46,74 +43,73 @@
     const analytics = getAnalytics(app);
   </script>
   <script>
-  if (
-    navigator.userAgent.indexOf("Safari") !== -1 &&
-    navigator.userAgent.indexOf("Chrome") === -1
-  ) {
-    var originalGetContext = HTMLCanvasElement.prototype.getContext;
-    HTMLCanvasElement.prototype.getContext = function () {
-      var contextType = arguments[0];
-      if (contextType === "webgl2") {
-        return;
-      }
-      return originalGetContext.apply(
-        this,
-        [contextType].concat(Array.prototype.slice.call(arguments, 1)),
-      );
-    };
-  }
+    if (
+      navigator.userAgent.indexOf("Safari") !== -1 &&
+      navigator.userAgent.indexOf("Chrome") === -1
+    ) {
+      var originalGetContext = HTMLCanvasElement.prototype.getContext;
+      HTMLCanvasElement.prototype.getContext = function () {
+        var contextType = arguments[0];
+        if (contextType === "webgl2") {
+          return;
+        }
+        return originalGetContext.apply(
+          this,
+          [contextType].concat(Array.prototype.slice.call(arguments, 1)),
+        );
+      };
+    }
   </script>
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2089641765";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+
   <style>
-      .container {
-        background-color: #202020;
-        width: 100vw;
-        height: 100vh;
-        display: flex; /* Default Axis is X*/
-        justify-content: center; /* Main Axis */
-        align-items: center; /* Cross Axis */
-      }
-      .indicator{
-        width: 50vw;
-      }
-</style>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .indicator {
+    width: 60vw; /* Default width for larger screens */
+
+    /* Media query for screens smaller than 800px */
+    @media (max-width: 800px) {
+      width: 100vw; /* Set it to 100vw for screens smaller than 800px */
+    }
+  }
+  </style>
 </head>
+
 <body style="overflow: hidden">
-  <div id="loading_indicator" class="container">
-   <img class="indicator" src="./assets/icons/logo.png"/>
-  </div>
-  <script>
-    window.addEventListener('load', function(ev) {
+<div id="loading_indicator" class="container">
+  <img class="indicator" src="./assets/loading.gif" alt="Loading gif" />
+</div>
+<script>
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: async function (engineInitializer) {
-          let appRunner = await engineInitializer.initializeEngine({
-            hostElement: document.querySelector("#flutter_app"),
-            renderer: "html"
-          }).then(function (appRunner) {
-            return appRunner.runApp();
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            appRunner.runApp();
           });
         }
       });
     });
   </script>
-  <script>
+<script>
     window.onload = function () {
-        setTimeout(function () {
-          var loadingIndicator = document.getElementById("loading_indicator");
-          if (loadingIndicator) {
-            loadingIndicator.remove();
-          }
-        }, 10000);
+      setTimeout(function () {
+        var loadingIndicator = document.getElementById("loading_indicator");
+        if (loadingIndicator) {
+          loadingIndicator.remove();
+        }
+      }, 10000);
     };
   </script>
 </body>
+
 </html>
