@@ -17,18 +17,18 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <title>Evans Stenakis</title>
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="manifest.json">
 
     <script>
       // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "3878175179";
+      const serviceWorkerVersion = "3755515914";
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script src="flutter.js" defer></script>
-
+  
     <script type="module">
-      import { initializeApp } from "firebase/app";
-      import { getAnalytics } from "firebase/analytics";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"
+
       const firebaseConfig = {
         apiKey: "AIzaSyCn6MaPL-GlEsu1f8Vlxsyc0MhgNEKe1m0",
         authDomain: "website-2f495.firebaseapp.com",
@@ -38,9 +38,10 @@
         appId: "1:168593416920:web:1ad263a6a31642bbe9adad",
         measurementId: "G-7SJFMDPZRS",
       };
+      
       const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
     </script>
+    
     <script>
       if (
         navigator.userAgent.indexOf("Safari") !== -1 &&
@@ -72,37 +73,29 @@
       .indicator {
         width: 60vw; /* Default width for larger screens */
 
-        /* Media query for screens smaller than 800px */
+        /* Media query for screens smaller than 80    <script src="flutter.js" defer=""></script><sc0px */
         @media (max-width: 800px) {
           width: 100vw; /* Set it to 100vw for screens smaller than 800px */
         }
       }
     </style>
   </head>
-
   <body style="overflow: hidden">
     <div id="loading_indicator" class="container">
       <img class="indicator" src="./assets/loading.gif" alt="Loading gif" />
     </div>
     <script>
-      window.addEventListener("load", function (ev) {
-        // var loading = document.querySelector('#loading');
-        // loading.textContent = "Loading entrypoint...";
+      window.addEventListener('load', function(ev) {
         // Download main.dart.js
         _flutter.loader.loadEntrypoint({
           serviceWorker: {
             serviceWorkerVersion: serviceWorkerVersion,
           },
-          onEntrypointLoaded: async function (engineInitializer) {
-            let appRunner = await engineInitializer
-              .initializeEngine({
-                hostElement: document.querySelector("#flutter_app"),
-                renderer: "html",
-              })
-              .then(function (appRunner) {
-                return appRunner.runApp();
-              });
-          },
+          onEntrypointLoaded: function(engineInitializer) {
+            engineInitializer.initializeEngine().then(function(appRunner) {
+              appRunner.runApp();
+            });
+          }
         });
       });
     </script>
