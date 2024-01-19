@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "bce9e2bfc8237de275371684e45bf2fc",
-"assets/AssetManifest.bin.json": "3ad7bf4a89ed04b40e7bf65f127223ee",
-"assets/AssetManifest.json": "b2564aed29d970c5d50333d57c044505",
+const RESOURCES = {"assets/AssetManifest.bin": "79461995704c2493ae9dee4f3f1af04f",
+"assets/AssetManifest.bin.json": "f17049997bcda4e2aae7f0676591bb21",
+"assets/AssetManifest.json": "9c54dd0de2ed96467f59e9404d8639b3",
 "assets/assets/icons/behance.svg": "47581037075cab1415da7ca527724dd0",
 "assets/assets/icons/deviantart.svg": "6639235c637bf4f70871743c3356f46f",
 "assets/assets/icons/facebook.svg": "cc2005cd7345c88a127ef072ce5746e5",
@@ -23,6 +23,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "bce9e2bfc8237de275371684e45bf2fc
 "assets/assets/products/klonos/ellinikon_8.png": "77e7aca4814530d40ea1b458e2c57c72",
 "assets/assets/products/klonos/ellinikon_9.png": "c32257f7c7c125803a916750c7021a78",
 "assets/assets/products/klonos/remvi_1.png": "f79f63edbd116c054217c0adb36988a5",
+"assets/assets/products/klonos/remvi_10.jpg": "cd0b8fd13a2ef01b87f9d7bf4a66da9c",
 "assets/assets/products/klonos/remvi_2.jpg": "d14868c8554c57c3d25b203f20b62d7a",
 "assets/assets/products/klonos/remvi_3.jpg": "1d00c9b4e9b859b1b90a8f996b2bc14d",
 "assets/assets/products/klonos/remvi_4.jpg": "b9c508b2de2cebaf8dcd90fa89496129",
@@ -30,6 +31,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "bce9e2bfc8237de275371684e45bf2fc
 "assets/assets/products/klonos/remvi_6.jpg": "4ac41b704a328fc5c45c2a212a331c1a",
 "assets/assets/products/klonos/remvi_7.jpg": "5b636df2d00425f19aa1a16ee5545843",
 "assets/assets/products/klonos/remvi_8.jpg": "6ba7a9f415581e34851a60e8914fe974",
+"assets/assets/products/klonos/remvi_9.jpg": "d52c64476c3c8743d435cdad66910b25",
 "assets/assets/products/main_logo.png": "a434fffdbc3a83807e1c9fbdbf049386",
 "assets/assets/products/motion/uni_motion.jpg": "c454a9d0140aa877e4b1b54c0bd39ee0",
 "assets/assets/products/music_festival/back.png": "6b30c43578e4c34e0a0c740bf9e76c8a",
@@ -148,9 +150,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "bce9e2bfc8237de275371684e45bf2fc
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "a75ddf539b9f205208b3ae1593b190de",
-"/": "a75ddf539b9f205208b3ae1593b190de",
-"main.dart.js": "dd1ebe5cbf0a685b5bdcee91a4afea7a",
+"index.html": "4724259dafc9ed9421ea4b8fc63bd06f",
+"/": "4724259dafc9ed9421ea4b8fc63bd06f",
+"main.dart.js": "339c960a3b6667a678790035823bc033",
 "manifest.json": "136936b7dd341c6433f45ef52be168ae",
 "version.json": "980547175e325fe622a3362b84d55b6a"};
 // The application shell files that are downloaded before a service worker can
