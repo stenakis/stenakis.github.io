@@ -6921,6 +6921,7 @@ SOFTWARE.
 
 --------------------------------------------------------------------------------
 flutter_lints
+flutter_shaders
 path_provider
 path_provider_android
 path_provider_foundation

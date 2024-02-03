@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "79461995704c2493ae9dee4f3f1af04f",
-"assets/AssetManifest.bin.json": "f17049997bcda4e2aae7f0676591bb21",
-"assets/AssetManifest.json": "9c54dd0de2ed96467f59e9404d8639b3",
+const RESOURCES = {"assets/AssetManifest.bin": "1abcad0b78e847fa48b45061795967ad",
+"assets/AssetManifest.bin.json": "d6daabfb40e9f51f3a975ac48bef435c",
+"assets/AssetManifest.json": "3c115324838d274c5cfa8f9e92d9baa5",
 "assets/assets/icons/behance.svg": "47581037075cab1415da7ca527724dd0",
 "assets/assets/icons/deviantart.svg": "6639235c637bf4f70871743c3356f46f",
 "assets/assets/icons/facebook.svg": "cc2005cd7345c88a127ef072ce5746e5",
@@ -33,6 +33,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "79461995704c2493ae9dee4f3f1af04f
 "assets/assets/products/klonos/remvi_8.jpg": "6ba7a9f415581e34851a60e8914fe974",
 "assets/assets/products/klonos/remvi_9.jpg": "d52c64476c3c8743d435cdad66910b25",
 "assets/assets/products/main_logo.png": "a434fffdbc3a83807e1c9fbdbf049386",
+"assets/assets/products/motion/motion.gif": "8da542af9c53f6870e2fe08760467f7e",
 "assets/assets/products/motion/uni_motion.jpg": "c454a9d0140aa877e4b1b54c0bd39ee0",
 "assets/assets/products/music_festival/back.png": "6b30c43578e4c34e0a0c740bf9e76c8a",
 "assets/assets/products/music_festival/banner.jpg": "2b84adedc25e4126505b7e701df103e3",
@@ -93,7 +94,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "79461995704c2493ae9dee4f3f1af04f
 "assets/assets/products/pixel_year/A-year-in-pixels-logo.jpg": "2c08bb8914358d43203d566862b1290d",
 "assets/assets/products/placeholder_phase10.png": "07b0924ed94bb197d7e57c8f5ac5d4c6",
 "assets/assets/products/placeholder_pianist.gif": "4b12865ac0cffd43c40e74fabbd58acc",
-"assets/assets/products/plaka/cover.jpg": "79e1b5ce2c1d718a37983cda7baf5a4a",
+"assets/assets/products/plaka/cover.gif": "67002564fdb4f0f05b8fa9c8b141854f",
 "assets/assets/products/rainmeter/badge.png": "73f65c25460d796033f23db75b8973a8",
 "assets/assets/products/rainmeter/clockworld.jpg": "8a3c15d87c80e9888e6f73c4efa5c8aa",
 "assets/assets/products/rainmeter/cover.png": "aeb66b41cdcacf36e9103bb952ea0d02",
@@ -132,7 +133,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "79461995704c2493ae9dee4f3f1af04f
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "6da0bcb25f79cf30445df52cf5a37beb",
 "assets/loading.gif": "e5d301bb2cf604e07dd4fd31d2adad45",
-"assets/NOTICES": "22e21b00b4e133d145d5c9e7ced0264c",
+"assets/NOTICES": "9850954d93499ba77b9c34934001c00a",
 "assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
 "canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
 "canvaskit/canvaskit.js.symbols": "77cdc19fcc63a442fb89bc32e8a6c886",
@@ -150,9 +151,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "79461995704c2493ae9dee4f3f1af04f
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "4724259dafc9ed9421ea4b8fc63bd06f",
-"/": "4724259dafc9ed9421ea4b8fc63bd06f",
-"main.dart.js": "339c960a3b6667a678790035823bc033",
+"index.html": "3f2fa0c39c705461fb114bafafd385cc",
+"/": "3f2fa0c39c705461fb114bafafd385cc",
+"main.dart.js": "9923053c24c61d07415124e08356ad17",
 "manifest.json": "136936b7dd341c6433f45ef52be168ae",
 "version.json": "980547175e325fe622a3362b84d55b6a"};
 // The application shell files that are downloaded before a service worker can
