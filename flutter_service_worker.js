@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "1abcad0b78e847fa48b45061795967ad",
-"assets/AssetManifest.bin.json": "d6daabfb40e9f51f3a975ac48bef435c",
-"assets/AssetManifest.json": "3c115324838d274c5cfa8f9e92d9baa5",
+const RESOURCES = {"assets/AssetManifest.bin": "5ce1b05ab60d8803e9edd14448b4852b",
+"assets/AssetManifest.bin.json": "1ef0cb4a938b5f283697458131edce7c",
+"assets/AssetManifest.json": "c602a39956c5dc9636fe1022672202f0",
 "assets/assets/icons/behance.svg": "47581037075cab1415da7ca527724dd0",
 "assets/assets/icons/deviantart.svg": "6639235c637bf4f70871743c3356f46f",
 "assets/assets/icons/facebook.svg": "cc2005cd7345c88a127ef072ce5746e5",
@@ -13,6 +13,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "1abcad0b78e847fa48b45061795967ad
 "assets/assets/icons/instagram.svg": "8190dbde6acb058af80b3a9801dc2912",
 "assets/assets/icons/linkedin.svg": "66be765d434023c6aeffdbe5c72515be",
 "assets/assets/icons/self.jpg": "3e99a49ad6d7cf2cb2411eef088c3455",
+"assets/assets/products/cover.jpg": "2e94a6736f584de3404b9f8d2bc6a1c0",
 "assets/assets/products/klonos/ellinikon_1.jpg": "7a4d5feffe39cb273e6759602049771a",
 "assets/assets/products/klonos/ellinikon_2.jpg": "44b1304b6b1cb65d3b4c9d7c3987d4d8",
 "assets/assets/products/klonos/ellinikon_3.jpg": "6f7538a290cdbff31725a0aab8b0591b",
@@ -108,7 +109,6 @@ const RESOURCES = {"assets/AssetManifest.bin": "1abcad0b78e847fa48b45061795967ad
 "assets/assets/products/spotify/Nu_Disco.jpg": "b915c35971b8dce30dcbb9e4f37fc056",
 "assets/assets/products/spotify/Piano.jpg": "a9f1614f85df3e9796e8809bbf993c3e",
 "assets/assets/products/spotify/Tech.jpg": "11e5fd88f1e071c8d04c2b896e99ac7e",
-"assets/assets/products/spotify_back.png": "26f7d6aa46b7e941a29f16ea183bde42",
 "assets/assets/products/together/cover.jpg": "82813f7709d9d6b5f0c460fb3aa80e4a",
 "assets/assets/products/together/image.jpg": "9d46af038197029f7c84f3347cd79414",
 "assets/assets/products/together/logo.svg": "f3f962c66c3f92770709637f265a80bc",
@@ -133,7 +133,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "1abcad0b78e847fa48b45061795967ad
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "e0a640e32e3593d3ed7ad4f4c114da03",
 "assets/loading.gif": "e5d301bb2cf604e07dd4fd31d2adad45",
-"assets/NOTICES": "9850954d93499ba77b9c34934001c00a",
+"assets/NOTICES": "5d89450f9b757602229b85d5766cd14f",
 "assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
 "canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
 "canvaskit/canvaskit.js.symbols": "77cdc19fcc63a442fb89bc32e8a6c886",
@@ -151,9 +151,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "1abcad0b78e847fa48b45061795967ad
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "e4d8fb04b7ba1ed41749bfd39b18061c",
-"/": "e4d8fb04b7ba1ed41749bfd39b18061c",
-"main.dart.js": "4dd6e51781f4a33146d97e6c82460946",
+"index.html": "75c2d3bbb4943c3c1394a35275b8f562",
+"/": "75c2d3bbb4943c3c1394a35275b8f562",
+"main.dart.js": "72116b7f6458044054f2d3f3f2e9ec5a",
 "manifest.json": "136936b7dd341c6433f45ef52be168ae",
 "version.json": "980547175e325fe622a3362b84d55b6a"};
 // The application shell files that are downloaded before a service worker can
