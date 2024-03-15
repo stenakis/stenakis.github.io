@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "efc27950fcdbc59769d3e7776d75efdb",
-"assets/AssetManifest.bin.json": "a944a0a62289612ec2cbfb89ab76c31d",
-"assets/AssetManifest.json": "96796ca2fd0cb9ea933a4279f6500b27",
+const RESOURCES = {"assets/AssetManifest.bin": "17b8fe07c943d25316e98eed124a66de",
+"assets/AssetManifest.bin.json": "d05bdc42970e7d3ac8ecd26c666ead1e",
+"assets/AssetManifest.json": "2e0fee7d7ba9f82eb6a71514e2c576a5",
 "assets/assets/icons/behance.svg": "47581037075cab1415da7ca527724dd0",
 "assets/assets/icons/deviantart.svg": "6639235c637bf4f70871743c3356f46f",
 "assets/assets/icons/facebook.svg": "cc2005cd7345c88a127ef072ce5746e5",
@@ -33,6 +33,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "efc27950fcdbc59769d3e7776d75efdb
 "assets/assets/products/klonos/remvi_8.jpg": "6ba7a9f415581e34851a60e8914fe974",
 "assets/assets/products/klonos/remvi_9.jpg": "d52c64476c3c8743d435cdad66910b25",
 "assets/assets/products/main_logo.png": "a434fffdbc3a83807e1c9fbdbf049386",
+"assets/assets/products/motion/Comp_1.mp4": "fbe8070d2d683665ced2b24284a48a57",
+"assets/assets/products/motion/Comp_2.mp4": "93f66693c97ee46f7519d8f3bbb6bd2b",
+"assets/assets/products/motion/Comp_3.mp4": "a714e0f41b5e2bbf09ba53f8eda078d2",
 "assets/assets/products/motion/motion.gif": "8da542af9c53f6870e2fe08760467f7e",
 "assets/assets/products/motion/uni_motion.jpg": "c454a9d0140aa877e4b1b54c0bd39ee0",
 "assets/assets/products/music_festival/back.png": "6b30c43578e4c34e0a0c740bf9e76c8a",
@@ -132,7 +135,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "efc27950fcdbc59769d3e7776d75efdb
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "0dc536378033d14a8841cd076856c636",
 "assets/loading.gif": "e5d301bb2cf604e07dd4fd31d2adad45",
-"assets/NOTICES": "ce57b8264f85b844b4590b4430e832ba",
+"assets/NOTICES": "9a1ef84beb3a1316c5cbb77ea5a2eed9",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "canvaskit/canvaskit.js": "7737f5fc722b6a040ac15271ea8d92fb",
 "canvaskit/canvaskit.js.symbols": "d0b3bf92014e698856d505a65b5f0ee9",
@@ -150,9 +153,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "efc27950fcdbc59769d3e7776d75efdb
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "c0c454171e07f13de6e1c3b3c7ff1dc6",
-"/": "c0c454171e07f13de6e1c3b3c7ff1dc6",
-"main.dart.js": "d75dcdfee87f5395a6b5e5d439aac927",
+"index.html": "a269dacac3d410776258f72f23545147",
+"/": "a269dacac3d410776258f72f23545147",
+"main.dart.js": "c331e6e40eb6eb828ca2d29bdda7b83c",
 "manifest.json": "136936b7dd341c6433f45ef52be168ae",
 "version.json": "980547175e325fe622a3362b84d55b6a"};
 // The application shell files that are downloaded before a service worker can
