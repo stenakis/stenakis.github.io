@@ -1,115 +1,284 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <base href="/" />
+<html lang="en">
 
-    <meta charset="UTF-8" />
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="Evans Stenakis" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evans Stenakis</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="afvsdfsdvf" />
-    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png" />
-
-    <title>Evans Stenakis</title>
-    <link rel="manifest" href="manifest.json">
-
-    <script>
-      // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "737197605";
-    </script>
-    <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
-  
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyCn6MaPL-GlEsu1f8Vlxsyc0MhgNEKe1m0",
-        authDomain: "website-2f495.firebaseapp.com",
-        projectId: "website-2f495",
-        storageBucket: "website-2f495.appspot.com",
-        messagingSenderId: "168593416920",
-        appId: "1:168593416920:web:1ad263a6a31642bbe9adad",
-        measurementId: "G-7SJFMDPZRS",
-      };
-      
-      const app = initializeApp(firebaseConfig);
-    </script>
-    
-    <script>
-      if (
-        navigator.userAgent.indexOf("Safari") !== -1 &&
-        navigator.userAgent.indexOf("Chrome") === -1
-      ) {
-        var originalGetContext = HTMLCanvasElement.prototype.getContext;
-        HTMLCanvasElement.prototype.getContext = function () {
-          var contextType = arguments[0];
-          if (contextType === "webgl2") {
-            return;
-          }
-          return originalGetContext.apply(
-            this,
-            [contextType].concat(Array.prototype.slice.call(arguments, 1))
-          );
-        };
-      }
-    </script>
-  
-    <style>
-      .container {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #1a1a1a;
-      }
-
-      .indicator {
-        width: 60vw; /* Default width for larger screens */
-
-        /* Media query for screens smaller than 80    <script src="flutter.js" defer=""></script><sc0px */
-        @media (max-width: 800px) {
-          width: 100vw; /* Set it to 100vw for screens smaller than 800px */
-        }
-      }
-    </style>
-  </head>
-  <body style="overflow: hidden">
-    <div id="loading_indicator" class="container">
-      <img class="indicator" src="./assets/loading.jpg" alt="Loading image" />
+<body>
+  <div style="
+        background-position: center;
+        background-image: url(assets/profile.jpg);
+        padding: var(--padding);
+       
+     
+      ">
+    <div style="display: flex; justify-content: space-between">
+      <div style="display: inline-flex; gap: 1.5rem">
+        <img style="height: 30px" src="assets/icons/logo.svg" />
+        <img style="height: 30px" src="assets/icons/logo_2.png" />
+      </div>
+      <div style="display: flex; gap: 1.5rem; height: 22px">
+        <a href="https://github.com/stenakis" target="_blank"><img style="height: 100%; filter: brightness(0) invert(1)"
+            src="assets/icons/github.svg" /></a>
+        <a href="https://www.behance.net/evans_stenakis" target="_blank"><img
+            style="height: 100%; filter: brightness(0) invert(1)" src="assets/icons/behance.svg" /></a>
+        <a href="https://www.linkedin.com/in/evans-stenakis-3175ba257/" target="_blank"><img
+            style="height: 100%; filter: brightness(0) invert(1)" src="assets/icons/linkedin.svg" /></a>
+        <a href="https://www.deviantart.com/offbalancect" target="_blank"><img
+            style="height: 100%; filter: brightness(0) invert(1)" src="assets/icons/deviantart.svg" /></a>
+      </div>
     </div>
-    <script>
-      window.addEventListener('load', function (ev) {
-        // Download main.dart.js
-        _flutter.loader.load({
-          serviceWorker: {
-            serviceWorkerVersion: serviceWorkerVersion,
-          },
-          onEntrypointLoaded: function (engineInitializer) {
-            engineInitializer.initializeEngine().then(function (appRunner) {
-              appRunner.runApp();
-            });
-          }
-        });
-      });
-    </script>
-    <script>
-      window.onload = function () {
-        setTimeout(function () {
-          var loadingIndicator = document.getElementById("loading_indicator");
-          if (loadingIndicator) {
-            loadingIndicator.remove();
-          }
-        }, 5000);
-      };
-    </script>
-    <script src="main.dart.js" type="application/javascript" defer></script>
-  </body>
+    <div class="padding-v"></div>
+    <h1 class="fw-bold"
+      style="text-align: center; line-height: 1; text-transform: uppercase; max-width: 1300px; margin: 0 auto;">
+      Crafting seamless
+      <span style="display: inline-block; position: relative; width: max-content">
+        <span style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              text-align: center;
+              font-family: 'NF-Blanc Seing';
+              color: var(--accent);
+              text-transform: capitalize;
+            ">
+          experiences
+        </span>
+        <span style="text-transform: uppercase">experiences</span>
+      </span>
+      <div style="text-transform: uppercase">in a user centered world</div>
+    </h1>
+    <div style="padding: calc(var(--padding) / 2)"></div>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+      UI/UX designer from Aegina island, Greece, always in transit between
+      places trying to find where my heart belongs.
+      <span style="color: var(--accent)">Intrigued</span> by new experiences,
+      constantly <span style="color: var(--accent)">trying out</span> new activities
+      and <span style="color: var(--accent)">learning</span> new things.
+    </p>
+  </div>
+  <div class="padding-v"></div>
+  <div class="container padding-h" style="max-width: 1300px;">
+    <div class="row">
+      <div class="col-md-6 p-3">
+        <!-- Together -->
+        <a href="together.html" style="text-decoration: none; color: inherit">
+          <div style="
+                background-color: #202020;
+                border-radius: 10px;
+                overflow: hidden;
+              ">
+            <div style="
+                  background-image: url(assets/products/together/cover.gif);
+                  background-size: cover;
+                  background-position: center;
+                  height: 300px;
+                "></div>
+            <div style="padding: 30px">
+              <img src="assets/products/together/logo.png" alt=""
+                style="height: 30px;  object-fit: contain;margin: 0; width: auto;" />
+              <div style="height: calc(var(--padding) / 3)"></div>
+              <h2>TOGETHER</h2>
+              <p>
+                The simpler way to meet your friends! Together is all your
+                friends need to make every moment count. 👀
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 p-3">
+        <!-- Phase 10 -->
+        <a href="phase_10.html" style="text-decoration: none; color: inherit">
+          <div style="
+                background-color: #202020;
+                border-radius: 10px;
+                overflow: hidden;
+              ">
+            <div style="
+                  background-image: url(assets/products/phase10/cover.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  height: 300px;
+                "></div>
+            <div style="padding: 30px">
+              <img src="assets/products/phase10/main_logo_full.png" alt=""
+                style="height: 40px; object-fit: contain; margin: 0; width: auto;" />
+              <div style="height: calc(var(--padding) / 3)"></div>
+              <h2>PHASE 10 ASSISTANT</h2>
+              <p>
+                Mobile / web app providing Phase 10 players with extra tools
+                to enhance their gaming experience!
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 p-3">
+        <!-- Hexa -->
+        <a href="hexa.html" style="text-decoration: none; color: inherit">
+          <div style="
+                background-color: #202020;
+                border-radius: 10px;
+                overflow: hidden;
+              ">
+            <div style="
+                  background-image: url(assets/products/hexa/cover.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  height: 300px;
+                "></div>
+            <div style="padding: 30px">
+              <img src="assets/products/hexa/logo.png" alt=""
+                style="height: 45px; object-fit: contain; margin: 0; width: auto;" />
+              <div style="height: calc(var(--padding) / 3)"></div>
+              <h2>HEXA</h2>
+              <p>
+                DesignFlows 2025 submssion. App design for managing intelligent robots from an all-inclusive
+                environment.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 p-3">
+        <!-- Rainmeter -->
+        <a href="rainmeter.html" style="text-decoration: none; color: inherit">
+          <div style="
+                background-color: #202020;
+                border-radius: 10px;
+                overflow: hidden;
+              ">
+            <div style="
+                  background-image: url(assets/products/rainmeter/cover.png);
+                  background-size: cover;
+                  background-position: center;
+                  height: 300px;
+                "></div>
+            <div style="padding: 30px">
+              <img src="assets/products/rainmeter/OffBalanceLogo.png" alt=""
+                style="height: 50px;  object-fit: contain;margin: 0; width: auto;" />
+              <div style="height: calc(var(--padding) / 3)"></div>
+              <h2>RAINMETER SKINS</h2>
+              <p>
+                Dynamic widgets built entirely from code provide a beautiful
+                way to decorate your desktop! Under the "OffBalance Creative Team" alias.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="padding-v"></div>
+  </div>
+
+  <div class="container padding-h" style="max-width: 1300px;">
+    <div class="row">
+      <div class="col-md-4 p-3">
+        <!-- Plaka -->
+        <div style="
+                background-color: #202020;
+                border-radius: 10px;
+                overflow: hidden;
+              ">
+          <div style="
+                  background-image: url(assets/products/plaka/cover.gif);
+                  background-size: cover;
+                  background-position: center;
+                  height: 300px;
+                "></div>
+          <div style="padding: 30px">
+            <div
+              style="background-color: var(--accent); border-radius: 5px; padding-left: 12px; padding-right: 12px; display: inline-block;">
+              <p>Coming soon</p>
+            </div>
+
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h3>BRUSH STROKES FOR PLAKA</h3>
+            <p>
+              Exciting activities for kids for them to get to know Plaka, Athens via its famous drawings.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 p-3">
+        <!-- Open Mall -->
+
+        <div style="
+                background-color: #202020;
+                border-radius: 10px;
+                overflow: hidden;
+              ">
+          <div style="
+                  background-image: url(assets/products/open_mall/cover.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  height: 300px;
+                "></div>
+          <div style="padding: 30px">
+            <div
+              style="background-color: var(--accent); border-radius: 5px; padding-left: 12px; padding-right: 12px; display: inline-block;">
+              <p>Coming soon</p>
+            </div>
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h3>AGIA VARVARA'S OPEN MALL</h3>
+            <p>
+              "A pole of attraction for the public of Athens and the suburbs."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-3">
+        <!-- Music Festival -->
+        <div style="
+                background-color: #202020;
+                border-radius: 10px;
+                overflow: hidden;
+              ">
+          <div style="
+                  background-image: url(assets/products/music_festival/cover.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  height: 300px;
+                "></div>
+          <div style="padding: 30px">
+            <div
+              style="background-color: var(--accent); border-radius: 5px; padding-left: 12px; padding-right: 12px; display: inline-block;">
+              <p>Coming soon</p>
+            </div>
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h3>AEGINA'S MUSIC FESTIVAL</h3>
+            <p>
+              Branding the biggest classical music festival of the island. In collaboration with YellowFish Design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-v"></div>
+    <p class="text-center">Made with ❤️ by Evans Stenakis</p>
+    <div style="height: 20px"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
