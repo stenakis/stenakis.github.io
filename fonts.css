@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Neue Regrade';
+    src: url(fonts/NeueRegradeRegular.TTF);
+}
+
+@font-face {
+    font-family: 'Neue Regrade';
+    src: url(fonts/NeueRegradeBold.OTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Neue Regrade';
+    src: url(fonts/NeueRegradeSemiboldItalic.OTF);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NF-Blanc Seing';
+    src: url(fonts/NF-BLANCSEING-NORMAL.TTF);
+}
