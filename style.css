@@ -7,10 +7,7 @@
 * {
     font-family: 'DM Sans', sans-serif;
     color: white;
-}
-
-body {
-    color: white;
+    background-size: cover;
 }
 
 body {
@@ -33,11 +30,10 @@ h1 {
     letter-spacing: 5px;
 }
 
-
 h2 {
     font-size: 24pt;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0%;
     font-weight: bold;
 }
 
@@ -82,8 +78,7 @@ iframe {
     margin-right: auto;
     padding-top: 0;
     padding-bottom: 0;
-    max-width: 100%;
-    height: auto;
+    width: auto;
 }
 
 video {
@@ -96,14 +91,14 @@ video {
 
 hr {
     border: none;
+    height: 2px;
     background-color: white;
-    opacity: 1;
+    opacity: 100%;
 }
-
 
 @media (max-width: 900px) {
     :root {
-        --padding: 40px;
+        --padding: 30px;
     }
 
     h1 {
