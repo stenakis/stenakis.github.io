@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
   <title>Together</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./fonts.css">
   <style>
@@ -22,42 +22,62 @@
       object-fit: contain;
     }
 
-    @media (max-width: 800px) {
+    .together_images {
+
+
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 900px) {
       .phone {
         display: none;
+      }
+
+      .together_images {
+        height: 30vh;
+        width: auto;
+
       }
     }
   </style>
 </head>
 
 <body>
-  <img src="assets/products/together/cover.gif" alt="Together Cover" ,
-    style="height: 350px; width: 100%; object-fit: cover" />
   <div>
-    <div class="row" style="gap: 2rem">
+    <!-- Only visible on screens > 900px -->
+    <div class="d-none d-lg-flex flex-row padding-h padding-v" style="gap: 2rem">
       <img src="assets/products/together/emojis_1.png" alt class="row-item" />
       <img src="assets/products/together/logo.png" alt class="row-item" />
       <img src="assets/products/together/emojis_2.png" alt class="row-item" />
     </div>
-    <div style="height: var(--padding)"></div>
+    <!-- Only visible on screens ≤ 900px -->
+    <div class="d-flex d-lg-none flex-column padding-h padding-v" style="gap: 1rem">
+      <div class="d-flex flex-row justify-content-between" style="gap: 1rem">
+        <img src="assets/products/together/emojis_1.png" alt class="row-item" />
+        <img src="assets/products/together/emojis_2.png" alt class="row-item" />
+      </div>
+      <img src="assets/products/together/logo.png" alt class="row-item" />
+    </div>
     <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
       Organize meetups
     </h3>
 
-    <img style="max-height: 60vh; object-fit: contain;" src="assets/products/together/meetups.png" alt="Card_1">
+    <img class="together_images" src="assets/products/together/meetups.png" alt="Card_1">
 
     <div style="height: var(--padding)"></div>
     <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
       Share your live location
     </h3>
     <div style="height: calc(var(--padding) / 2)"></div>
-    <img src="assets/products/together/map.jpg" alt="" />
+    <img class="together_images" src="assets/products/together/map.jpg" alt="" />
     <div style="height: var(--padding)"></div>
     <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
       Make every moment count
     </h3>
     <div style="height: calc(var(--padding) / 2)"></div>
-    <img style="max-height: 50vh; object-fit: contain;" src="assets/products/together/moments.png" alt="Card_1">
+    <img style="max-width: 70%; max-height: 20%; object-fit: contain;" src="assets/products/together/moments.png"
+      alt="Card_1">
     <div style="height: var(--padding)"></div>
     <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
       Your mood out loud
@@ -66,21 +86,21 @@
       Express yourself freely!
     </p>
     <div style="height: calc(var(--padding) / 2)"></div>
-    <img style="max-height: 60vh; object-fit: contain;" src="assets/products/together/check-in.png" alt="Card_1">
+    <img style="width: 100%; object-fit: contain;" src="assets/products/together/check-in.png" alt="Card_1">
     <div style="height: var(--padding)"></div>
     <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
       Watch the trailer
     </h3>
     <div style="height: calc(var(--padding) / 2)"></div>
-    <video class="padding-h" style="width: 50%" controls>
+    <video class="padding-h" style="width: 100%; height: auto;" controls>
       <source src="assets/products/together/output_video.mp4" type="video/mp4" />
     </video>
     <div style="height: var(--padding)"></div>
     <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
       Interact on Figma
     </h3>
- 
-    <iframe class="padding-h" style="width: 800px; border: 1px solid rgba(0, 0, 0, 0.1)" width="800" height="450"
+
+    <iframe class="padding-h" style="width: 100%; height: 500px; border: 1px solid rgba(0, 0, 0, 0.1)"
       src="https://embed.figma.com/design/T6KSp7ImrJm6bQwkTtwPSy/TogetherApp?node-id=1378-77&embed-host=share"
       allowfullscreen></iframe>
     <div style="height: var(--padding)"></div>
@@ -126,29 +146,29 @@
         application. (Frier, 2021)</p>
     </div>
     <div class="gap-80"></div>
-  <div class="gap-80"></div>
-  <h3 style="color: white;">NEXT PROJECT</h3>
-  <div style="height: 10px;"></div>
-  <a href="hexa.html" style="text-decoration: none; color: inherit;">
-    <div class="row g-0" style="background-color: #202020; border-radius: 10px; overflow: hidden;">
-      <div class="col-md-4">
-        <img src="assets/products/hexa/cover.jpg" alt="HEXA cover" class="img-fluid h-100 w-100"
-          style="object-fit: cover; max-height: 250px;" />
-      </div>
-      <div class="col-md-8">
-        <div class="p-4">
-          <img src="assets/products/hexa/logo.png" alt="Phase 10 logo"
-            style="height: 45px; object-fit: contain; margin: initial; margin-bottom: 20px; width: auto;" />
-          <h2 >HEXA</h2>
-          <p class="mt-2 mb-0">
-            DesignFlows 2025 submission. App design for managing intelligent robots from an all-inclusive environment.
-          </p>
+    <div class="gap-80"></div>
+    <h3 style="color: white;">NEXT PROJECT</h3>
+    <div style="height: 10px;"></div>
+    <a href="hexa.html" style="text-decoration: none; color: inherit;">
+      <div class="row g-0" style="background-color: #202020; border-radius: 10px; overflow: hidden;">
+        <div class="col-md-4">
+          <img src="assets/products/hexa/cover.jpg" alt="HEXA cover" class="img-fluid h-100 w-100"
+            style="object-fit: cover; max-height: 250px;" />
+        </div>
+        <div class="col-md-8">
+          <div class="p-4">
+            <img src="assets/products/hexa/logo.png" alt="Phase 10 logo"
+              style="height: 45px; object-fit: contain; margin: initial; margin-bottom: 20px; width: auto;" />
+            <h2>HEXA</h2>
+            <p class="mt-2 mb-0">
+              DesignFlows 2025 submission. App design for managing intelligent robots from an all-inclusive environment.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
   </div>
-  
+
 </body>
 
 </html>
