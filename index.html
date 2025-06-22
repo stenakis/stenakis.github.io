@@ -15,59 +15,81 @@
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./fonts.css" />
+  <style>
+    h1 {
+      font-weight: 600;
+      font-size: 35pt;
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
-  <div style="
-        background-position: center;
-        background-image: url(assets/profile.jpg);
-        padding: var(--padding);
-      ">
-    <div style="display: flex; justify-content: space-between">
-      <div style="display: inline-flex; gap: 1.5rem">
-        <img style="height: 30px" src="assets/icons/logo.svg" />
-        <img style="height: 30px" src="assets/icons/logo_2.png" />
+  <div style="max-width: 1300px; margin: 0 auto; position: relative;">
+  <img class="position-absolute z-n1" style="
+    top: -20px;
+    right: 70px;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    transform: rotate(5deg);
+  " src="assets/profile.jpg" alt="">
+
+    <div class="z-1 padding-h padding-v d-flex justify-content-between">
+      <div class="row d-flex align-items-center">
+        <img style="height: 30px; width: auto;" src="assets/icons/logo.svg" />
+        <img style="height: 30px; width: auto;" src="assets/icons/logo_2.png" />
       </div>
-      <div style="display: flex; gap: 1.5rem; height: 22px">
-        <a href="https://github.com/stenakis" target="_blank"><img style="height: 100%; filter: brightness(0) invert(1)"
-            src="assets/icons/github.svg" /></a>
-        <a href="https://www.behance.net/evans_stenakis" target="_blank"><img
-            style="height: 100%; filter: brightness(0) invert(1)" src="assets/icons/behance.svg" /></a>
-        <a href="https://www.linkedin.com/in/evans-stenakis-3175ba257/" target="_blank"><img
-            style="height: 100%; filter: brightness(0) invert(1)" src="assets/icons/linkedin.svg" /></a>
-        <a href="https://www.deviantart.com/offbalancect" target="_blank"><img
-            style="height: 100%; filter: brightness(0) invert(1)" src="assets/icons/deviantart.svg" /></a>
+      <div class="d-flex align-items-center" style="gap: 1.5rem;">
+        <a href="https://github.com/stenakis" target="_blank">
+          <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/github.svg" />
+        </a>
+        <a href="https://www.behance.net/evans_stenakis" target="_blank">
+          <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/behance.svg" />
+        </a>
+        <a href="https://www.linkedin.com/in/evans-stenakis-3175ba257/" target="_blank">
+          <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/linkedin.svg" />
+        </a>
+        <a href="https://www.deviantart.com/offbalancect" target="_blank">
+          <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/deviantart.svg" />
+        </a>
       </div>
     </div>
     <div class="padding-v"></div>
-    <h1 class="fw-bold"
-      style="text-align: center; line-height: 1; text-transform: uppercase; max-width: 1300px; margin: 0 auto;">
+    <h1 class="padding-h"
+      style="text-align: justify; line-height: 1; text-transform: uppercase; margin-bottom: 0.5rem; max-width: 700px;">
       Crafting seamless
-      <span style="display: inline-block; position: relative; width: max-content">
+      <span style="display: inline-block; position: relative; width: max-content;">
         <span style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              text-align: center;
-              font-family: 'NF-Blanc Seing';
-              color: var(--accent);
-              text-transform: capitalize;
-            ">
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          font-family: 'NF-Blanc Seing';
+          color: var(--accent);
+          text-transform: capitalize;
+        ">
           experiences
         </span>
         <span style="text-transform: uppercase">experiences</span>
       </span>
-      <div style="text-transform: uppercase">in a user centered world</div>
+      <div style="text-transform: uppercase; text-align: justify;">in a user centered world</div>
     </h1>
     <div style="padding: calc(var(--padding) / 2)"></div>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+    <p class="padding-h" style="max-width: 700px;">
       UI/UX designer from Aegina island, Greece, always in transit between
       places trying to find where my heart belongs.
       <span style="color: var(--accent)">Intrigued</span> by new experiences,
       constantly <span style="color: var(--accent)">trying out</span> new activities
       and <span style="color: var(--accent)">learning</span> new things.
     </p>
+
+  </div>
+
+
+
+
   </div>
   <div class="padding-v"></div>
   <div class="container padding-h" style="max-width: 1300px;">
@@ -196,7 +218,7 @@
                 overflow: hidden;
               ">
           <div style="
-                  background-image: url(assets/products/plaka/cover.gif);
+                  background-image: url(assets/products/fest2024/cover.gif);
                   background-size: cover;
                   background-position: center;
                   height: 300px;
@@ -208,9 +230,9 @@
             </div>
 
             <div style="height: calc(var(--padding) / 3)"></div>
-            <h3>BRUSH STROKES FOR PLAKA</h3>
+            <h3>AEGINA'S FISTIKI FEST 2024</h3>
             <p>
-              Exciting activities for kids for them to get to know Plaka, Athens via its famous drawings.
+              The #1 nut on the planet celebrates its locality.
             </p>
           </div>
         </div>
