@@ -47,6 +47,7 @@ h3 {
 p {
     margin-top: 5px;
     margin-bottom: 5px;
+ 
 }
 
 .project_title {
@@ -115,6 +116,19 @@ hr {
     background-color: white;
     opacity: 100%;
 }
+
+#animatedDiv
+{
+    text-align: center;
+  font-size: 10vw;
+  position: fixed; top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; 
+  color: white;
+  transform: scale(0.2); /* since you ask for 20% */     
+}
+
 
 @media (max-width: 900px) {
     :root {
