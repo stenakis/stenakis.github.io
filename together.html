@@ -14,11 +14,24 @@
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./fonts.css">
   <style>
+    h3 {
+      text-align: center;
+      letter-spacing: 0;
+      color: white
+    }
+
     .row-item {
       flex: 1;
       min-width: 0;
       height: auto;
       object-fit: contain;
+    }
+
+    .together_images {
+      min-height: 200px;
+      max-height: 350px;
+      object-fit: cover;
+      margin: auto;
     }
 
     @media (max-width: 900px) {
@@ -38,7 +51,7 @@ margin-right: auto;">
     <div class="row">
       <div class="col-md-8 mb-4 mb-md-0">
         <h1 class="project_title">Together</h1>
-        <h3 class="project_desc">BA Thesis about converting a fresh app idea into reality. With less than 6
+        <h3 class="project_desc" style="text-align: initial;">BA Thesis about converting a fresh app idea into reality. With less than 6
           months to complete, this
           projet is a truly extended approach on UI/UX. Together is all you need to gather with your friends!</h3>
       </div>
@@ -51,144 +64,116 @@ margin-right: auto;">
         <p>Figma</p>
       </div>
     </div>
-     <div class="gap-40"></div>
-        <a href="https://polynoe.lib.uniwa.gr/xmlui/handle/11400/7205" target="_blank"><img
+    <div class="gap-40"></div>
+    <a href="https://polynoe.lib.uniwa.gr/xmlui/handle/11400/7205" target="_blank"><img
         src="assets/products/together/action_thesis.png" alt="PlayStore icon" , style="margin: 0;
           padding: 0;object-fit: cover; width: auto; height:55px;" /></a>
-              <div class="gap-80"></div>
-    <div>
-      <!-- Only visible on screens > 900px -->
-      <div class="d-none d-lg-flex flex-row padding-h padding-v" style="gap: 2rem">
+    <div class="gap-80"></div>
+  </div>
+  <div class="padding-h" style="max-width: 1300px; margin-left: auto;
+margin-right: auto;">
+    <!-- Only visible on screens > 900px -->
+    <div class="d-none d-lg-flex flex-row padding-h padding-v" style="gap: 2rem">
+      <img src="assets/products/together/emojis_1.png" alt class="row-item" />
+      <img src="assets/products/together/logo.png" alt class="row-item" />
+      <img src="assets/products/together/emojis_2.png" alt class="row-item" />
+    </div>
+    <!-- Only visible on screens ≤ 900px -->
+    <div class=" d-flex d-lg-none flex-column padding-h padding-v" style="gap: 1rem">
+      <div class="d-flex flex-row justify-content-between" style="gap: 1rem">
         <img src="assets/products/together/emojis_1.png" alt class="row-item" />
-        <img src="assets/products/together/logo.png" alt class="row-item" />
         <img src="assets/products/together/emojis_2.png" alt class="row-item" />
       </div>
-      <!-- Only visible on screens ≤ 900px -->
-      <div class=" d-flex d-lg-none flex-column padding-h padding-v" style="gap: 1rem">
-        <div class="d-flex flex-row justify-content-between" style="gap: 1rem">
-          <img src="assets/products/together/emojis_1.png" alt class="row-item" />
-          <img src="assets/products/together/emojis_2.png" alt class="row-item" />
-        </div>
-        <img class="w-75" src="assets/products/together/logo.png" alt class="row-item" />
-      </div>
-      <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
-        Organize meetups
-      </h3>
-      <img class="together_images" src="assets/products/together/meetups.png" alt="Card_1">
-      <div style="height: var(--padding)"></div>
-      <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
-        Share your live location
-      </h3>
-      <div style="height: calc(var(--padding) / 2)"></div>
-      <img class="together_images" src="assets/products/together/map.jpg" alt="" />
-      <div style="height: var(--padding)"></div>
-      <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
-        Make every moment count
-      </h3>
-      <div style="height: calc(var(--padding) / 2)"></div>
-      <img style="max-width: 70%; max-height: 20%; object-fit: contain;" src="assets/products/together/moments.png"
-        alt="Card_1">
-      <div style="height: var(--padding)"></div>
-      <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
-        Your mood out loud
-      </h3>
-      <p class="padding-h" style="text-align: center">
-        Express yourself freely!
-      </p>
-      <div style="height: calc(var(--padding) / 2)"></div>
-      <img style="width: 100%; object-fit: contain;" src="assets/products/together/check-in.png" alt="Card_1">
-      <div style="height: var(--padding)"></div>
-      <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
-        Watch the trailer
-      </h3>
-      <div style="height: calc(var(--padding) / 2)"></div>
-      <video class="padding-h" style="width: 100%; height: auto;" controls>
-        <source src="assets/products/together/output_video.mp4" type="video/mp4" />
-      </video>
-      <div style="height: var(--padding)"></div>
-      <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
-        Interact on Figma
-      </h3>
-
-      <iframe class="padding-h" style="width: 100%; height: 500px; border: 1px solid rgba(0, 0, 0, 0.1)"
-        src="https://embed.figma.com/design/T6KSp7ImrJm6bQwkTtwPSy/TogetherApp?node-id=1378-77&embed-host=share"
-        allowfullscreen></iframe>
-      <div style="height: var(--padding)"></div>
-
-    </div>
-    <div style="position: relative;">
-      <div style="width: 100%; height: 60px; background-color: #F8CE1F; display: flex;  align-items: center;">
-        <h3 style="margin-left: 40px;color: black;">BEHIND THE PROJECT</h3>
-      </div>
-      <img class="phone" style=" position: absolute; right: 150px; bottom: 0px; height: 200px;"
-        src="assets/products/together/header.png" alt="">
-    </div>
-    <div style="height: var(--padding)"></div>
-    <div class="padding-h padding-v">
-      <h3>INFLUENCE: SOCIAL MEDIA</h3>
-      <br>
-      <div class="col-md-8">
-        <p style="text-align: justify;">Social networks have become an integral part of the daily lives of a large
-          population of people around the
-          world. But not everyone belongs to the same category. According to the Pew Research Center, users over the age
-          of 30 prefer to use Facebook and YouTube more than Snapchat and Tiktok which seems to appeal to younger
-          generations. Accordingly, the use of social networks decreases as people age. In the United States of America,
-          84% of young people aged 18-29 say they use social networks on a daily basis, while only 45% of people over 65
-          seem to do the same. (Atske, 2021)</p>
-        <br>
-        <p style="text-align: justify;">According to this data, some conclusions can be drawn regarding the general
-          character of social networks and
-          what needs they cover. Some social networks, such as Facebook and Twitter, were launched during the first
-          years
-          of public availability of the Internet. Consequently, the rules, both functional and design, have adapted to
-          the
-          times and the available technology. Initially, they were aimed at a young audience with few tools and
-          customisation options while trying to become known and enter the everyday life of the average user by creating
-          a
-          new habit. However, as technology evolved, new platforms emerged, taking advantage of new technologies. To
-          compensate for its share of the global market, Facebook introduced more and more features too often, leading
-          to
-          the phenomenon of Social Media Fatigue. Users, overwhelmed by a very high pressure, started to get tired and
-          sought new simpler platforms such as Snapchat (Bright et al., 2015)</p>
-        <br>
-        <p style="text-align: justify;">But why were these platforms left behind? The key elements they focused on were
-          few but clear and new-to-market
-          tools and a simple user experience. Companies understood that young and relaxed users bring in much more
-          revenue
-          than existing users, so they started to create new platforms that were clearly targeting new generations.
-          Fresh
-          colours, soft movements and interesting typography were the main means of attracting the interest of the new
-          generations. In addition, they started to follow the laws of user experience, rules that set the basis for the
-          maximum user experience of an application. Nowadays, creating an application was not just in the hands of one
-          or
-          a group of developers but needed a special new approach related to the user's satisfaction while using the
-          application. (Frier, 2021)</p>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-80"></div>
-      <h3 style="color: white;">NEXT PROJECT</h3>
-      <div style="height: 10px;"></div>
-      <a href="hexa.html" style="text-decoration: none; color: inherit;">
-        <div class="row g-0" style="background-color: #202020; border-radius: 10px; overflow: hidden;">
-          <div class="col-md-4">
-            <img src="assets/products/hexa/cover.jpg" alt="HEXA cover" class="img-fluid h-100 w-100"
-              style="object-fit: cover; max-height: 250px;" />
-          </div>
-          <div class="col-md-8">
-            <div class="p-4">
-              <img src="assets/products/hexa/logo.png" alt="Phase 10 logo"
-                style="height: 45px; object-fit: contain; margin: initial; margin-bottom: 20px; width: auto;" />
-              <h2>HEXA</h2>
-              <p class="mt-2 mb-0">
-                DesignFlows 2025 submission. App design for managing intelligent robots from an all-inclusive
-                environment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </a>
+      <img class="w-75" src="assets/products/together/logo.png" alt class="row-item" />
     </div>
   </div>
+  <h3>
+    Organize meetups
+  </h3>
+  <img class="together_images" src="assets/products/together/meetups.png" alt="Card_1">
+  <div style="height: var(--padding)"></div>
+  <h3>
+    Share your live location
+  </h3>
+  <div style="height: calc(var(--padding) / 2)"></div>
+  <img class="together_images" src="assets/products/together/map.jpg" alt="" />
+  <div style="height: var(--padding)"></div>
+  <h3>Make every moment count</h3>
+  <div style="height: calc(var(--padding) / 2)"></div>
+  <img class="together_images" src="assets/products/together/moments.png" alt="Card_1">
+  <div style="height: var(--padding)"></div>
+  <h3>Your mood out loud</h3>
+  <p style="text-align: center">
+    Express yourself freely!
+  </p>
+  <div style="height: calc(var(--padding) / 2)"></div>
+  <img class="together_images" src="assets/products/together/check-in.png" alt="Card_1">
+  <div style="height: var(--padding)"></div>
+  <h3> Watch the trailer </h3>
+  <div style="height: calc(var(--padding) / 2)"></div>
+  <video class="padding-h" style="width: 100%; height: auto;" controls>
+    <source src="assets/products/together/output_video.mp4" type="video/mp4" />
+  </video>
+  <div style="height: var(--padding)"></div>
+  <h3 class="padding-h" style="text-align: center; letter-spacing: 0">
+    Interact on Figma
+  </h3>
+
+  <iframe class="padding-h" style="width: 100%; height: 500px; border: 1px solid rgba(0, 0, 0, 0.1)"
+    src="https://embed.figma.com/design/T6KSp7ImrJm6bQwkTtwPSy/TogetherApp?node-id=1378-77&embed-host=share"
+    allowfullscreen></iframe>
+  <div style="height: var(--padding)"></div>
+
+
+  <div style="position: relative;">
+    <div style="width: 100%; height: 60px; background-color: #F8CE1F; display: flex;  align-items: center;">
+      <h3 style="margin-left: 40px;color: black;">BEHIND THE PROJECT</h3>
+    </div>
+    <img class="phone" style=" position: absolute; right: 150px; bottom: 0px; height: 200px;"
+      src="assets/products/together/header.png" alt="">
+  </div>
+  <div style="height: var(--padding)"></div>
+  <div class="padding-h padding-v">
+    <h3 style="text-align: initial;">INFLUENCE: SOCIAL MEDIA</h3>
+    <br>
+    <div class="col-md-8">
+      <p style="text-align: justify;">Social networks have become an integral part of the daily lives of a large
+        population of people around the
+        world. But not everyone belongs to the same category. According to the Pew Research Center, users over the age
+        of 30 prefer to use Facebook and YouTube more than Snapchat and Tiktok which seems to appeal to younger
+        generations. Accordingly, the use of social networks decreases as people age. In the United States of America,
+        84% of young people aged 18-29 say they use social networks on a daily basis, while only 45% of people over 65
+        seem to do the same. (Atske, 2021)</p>
+      <br>
+      <p style="text-align: justify;">According to this data, some conclusions can be drawn regarding the general
+        character of social networks and
+        what needs they cover. Some social networks, such as Facebook and Twitter, were launched during the first
+        years
+        of public availability of the Internet. Consequently, the rules, both functional and design, have adapted to
+        the
+        times and the available technology. Initially, they were aimed at a young audience with few tools and
+        customisation options while trying to become known and enter the everyday life of the average user by creating
+        a
+        new habit. However, as technology evolved, new platforms emerged, taking advantage of new technologies. To
+        compensate for its share of the global market, Facebook introduced more and more features too often, leading
+        to
+        the phenomenon of Social Media Fatigue. Users, overwhelmed by a very high pressure, started to get tired and
+        sought new simpler platforms such as Snapchat (Bright et al., 2015)</p>
+      <br>
+      <p style="text-align: justify;">But why were these platforms left behind? The key elements they focused on were
+        few but clear and new-to-market
+        tools and a simple user experience. Companies understood that young and relaxed users bring in much more
+        revenue
+        than existing users, so they started to create new platforms that were clearly targeting new generations.
+        Fresh
+        colours, soft movements and interesting typography were the main means of attracting the interest of the new
+        generations. In addition, they started to follow the laws of user experience, rules that set the basis for the
+        maximum user experience of an application. Nowadays, creating an application was not just in the hands of one
+        or
+        a group of developers but needed a special new approach related to the user's satisfaction while using the
+        application. (Frier, 2021)</p>
+    </div>
+
 </body>
 
 </html>
