@@ -15,28 +15,12 @@
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./fonts.css" />
-
   <style>
-    h1 {
-      font-weight: 600;
-      font-size: 40pt;
-    }
+    @media (max-width: 900px) {
+      .image-profile {
+        opacity: 0;
+      }
 
-   .scroll-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      color: var(--background);
-      text-align: center;
-      padding: 15px;
-      background: transparent;
-      transition: opacity 0.3s ease,
-    }
-
-    /* When active */
-    .scroll-header.active {
-      background: var(--background);
     }
   </style>
 </head>
@@ -44,7 +28,7 @@
 <body>
   <script src="./scripts.js"></script>
   <div style="max-width: 1300px; margin: 0 auto; position: relative;">
-    <img class="position-absolute z-n1" style="
+    <img class="image-profile position-absolute z-n1" style="
     top: -20px;
     right: 70px;
     width: 350px;
@@ -53,8 +37,8 @@
     transform: rotate(5deg);
   " src="assets/profile.jpeg" alt="">
     <header>
-
-      <div class="padding-h padding-v d-flex justify-content-between" style="position: sticky; top: 0; left: 0; right: 0; z-index: 100; ">
+      <div class="padding-h padding-v d-flex justify-content-between"
+        style="position: sticky; top: 0; left: 0; right: 0; z-index: 100; ">
         <div class=" row d-flex align-items-center">
           <img style="height: 30px; width: auto;" src="assets/icons/logo.svg" />
           <img style="height: 30px; width: auto;" src="assets/icons/logo_2.png" />
@@ -73,9 +57,6 @@
             <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/deviantart.svg" />
           </a>
         </div>
-      </div>
-      <div class="scroll-header" id="scrollHeader">
-        I'm visible when you scroll down
       </div>
     </header>
 
@@ -197,7 +178,7 @@
       <div class="col-md-4 p-3">
         <!-- fest -->
         <div class="rounded-4" style="
-                  background-image: url(assets/products/fest2024/cover.gif);
+                  background-image: url(assets/products/fest/cover.gif);
                   background-size: cover;
                   background-position: center;
                   height: 300px;
@@ -270,17 +251,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-  <script>
-    const header = document.getElementById('scrollHeader');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('active');
-      } else {
-        header.classList.remove('active');
-      }
-    });
-  </script>
 </body>
 
 </html>
