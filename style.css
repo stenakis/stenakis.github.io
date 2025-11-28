@@ -2,6 +2,7 @@
     --padding: 60px;
     --background: #1a1a1a;
     --accent: #439de1;
+    --max_width: 1200px;
 }
 
 * {
