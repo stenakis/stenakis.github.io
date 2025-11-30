@@ -1,256 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Evans Stenakis</title>
-  <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./fonts.css" />
-  <style>
-    @media (max-width: 900px) {
-      .image-profile {
-        opacity: 0;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evans Stenakis</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fonts.css" />
+    <style>
+      @media (max-width: 900px) {
+        .image-profile {
+          opacity: 0;
+        }
       }
+    </style>
+  </head>
 
-    }
-  </style>
-</head>
-
-<body>
-  <script src="./scripts.js"></script>
-  <div style="max-width: 1300px; margin: 0 auto; position: relative;">
-    <img class="image-profile position-absolute z-n1" style="
-    top: -20px;
-    right: 70px;
-    width: 350px;
-    height: 400px;
-    object-fit: cover;
-    transform: rotate(5deg);
-  " src="assets/profile.jpeg" alt="">
-    <header>
-      <div class="padding-h padding-v d-flex justify-content-between"
-        style="position: sticky; top: 0; left: 0; right: 0; z-index: 100; ">
-        <div class=" row d-flex align-items-center">
-          <img style="height: 30px; width: auto;" src="assets/icons/logo.svg" />
-          <img style="height: 30px; width: auto;" src="assets/icons/logo_2.png" />
+  <body>
+    <script src="./scripts.js"></script>
+    <div style="max-width: 1300px; margin: 0 auto; position: relative">
+      <img
+        class="image-profile position-absolute z-n1"
+        style="
+          top: -20px;
+          right: 70px;
+          width: 350px;
+          height: 400px;
+          object-fit: cover;
+          transform: rotate(5deg);
+        "
+        src="assets/profile.jpeg"
+        alt=""
+      />
+      <header>
+        <div
+          class="padding-h padding-v d-flex justify-content-between"
+          style="position: sticky; top: 0; left: 0; right: 0; z-index: 100"
+        >
+          <div class="row d-flex align-items-center">
+            <img
+              style="height: 30px; width: auto"
+              src="assets/icons/logo.svg"
+            />
+            <img
+              style="height: 30px; width: auto"
+              src="assets/icons/logo_2.png"
+            />
+          </div>
+          <div class="d-flex align-items-center" style="gap: 1.5rem">
+            <a href="https://github.com/stenakis" target="_blank">
+              <img
+                style="
+                  height: 24px;
+                  width: auto;
+                  filter: brightness(0) invert(1);
+                "
+                src="assets/icons/github.svg"
+              />
+            </a>
+            <a href="https://www.behance.net/evans_stenakis" target="_blank">
+              <img
+                style="
+                  height: 24px;
+                  width: auto;
+                  filter: brightness(0) invert(1);
+                "
+                src="assets/icons/behance.svg"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/evans-stenakis-3175ba257/"
+              target="_blank"
+            >
+              <img
+                style="
+                  height: 24px;
+                  width: auto;
+                  filter: brightness(0) invert(1);
+                "
+                src="assets/icons/linkedin.svg"
+              />
+            </a>
+            <a href="https://www.deviantart.com/offbalancect" target="_blank">
+              <img
+                style="
+                  height: 24px;
+                  width: auto;
+                  filter: brightness(0) invert(1);
+                "
+                src="assets/icons/deviantart.svg"
+              />
+            </a>
+          </div>
         </div>
-        <div class="d-flex align-items-center" style="gap: 1.5rem;">
-          <a href="https://github.com/stenakis" target="_blank">
-            <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/github.svg" />
-          </a>
-          <a href="https://www.behance.net/evans_stenakis" target="_blank">
-            <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/behance.svg" />
-          </a>
-          <a href="https://www.linkedin.com/in/evans-stenakis-3175ba257/" target="_blank">
-            <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/linkedin.svg" />
-          </a>
-          <a href="https://www.deviantart.com/offbalancect" target="_blank">
-            <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/deviantart.svg" />
-          </a>
-        </div>
-      </div>
-    </header>
+      </header>
 
-
-    <div class="padding-v"></div>
-    <h1 class="padding-h" style="line-height: 1; margin-bottom: 0.5rem; max-width: 700px;">
-      Creating real world interfaces.
-      <span style="display: inline-block; position: relative; width: max-content;">
-        <span style="
-          position: absolute;
-          top: 0;
-          left: 40px;
-          width: 100%;
-          text-align: center;
-          font-family: 'NF-Blanc Seing';
-          color: var(--accent);
-          
-        ">
-          design
+      <div class="padding-v"></div>
+      <h1
+        class="padding-h"
+        style="line-height: 1; margin-bottom: 0.5rem; max-width: 700px"
+      >
+        Creating real world interfaces.
+        <span
+          style="display: inline-block; position: relative; width: max-content"
+        >
+          <span
+            style="
+              position: absolute;
+              top: 0;
+              left: 40px;
+              width: 100%;
+              text-align: center;
+              font-family: 'NF-Blanc Seing';
+              color: var(--accent);
+            "
+          >
+            design
+          </span>
+          <span>by design</span>
         </span>
-        <span>by design</span>
-      </span>
+      </h1>
 
-    </h1>
-
-    <div class="gap-40"></div>
-    <p class="padding-h" style="max-width: 700px;">
-      UI/UX designer from Aegina island, Greece, making a reality what
-      <span style="color: var(--accent)">really</span> works.
-      <span style="color: var(--accent)">Grounded</span> designs based on feasibility and interfaces that spark
-      <span style="color: var(--accent)">innovation</span> while applying <span style="color: var(--accent)">common
-        sense</span>.
-    </p>
-  </div>
-  </div>
-  <div class="gap-80"></div>
-
-  <div class="container padding-h" style="max-width: 1300px;">
-    <div class="row">
-      <div class="col-md-6 p-3">
-        <!-- Together -->
-        <a href="together.html" style="text-decoration: none; color: inherit">
-          <div class="rounded-4" style="
-                  background-image: url(assets/products/together/cover.gif);
-                  background-size: cover;
-                  background-position: center;
-                  height: 300px;
-                "></div>
-          <div style="height: calc(var(--padding) / 3)"></div>
-          <h2>Together</h2>
-          <p style="opacity: 0.75;">
-            Thesis on UI Design and Visual Identity of a brand through a mobile app.
-          </p>
-        </a>
-      </div>
-      <div class="col-md-6 p-3">
-        <!-- Phase 10 -->
-        <a href="phase_10.html" style="text-decoration: none; color: inherit">
-          <div class="rounded-4" style="
-                  background-image: url(assets/products/phase10/cover.jpg);
-                  background-size: cover;
-                  background-position: center;
-                  height: 300px;
-                "></div>
-          <div style="height: calc(var(--padding) / 3)"></div>
-          <h2>Phase 10 Assistant</h2>
-          <p style="opacity: 0.75;">
-            Mobile / web app providing Phase 10 players with extra tools
-            to enhance their gaming experience!
-          </p>
-      </div>
-      </a>
+      <div class="gap-40"></div>
+      <p class="padding-h" style="max-width: 700px">
+        UI/UX designer from Aegina island, Greece, making a reality what
+        <span style="color: var(--accent)">really</span> works.
+        <span style="color: var(--accent)">Grounded</span> designs based on
+        feasibility and interfaces that spark
+        <span style="color: var(--accent)">innovation</span> while applying
+        <span style="color: var(--accent)">common sense</span>.
+      </p>
     </div>
 
-    <div class="row">
-      <div class="col-md-6 p-3">
-        <!-- Hexa -->
-        <a href="hexa.html" style="text-decoration: none; color: inherit">
-          <div class="rounded-4" style="
-                  background-image: url(assets/products/hexa/cover.jpg);
-                  background-size: cover;
-                  background-position: center;
-                  height: 300px;
-                "></div>
-          <div style="height: calc(var(--padding) / 3)"></div>
-          <h2>Hexa</h2>
-          <p style="opacity: 0.75;">
-            DesignFlows 2025 submssion. UX design for managing intelligent robots from an all-inclusive
-            environment.
-          </p>
+    <div class="gap-80"></div>
 
-        </a>
+    <div class="container padding-h" style="max-width: 1300px">
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <!-- Together -->
+          <a href="together.html" style="text-decoration: none; color: inherit">
+            <div
+              class="rounded-4"
+              style="
+                background-image: url(assets/products/together/cover.gif);
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+              "
+            ></div>
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h2>Together</h2>
+            <p style="opacity: 0.75">
+              Thesis on UI Design and Visual Identity of a brand through a
+              mobile app.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-6 p-3">
+          <!-- Phase 10 -->
+          <a href="phase_10.html" style="text-decoration: none; color: inherit">
+            <div
+              class="rounded-4"
+              style="
+                background-image: url(assets/products/phase10/cover.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+              "
+            ></div>
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h2>Phase 10 Assistant</h2>
+            <p style="opacity: 0.75">
+              Mobile / web app providing Phase 10 players with extra tools to
+              enhance their gaming experience!
+            </p>
+          </a>
+        </div>
       </div>
-      <div class="col-md-6 p-3">
-        <!-- Rainmeter -->
-        <a href="rainmeter.html" style="text-decoration: none; color: inherit">
-          <div class="rounded-4" style="
-                  background-image: url(assets/products/rainmeter/cover.png);
-                  background-size: cover;
-                  background-position: center;
-                  height: 300px;
-                "></div>
-          <div style="height: calc(var(--padding) / 3)"></div>
-          <h2>Rainmeter Skins</h2>
-          <p style="opacity: 0.75;">
-            Dynamic widgets built from code that provide a beautiful
-            way to decorate your desktop.
-          </p>
 
-
-        </a>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <!-- Hexa -->
+          <a href="hexa.html" style="text-decoration: none; color: inherit">
+            <div
+              class="rounded-4"
+              style="
+                background-image: url(assets/products/hexa/cover.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+              "
+            ></div>
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h2>Hexa</h2>
+            <p style="opacity: 0.75">
+              DesignFlows 2025 submssion. UX design for managing intelligent
+              robots from an all-inclusive environment.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-6 p-3">
+          <!-- Rainmeter -->
+          <a
+            href="rainmeter.html"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              class="rounded-4"
+              style="
+                background-image: url(assets/products/rainmeter/cover.png);
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+              "
+            ></div>
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h2>Rainmeter Skins</h2>
+            <p style="opacity: 0.75">
+              Dynamic widgets built from code that provide a beautiful way to
+              decorate your desktop.
+            </p>
+          </a>
+        </div>
       </div>
+      <div class="padding-v"></div>
     </div>
-    <div class="padding-v"></div>
-  </div>
 
-  <div class="container padding-h" style="max-width: 1300px;">
-    <div class="row">
-      <div class="col-md-4 p-3">
-        <!-- fest -->
-        <div class="rounded-4" style="
-                  background-image: url(assets/products/fest/cover.gif);
-                  background-size: cover;
-                  background-position: center;
-                  height: 300px;
-                "></div>
-        <div style="height: calc(var(--padding) / 3)"></div>
-        <div
-          style="background-color: var(--accent); border-radius: 5px; padding-left: 12px; padding-right: 12px; display: inline-block;">
-          <p style="opacity: 0.75;">Coming soon</p>
+    <div class="container padding-h" style="max-width: 1300px">
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <!-- fest -->
+          <a href="fest.html" style="text-decoration: none; color: inherit">
+            <div
+              class="rounded-4"
+              style="
+                background-image: url(assets/products/fest/cover.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+              "
+            ></div>
+            <div style="height: calc(var(--padding) / 3)"></div>
+            <h2>Aegina's Fistiki Fest</h2>
+            <p style="opacity: 0.75">
+              A refreshing visual identity for Aegina Fistiki Fest event.
+            </p>
+          </a>
         </div>
-
-        <div style="height: calc(var(--padding) / 3)"></div>
-        <h2>Aegina's Fistiki Fest</h2>
-        <p style="opacity: 0.75;">
-          A refreshing visual identity for Aegina Fistiki Fest event.
-        </p>
-
-
-
-      </div>
-      <div class="col-md-4 p-3">
-        <!-- Open Mall -->
-        <div class="rounded-4" style="
-                  background-image: url(assets/products/open_mall/cover.jpg);
-                  background-size: cover;
-                  background-position: center;
-                  height: 300px;
-                "></div>
-        <div style="height: calc(var(--padding) / 3)"></div>
-        <div
-          style="background-color: var(--accent); border-radius: 5px; padding-left: 12px; padding-right: 12px; display: inline-block;">
-          <p>Coming soon</p>
+        <div class="col-md-4 p-3">
+          <!-- Open Mall -->
+          <div
+            class="rounded-4"
+            style="
+              background-image: url(assets/products/open_mall/cover.jpg);
+              background-size: cover;
+              background-position: center;
+              height: 300px;
+            "
+          ></div>
+          <div style="height: calc(var(--padding) / 3)"></div>
+          <div
+            style="
+              background-color: var(--accent);
+              border-radius: 5px;
+              padding-left: 12px;
+              padding-right: 12px;
+              display: inline-block;
+            "
+          >
+            <p>Coming soon</p>
+          </div>
+          <div style="height: calc(var(--padding) / 3)"></div>
+          <h2>Agia Varvara's Open Mall</h2>
+          <p style="opacity: 0.75">
+            My submission on a public contest for the visual ientity of Agia
+            Varvar'as Open Mall
+          </p>
         </div>
-        <div style="height: calc(var(--padding) / 3)"></div>
-        <h2>Agia Varvara's Open Mall</h2>
-        <p style="opacity: 0.75;">
-          My submission on a public contest for the visual ientity of Agia Varvar'as Open Mall
-        </p>
-
-
-      </div>
-      <div class="col-md-4 p-3">
-        <!-- Music Festival -->
-
-        <div class="rounded-4" style="
-                  background-image: url(assets/products/music_festival/cover.jpg);
-                  background-size: cover;
-                  background-position: center;
-                  height: 300px;
-                "></div>
-        <div style="height: calc(var(--padding) / 3)"></div>
-        <div
-          style="background-color: var(--accent); border-radius: 5px; padding-left: 12px; padding-right: 12px; display: inline-block;">
-          <p>Coming soon</p>
+        <div class="col-md-4 p-3">
+          <!-- Music Festival -->
+          <div
+            class="rounded-4"
+            style="
+              background-image: url(assets/products/music_festival/cover.jpg);
+              background-size: cover;
+              background-position: center;
+              height: 300px;
+            "
+          ></div>
+          <div style="height: calc(var(--padding) / 3)"></div>
+          <div
+            style="
+              background-color: var(--accent);
+              border-radius: 5px;
+              padding-left: 12px;
+              padding-right: 12px;
+              display: inline-block;
+            "
+          >
+            <p>Coming soon</p>
+          </div>
+          <div style="height: calc(var(--padding) / 3)"></div>
+          <h2>Aegina's Music Festival</h2>
+          <p style="opacity: 0.75">
+            Branding the biggest classical music festival of the island.
+          </p>
         </div>
-        <div style="height: calc(var(--padding) / 3)"></div>
-        <h2>Aegina's Music Festival</h2>
-        <p style="opacity: 0.75;">
-          Branding the biggest classical music festival of the island.
-        </p>
-
-
       </div>
+      <div class="padding-v"></div>
+      <p style="opacity: 0.75" class="text-center">
+        Made with ❤️ by Evans Stenakis with pure HTML & CSS
+      </p>
+      <div class="gap-20"></div>
     </div>
-    <div class="padding-v"></div>
-    <p style="opacity: 0.75;" class="text-center">Made with ❤️ by Evans Stenakis with pure HTML & CSS</p>
-    <div class="gap-20"></div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
