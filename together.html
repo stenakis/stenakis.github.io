@@ -30,16 +30,11 @@
         font-weight: bold;
       }
 
-      .row-item {
-        flex: 1;
-        min-width: 0;
-        height: auto;
-        object-fit: contain;
-      }
-
       .together_images {
+        width: 100%;
+        height: auto;
         max-height: 60vh;
-        max-width: 100%;
+        object-fit: contain;
       }
 
       @media (max-width: 900px) {
@@ -59,12 +54,9 @@
       src="assets/products/together/background.png"
       alt="Background yellow"
     />
-    <div
-      class="position-relative z-1 mx-auto align-items-center"
-      style="max-width: var(--max_width)"
-    >
+    <div class="position-relative z-1 mx-auto align-items-center">
       <div class="gap-60"></div>
-      <div class="padding-h" style="max-width: var(--max-width); margin: auto">
+      <div class="padding-h mx-auto" style="max-width: var(--max_width)">
         <div class="row g-5">
           <div class="col-md-6">
             <img
@@ -129,25 +121,22 @@
           </div>
         </div>
         <div class="gap-80"></div>
+
+        <h3>The trailer</h3>
+        <div class="gap-20"></div>
+        <video class="padding-h" style="width: 100%; height: auto" controls>
+          <source
+            src="assets/products/together/output_video.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="gap-60"></div>
+        <div class="gap-60"></div>
+        <h3>Organized Meetups</h3>
+        <p style="text-align: center; opacity: 0.75">
+          Your meetups in one place, no more lost in endless group chats!
+        </p>
       </div>
-      <div
-        class="padding-h"
-        style="max-width: 1300px; margin-left: auto; margin-right: auto"
-      ></div>
-      <h3>The trailer</h3>
-      <div style="height: calc(var(--padding) / 2)"></div>
-      <video class="padding-h" style="width: 100%; height: auto" controls>
-        <source
-          src="assets/products/together/output_video.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div class="gap-60"></div>
-      <div class="gap-60"></div>
-      <h3>Organized Meetups</h3>
-      <p style="text-align: center; opacity: 0.75">
-        Your meetups in one place, no more lost in endless group chats!
-      </p>
     </div>
     <div class="gap-20"></div>
     <img
@@ -155,10 +144,7 @@
       src="assets/products/together/meetups.png"
       alt="Card_1"
     />
-    <div
-      class="padding-h mx-auto align-items-center"
-      style="max-width: var(--max_width)"
-    >
+    <div class="padding-h mx-auto" style="max-width: var(--max_width)">
       <div class="gap-60"></div>
       <div class="gap-60"></div>
       <h3>Share your live location 👀</h3>
@@ -191,42 +177,34 @@
         Let your friends know where you are and how much time will it take to
         arrive
       </p>
-
       <div style="height: calc(var(--padding) / 2)"></div>
       <img
         class="together_images"
         src="assets/products/together/check-in.png"
         alt="Card_1"
       />
-    </div>
-    <div class="gap-60"></div>
-    <div class="gap-60"></div>
-    <div class="gap-60"></div>
-    <div style="position: relative">
+      <div class="gap-60"></div>
+      <div class="gap-60"></div>
+      <div class="gap-60"></div>
       <div
         style="
-          width: 100%;
           height: 60px;
           background-color: #d3b932;
           display: flex;
           align-items: center;
+          padding: 0 30px;
+          overflow: hidden;
         "
       >
-        <h4 style="margin-left: 40px; color: black">BEHIND THE PROJECT</h4>
-      </div>
-      <img
-        class="phone"
-        style="position: absolute; right: 150px; bottom: 0px; height: 200px"
-        src="assets/products/together/header.png"
-        alt=""
-      />
-    </div>
-    <div class="gap-60"></div>
+        <h4 style="color: black; margin: 0">BEHIND THE PROJECT</h4>
 
-    <div
-      class="padding-h mx-auto align-items-center"
-      style="max-width: var(--max_width)"
-    >
+        <img
+          src="assets/products/together/header.png"
+          alt=""
+          style="height: 200px; object-fit: cover"
+        />
+      </div>
+      <div class="gap-60"></div>
       <div class="row g-5">
         <div class="col-md-6">
           <h4>The problem</h4>
@@ -346,35 +324,28 @@
           </p>
         </div>
       </div>
-    </div>
-
-    <div class="gap-60"></div>
-    <div class="gap-60"></div>
-    <div class="gap-60"></div>
-    <div style="position: relative">
+      <div class="gap-60"></div>
+      <div class="gap-60"></div>
+      <div class="gap-60"></div>
       <div
         style="
-          width: 100%;
           height: 60px;
           background-color: #d3b932;
           display: flex;
           align-items: center;
+          padding: 0 30px;
+          overflow: hidden;
         "
       >
-        <h4 style="margin-left: 40px; color: black">DESIGN</h4>
+        <h4 style="color: black; margin: 0">DESIGN</h4>
+
+        <img
+          src="assets/products/together/header.png"
+          alt=""
+          style="height: 200px; object-fit: cover"
+        />
       </div>
-      <img
-        class="phone"
-        style="position: absolute; right: 150px; bottom: 0px; height: 200px"
-        src="assets/products/together/header.png"
-        alt=""
-      />
-    </div>
-    <div class="gap-60"></div>
-    <div
-      class="padding-h mx-auto align-items-center"
-      style="max-width: var(--max_width)"
-    >
+      <div class="gap-60"></div>
       <h4>Screens</h4>
       <div class="gap-20"></div>
       <div class="row g-5">
@@ -410,68 +381,71 @@
           />
         </div>
       </div>
-      <div class="gap-60"></div>
-      <h4 style="text-align: center">A UNIQUE VIEW ON USER EXPERIENCE</h4>
-      <div class="gap-40"></div>
-      <img
-        class="together_images"
-        style="max-height: 35vh"
-        src="assets/products/together/dynamic_bar.png"
-        alt="UX Design"
-      />
-      <div class="gap-20"></div>
-      <h4 style="text-align: center">DYNAMIC NAVIGATION BAR</h4>
-      <p style="text-align: center">
-        A dynamic navigation bar adjusts its content depending on the page it is
-        on, a feature not often found in mobile apps but in web apps. The choice
-        to integrate this separate technology into Together is related to the
-        amount of different functions necessary on each page of Together. Each
-        page has a set of specific important functions that due to the
-        information hierarchy cannot be integrated into a dropdown menu or
-        submenu. In addition, the application does not follow the usual
-        navigation character promoted by the navigation bar, meaning that there
-        are no pages that need to be accessible from any screen at any time.
-        With the dynamic bar technique, the purpose of the dynamic bar changes
-        its character, transforming it from an access tool for the main pages of
-        the application to a menu that is personalized according to the page but
-        is always accessible. Finally, in addition to navigating between pages,
-        the dynamic bar can contain buttons that relate to the general behavior
-        of the page, such as creating a meetup or a new Circle. In general, the
-        dynamic navigation bar offers a personalized experience of using the
-        application by combining an existing practice with giving it a new life.
-      </p>
       <div class="gap-80"></div>
-    
-      <h4 style="text-align: center">Meetup Screen Sequence</h4>
-      <p style="text-align: center">
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h4>UX TACTIC: DYNAMIC NAVIGATION BAR</h4>
+          <p>
+            A dynamic navigation bar adjusts its content depending on the page
+            it is on, a feature not often found in mobile apps but in web apps.
+            The choice to integrate this separate technology into Together is
+            related to the amount of different functions necessary on each page
+            of Together. Each page has a set of specific important functions
+            that due to the information hierarchy cannot be integrated into a
+            dropdown menu or submenu. In addition, the application does not
+            follow the usual navigation character promoted by the navigation
+            bar, meaning that there are no pages that need to be accessible from
+            any screen at any time. With the dynamic bar technique, the purpose
+            of the dynamic bar changes its character, transforming it from an
+            access tool for the main pages of the application to a menu that is
+            personalized according to the page but is always accessible.
+            Finally, in addition to navigating between pages, the dynamic bar
+            can contain buttons that relate to the general behavior of the page,
+            such as creating a meetup or a new Circle. In general, the dynamic
+            navigation bar offers a personalized experience of using the
+            application by combining an existing practice with giving it a new
+            life.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="together_images"
+            src="assets/products/together/dynamic_bar.png"
+            alt="UX Design"
+          />
+        </div>
+      </div>
+      <div class="gap-80"></div>
+      <h4>Meetup Screen Sequence</h4>
+      <p>
         <b>Goal-Gradient Effect</b><br />
         “Provide a clear indication of progress in order to motivate users to
         complete tasks.”<br />lawsofux.com
       </p>
       <div class="gap-20"></div>
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
           <img
             class="together_images"
             src="assets/products/together/screen_meetup_1.png"
             alt=""
           />
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3">
           <img
             class="together_images"
             src="assets/products/together/screen_meetup_2.png"
             alt=""
           />
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3">
           <img
             class="together_images"
             src="assets/products/together/screen_meetup_3.png"
             alt=""
           />
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3">
           <img
             class="together_images"
             src="assets/products/together/screen_meetup_4.png"
@@ -479,34 +453,209 @@
           />
         </div>
       </div>
-      <div class="gap-80"></div>
-    </div>
-    <div class="gap-60"></div>
-    <div class="gap-60"></div>
-    <div style="position: relative">
+      <div class="gap-60"></div>
+      <div class="gap-60"></div>
       <div
         style="
-          width: 100%;
           height: 60px;
           background-color: #d3b932;
           display: flex;
           align-items: center;
+          padding: 0 30px;
+          overflow: hidden;
         "
       >
-        <h4 style="margin-left: 40px; color: black">PROMOTION</h4>
+        <h4 style="color: black; margin: 0">PROMOTION</h4>
+
+        <img
+          src="assets/products/together/header.png"
+          alt=""
+          style="height: 200px; object-fit: cover"
+        />
       </div>
-      <img
-        class="phone"
-        style="position: absolute; right: 150px; bottom: 0px; height: 200px"
-        src="assets/products/together/header.png"
-        alt=""
-      />
-    </div>
-  <div class="gap-60"></div>
-    <div
-      class="padding-h mx-auto align-items-center"
-      style="max-width: var(--max_width)"
-    >
+
+      <div class="gap-60"></div>
+      <h4>Character</h4>
+      <div class="row g-4">
+        <div class="col-md-8">
+          <p style="text-align: justify">
+            The character of the promotion of an application is influenced both
+            by the target audience and the design choices of its identity. In
+            Together, as the target is a young audience, the use of humor and
+            directness is chosen in order to express a freer spirit which also
+            follows the brand identity of the product. The content of the
+            promotional applications initially describes in a few words a
+            problem which, depending on the medium, may be accompanied by a
+            complementary image. The solution is then proposed through a
+            function of the application and finally the viewer is invited to
+            install the application, as the final purpose of the promotion. In
+            general, the advertising of the app is largely aimed at raising the
+            emotional awareness of the viewers, a successful practice often used
+            in the world of promotion.
+          </p>
+          <div class="gap-40"></div>
+          <h4>typography</h4>
+          <p style="text-align: justify">
+            The rules of typography change in relation to the digital
+            application as the promotional media are governed by different
+            operational rules and have a different end goal. In promotion, the
+            information hierarchy wishes to communicate a problem and then
+            propose a solution in that order while intensifying the user's
+            attention so that the promotional medium is both perceived and
+            understood.
+          </p>
+          <div class="gap-40"></div>
+          <h4>Color</h4>
+          <p style="text-align: justify">
+            In promotional applications, colour has a strong role in terms of
+            aesthetics and attractiveness. attractiveness. As in the digital
+            application, the combination of dark tones with yellow gives a
+            intensity through contrast and attracts the viewer's eye. Finally,
+            the colour palette remains simple since it is complemented by the
+            image element creating a complete aesthetic and colourful
+            environment
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="together_images"
+            src="assets/products/together/bus.jpg"
+            alt="Bus Stop Promotion"
+          />
+        </div>
+      </div>
+
+      <div class="gap-40"></div>
+      <h4>Promotion</h4>
+      <div class="row g-4">
+        <div class="col-md-8">
+          <p style="text-align: justify">
+            The choice of promotion is related to the nature of the digital
+            applications and the audience to which they are targeted audience.
+            For this reason, specific choices have been made, such as the bus
+            stop or the metro, places where young people are more likely to be
+            moving around and other media such as magazine advertisements are
+            not used. The use of other media such as magazine advertisements has
+            not been used as young people are not familiar with these media. In
+            addition, the character and content of the advertisements was
+            adapted to each medium in order to the maximum readability and
+            clarity of the information. Thus, in the subway advertisements, no
+            space is allocated to the The advertisements in the metro ads did
+            not use images, but only icons and a photo of a mobile phone in
+            order to make it immediately accessible to the public. that the
+            advertised product is a digital application. Images tend to create
+            visual noise and to such an extent as in the case of the metro it
+            was considered that it would be difficult to read of the other
+            information in the advertisement
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p style="text-align: justify">
+            Another approach was taken by online advertising. As the time a user
+            spends looking at advertisements is minimal, the advertised product
+            should be so clear that it can be recognized at first glance in a
+            fraction of a second. Thus, in this case too, the use of images was
+            not used, but rather the direct presentation of the application
+            screens was preferred.
+          </p>
+        </div>
+      </div>
+      <div class="gap-40"></div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img
+            class="together_images"
+            src="assets/products/together/metro_1.png"
+            alt="Metro 1"
+          />
+        </div>
+        <div class="col-md-6">
+          <img
+            class="together_images"
+            src="assets/products/together/metro_2.png"
+            alt="Metro 1"
+          />
+        </div>
+      </div>
+      <div class="gap-60"></div>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <img
+            class="together_images"
+            src="assets/products/together/PlayStory_1.png"
+            alt=""
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            class="together_images"
+            src="assets/products/together/PlayStory_2.png"
+            alt=""
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            class="together_images"
+            src="assets/products/together/PlayStory_3.png"
+            alt=""
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            class="together_images"
+            src="assets/products/together/PlayStory_4.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="gap-60"></div>
+      <h4>The use of humour</h4>
+      <div class="row g-5">
+        <div class="col-md-6">
+          <p style="text-align: justify">
+            Humour is an integral part of Together’s advertising campaign and it
+            is heavily based on its targeted age group. It is a fresh approach
+            that really captivates the freedom and youthfulness that comes with
+            the street language spoken by the young people and works as an
+            effective means of getting closer to their needs and way of
+            living.<br /><br />
+            In the billboard example, the sign writes:” ‘I’ll be here in 5
+            minutes’ - None ever even believed it“, which is a very common
+            phrase when organizing a meetup. Using an annoying situation that
+            happens very often as a problem, implies that the advertized
+            product, in this case the app, can help deal with it or reverse it.
+            Consequently, by utilizing a common oral everyday phrase, Together
+            is able to communicate its purpose, without writing exactly how it
+            helps, inviting the ad spectator to dive more into the product.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="together_images"
+            src="assets/products/together/billboard.png"
+            alt="Billboard (Humor)"
+          />
+        </div>
+      </div>
+      <div class="gap-60"></div>
+      <div class="col-md-8">
+        <div style="border: 1px solid white; padding: 30px">
+          <h4>CONCLUSION</h4>
+          <p>
+            Together is a digital application that wants to solve a problem that
+            is faced on a daily basis, the inability to organize meetings
+            between friends. Through specific tools and validated design
+            practices, it leaves nothing to chance but adapts its user
+            experience according to its users and according to the laws of UX.
+            All design elements have been used to maximize usability that will
+            ultimately contribute to the success of the app. In addition, the
+            design identity is completed through the promotional applications
+            which aim to promote the application through the most appropriate
+            ways and the most ideal means.
+          </p>
+        </div>
+      </div>
+      <div class="gap-80"></div>
       <h4>Resources Used</h4>
       <p>
         • Atske, S. (2021, April 7). Social media use in 2021. Pew Research
@@ -521,10 +670,10 @@
         chb.2014.11.048 <br />• Cuello, J., & Vittone, J. (2013). Designing
         mobile apps. José Vittone. https://books.google.
         gr/books?hl=en&lr=&id=nQBJAQAAQBAJ&oi=fnd&pg=PA11&dq=visual+language+in+mobile+apps&ots=yvr8PCDyAo&sig=zsuYwIeSy9gpJRCX9WQf6Mth2lE&redir_esc=y#v=onepage&q=visu
-        al%20language%20in%20mobile%20apps&f=false Frier, S. (2021). No filter:
-        The inside story of instagram. Simon and Schuster.<br />• Maybray, B.
-        (2023, July 11). Color Psychology: How To Use it in Marketing and
-        Branding. HubSpot.
+        al%20language%20in%20mobile%20apps&f=false Frier, S. (2021).<br />• No
+        filter: The inside story of instagram. Simon and Schuster.<br />•
+        Maybray, B. (2023, July 11). Color Psychology: How To Use it in
+        Marketing and Branding. HubSpot.
         https://blog.hubspot.com/the-hustle/psychology-of-color<br />• Wheeler,
         A. (2017). Designing Brand Identity: An essential guide for the whole
         branding team. John Wiley & Sons.<br />• Yablonski, J. (n.d.-a). Design
