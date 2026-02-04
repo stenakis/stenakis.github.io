@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -24,6 +24,31 @@
         .image-profile {
           opacity: 0;
         }
+      }
+
+      h2 {
+        font-size: 2.8rem;
+        margin: 0%;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 2.2rem;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+      }
+
+      .rotate_arrow_button {
+        filter: grayscale(100%);
+        transition:
+          transform 0.2s ease-in-out,
+          filter 0.3s ease;
+      }
+
+      .rotate_arrow_button:hover {
+        cursor: pointer;
+        filter: grayscale(0%);
+        transform: rotate(45deg);
       }
     </style>
   </head>
@@ -108,7 +133,6 @@
           </div>
         </div>
       </header>
-
       <div class="gap-60"></div>
       <h1
         class="padding-h"
@@ -125,7 +149,7 @@
               left: 40px;
               width: 100%;
               text-align: center;
-              font-family: 'NF-Blanc Seing';
+              font-family: NF-Blanc Seing;
               color: var(--accent);
             "
           >
@@ -134,7 +158,6 @@
           <span>by design</span>
         </span>
       </h1>
-
       <div class="gap-40"></div>
       <p class="padding-h" style="max-width: 700px">
         UI/UX designer from Aegina island, Greece, making a reality what
@@ -145,45 +168,46 @@
         <span style="color: var(--accent)">common sense</span>.
       </p>
     </div>
-
     <div class="gap-80"></div>
-
+    <div class="gap-40"></div>
     <div class="container padding-h" style="max-width: var(--max_width)">
-      <div class="row">
-        <div class="col-md-6 p-3">
+      <h2 style="color: var(--accent)">Featured Projects</h2>
+      <div class="gap-20"></div>
+      <div class="row g-5">
+        <div class="col-md-6">
           <!-- Together -->
           <a href="together.html" style="text-decoration: none; color: inherit">
             <div
-              class="rounded-4"
+              class="rounded-4 ratio"
               style="
                 background-image: url(assets/products/together/cover.gif);
                 background-size: cover;
                 background-position: center;
-                height: 300px;
+                --bs-aspect-ratio: 70%;
               "
             ></div>
-            <div style="height: calc(var(--padding) / 3)"></div>
-            <h2>Together</h2>
+            <div class="gap-20"></div>
+            <h3>Together</h3>
             <p style="opacity: 0.75">
               Thesis on UI Design and Visual Identity of a brand through a
               mobile app.
             </p>
           </a>
         </div>
-        <div class="col-md-6 p-3">
+        <div class="col-md-6">
           <!-- Phase 10 -->
           <a href="phase_10.html" style="text-decoration: none; color: inherit">
             <div
-              class="rounded-4"
+              class="rounded-4 ratio"
               style="
                 background-image: url(assets/products/phase10/cover.jpg);
                 background-size: cover;
                 background-position: center;
-                height: 300px;
+                --bs-aspect-ratio: 70%;
               "
             ></div>
-            <div style="height: calc(var(--padding) / 3)"></div>
-            <h2>Phase 10 Assistant</h2>
+            <div class="gap-20"></div>
+            <h3>Phase 10 Assistant</h3>
             <p style="opacity: 0.75">
               Mobile / web app providing Phase 10 players with extra tools to
               enhance their gaming experience!
@@ -191,22 +215,21 @@
           </a>
         </div>
       </div>
-
-      <div class="row g-4">
+      <div class="row g-5">
         <div class="col-md-6">
           <!-- Hexa -->
           <a href="hexa.html" style="text-decoration: none; color: inherit">
             <div
-              class="rounded-4"
+              class="rounded-4 ratio"
               style="
                 background-image: url(assets/products/hexa/cover.jpg);
                 background-size: cover;
                 background-position: center;
-                height: 300px;
+                --bs-aspect-ratio: 70%;
               "
             ></div>
-            <div style="height: calc(var(--padding) / 3)"></div>
-            <h2>Hexa</h2>
+            <div class="gap-20"></div>
+            <h3>Hexa</h3>
             <p style="opacity: 0.75">
               DesignFlows 2025 submssion. UX design for managing intelligent
               robots from an all-inclusive environment.
@@ -220,16 +243,16 @@
             style="text-decoration: none; color: inherit"
           >
             <div
-              class="rounded-4"
+              class="rounded-4 ratio"
               style="
                 background-image: url(assets/products/rainmeter/cover.png);
                 background-size: cover;
                 background-position: center;
-                height: 300px;
+                --bs-aspect-ratio: 70%;
               "
             ></div>
-            <div style="height: calc(var(--padding) / 3)"></div>
-            <h2>Rainmeter Skins</h2>
+            <div class="gap-20"></div>
+            <h3>Rainmeter Skins</h3>
             <p style="opacity: 0.75">
               Dynamic widgets built from code that provide a beautiful way to
               decorate your desktop.
@@ -238,23 +261,25 @@
         </div>
       </div>
       <div class="gap-60"></div>
+      <div class="gap-40"></div>
     </div>
     <div class="padding-h mx-auto" style="max-width: var(--max_width)">
-      <div class="row g-4">
+      <h2 style="color: var(--accent)">Other Projects</h2>
+      <div class="gap-20"></div>
+      <div class="row g-5">
         <div class="col-md-4">
           <!-- fest -->
           <a href="fest.html" style="text-decoration: none; color: inherit">
             <div
-              class="rounded-4"
+              class="rounded-4 ratio ratio-1x1"
               style="
                 background-image: url(assets/products/fest/cover.jpg);
                 background-size: cover;
                 background-position: center;
-                height: 300px;
               "
             ></div>
             <div style="height: calc(var(--padding) / 3)"></div>
-            <h2>Aegina's Fistiki Fest</h2>
+            <h3>Aegina's Fistiki Fest</h3>
             <p style="opacity: 0.75">
               A refreshing visual identity for Aegina Fistiki Fest event.
             </p>
@@ -264,15 +289,14 @@
         <div class="col-md-4 position-relative">
           <!-- Music Festival -->
           <div
-            class="rounded-4"
+            class="rounded-4 ratio ratio-1x1"
             style="
               background-image: url(assets/products/music_festival/cover.jpg);
               background-size: cover;
               background-position: center;
-              height: 300px;
             "
           ></div>
-          <div style="height: calc(var(--padding) / 3)"></div>
+          <div class="gap-20"></div>
           <div
             class="position-absolute top-0 end-0"
             style="
@@ -286,19 +310,60 @@
             <p>Coming soon</p>
           </div>
 
-          <h2>Aegina's Music Festival</h2>
+          <h3>Aegina's Music Festival</h3>
           <p style="opacity: 0.75">
             Branding the biggest classical music festival of the island.
           </p>
         </div>
       </div>
-      <div class="gap-60"></div>
-      <p style="opacity: 0.75" class="text-center">
+      <div class="gap-80"></div>
+      <div class="gap-40"></div>
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h2>
+            Ready to create
+            <span
+              style="
+                display: inline-block;
+                position: relative;
+                width: max-content;
+              "
+            >
+              <span
+                style="
+                  position: absolute;
+                  top: 5px;
+                  right: 55px;
+                  width: 100%;
+                  text-align: right;
+                  font-family: NF-Blanc Seing;
+                  color: var(--accent);
+                "
+              >
+                fresh
+              </span>
+              <span>something fresh?</span>
+            </span>
+          </h2>
+        </div>
+
+        <div class="col-md-4 mx-auto">
+          <a href="mailto:ervans589@gmail.com">
+            <img
+              class="h-100 rotate_arrow_button"
+              style="max-height: 15vh"
+              src="assets/button_arrow.svg"
+          /></a>
+        </div>
+      </div>
+      <div class="gap-40"></div>
+      <hr style="opacity: 0.5" />
+      <p style="opacity: 0.5">
         Website created with ❤️ by Evans Stenakis with pure HTML & CSS
       </p>
+
       <div class="gap-20"></div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
