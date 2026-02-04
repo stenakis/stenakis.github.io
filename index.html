@@ -38,6 +38,18 @@
         filter: grayscale(0%);
         transform: rotate(45deg);
       }
+
+      .project_box {
+        background-color: var(--background);
+        -webkit-transition: background-color 150ms linear;
+        -ms-transition: background-color 150ms linear;
+        transition: background-color 150ms linear;
+      }
+
+      .project_box:hover {
+        cursor: pointer;
+        background-color: var(--background_light);
+      }
     </style>
   </head>
 
@@ -47,7 +59,7 @@
       style="max-width: var(--max_width); margin: 0 auto; position: relative"
     >
       <img
-        class="image-profile position-absolute z-n1"
+        class="image-profile position-absolute z-n1 rounded-4"
         style="
           top: -20px;
           right: 70px;
@@ -160,9 +172,8 @@
     <div class="gap-40"></div>
     <div class="container padding-h" style="max-width: var(--max_width)">
       <h2 style="color: var(--accent)">Featured Projects</h2>
-      <div class="gap-20"></div>
-      <div class="row g-5">
-        <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6 rounded-4 p-4 project_box">
           <!-- Together -->
           <a href="together.html" style="text-decoration: none; color: inherit">
             <div
@@ -182,7 +193,7 @@
             </p>
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 rounded-4 p-4 project_box">
           <!-- Phase 10 -->
           <a href="phase_10.html" style="text-decoration: none; color: inherit">
             <div
@@ -203,9 +214,8 @@
           </a>
         </div>
       </div>
-      <div class="gap-40"></div>
-      <div class="row g-5">
-        <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6 rounded-4 p-4 project_box">
           <!-- Hexa -->
           <a href="hexa.html" style="text-decoration: none; color: inherit">
             <div
@@ -225,7 +235,7 @@
             </p>
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 rounded-4 p-4 project_box">
           <!-- Rainmeter -->
           <a
             href="rainmeter.html"
@@ -249,14 +259,13 @@
           </a>
         </div>
       </div>
-      <div class="gap-60"></div>
-      <div class="gap-40"></div>
+      <div class="gap-80"></div>
     </div>
     <div class="padding-h mx-auto" style="max-width: var(--max_width)">
       <h2 style="color: var(--accent)">Other Projects</h2>
       <div class="gap-20"></div>
-      <div class="row g-5">
-        <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-4 rounded-4 p-4 project_box">
           <!-- fest -->
           <a href="fest.html" style="text-decoration: none; color: inherit">
             <div
@@ -275,7 +284,7 @@
           </a>
         </div>
 
-        <div class="col-md-4 position-relative">
+        <div class="col-md-4 rounded-4 p-4 position-relative">
           <!-- Music Festival -->
           <div
             class="rounded-4 ratio ratio-1x1"
@@ -287,12 +296,14 @@
           ></div>
           <div class="gap-20"></div>
           <div
-            class="position-absolute top-0 end-0"
+            class="position-absolute"
             style="
+              top: -15px;
+              right: 0px;
               background-color: var(--accent);
               border-radius: 5px;
-              padding-left: 12px;
               padding-right: 12px;
+              padding-left: 12px;
               display: inline-block;
             "
           >

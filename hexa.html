@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fonts.css" />
     <style>
-      h2 {
+      h4 {
         font-size: 20pt;
         font-style: italic;
         font-family: "Neue Regrade";
@@ -27,14 +27,7 @@
         color: #79d1e6;
       }
 
-      .padding-h {
-        padding-left: 40px;
-        padding-right: 40px;
-      }
-
       .title {
-        font-size: 18pt;
-        font-weight: 600;
         font-family: "Neue Regrade";
         color: #79d1e6;
       }
@@ -49,43 +42,53 @@
   </head>
 
   <body>
-    <img
-      src="assets/products/hexa/cover.jpg"
-      alt="Hexa Cover"
-      ,
-      style="height: 350px; width: 100%; object-fit: cover"
-    />
-    <div class="gap-60"></div>
+    <div class="row g-5 align-items-end mx-3 my-1">
+      <div class="col-md-6">
+        <img
+          src="assets/products/hexa/cover.jpg"
+          alt="Hexa Cover"
+          class="cover_style rounded-4"
+        />
+      </div>
+      <div class="col-md-6">
+        <h1 class="project_title">Hexa</h1>
+        <h3 class="project_desc">
+          My submission to the 2025 DesignFlows competition by Bending Spoons.
+          With just 4 days to complete the challenge, I designed a
+          mission-critical interface that enables seamless coordination between
+          humans and special robots.
+        </h3>
+        <div class="gap-20"></div>
+        <div class="d-flex flex-wrap">
+          <div
+            style="background-color: var(--background_light)"
+            class="rounded-2 px-3 py-2 m-1"
+          >
+            Project type: UI/UX
+          </div>
+          <div
+            style="background-color: var(--background_light)"
+            class="rounded-2 px-3 py-2 m-1"
+          >
+            Timeline: 2025
+          </div>
+          <div
+            style="background-color: var(--background_light)"
+            class="rounded-2 px-3 py-2 m-1"
+          >
+            Tools used: Figma
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gap-80"></div>
+    <div class="gap-20"></div>
     <div
       class="padding-h mx-auto align-items-center"
       style="max-width: var(--max_width)"
     >
-      <h1 class="project_title text-center">Hexa</h1>
-      <h3 class="project_desc text-center">
-        My submission to the 2025 DesignFlows competition by Bending Spoons.
-        With just 4 days to complete the challenge, I designed a
-        mission-critical interface that enables seamless coordination between
-        humans and special robots.
-      </h3>
-        <div class="gap-20"></div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <p style="color: var(--accent)">Project type</p>
-          <p>UI/UX</p>
-        </div>
-        <div class="col-md-4">
-          <p style="color: var(--accent)">Timeline</p>
-          <p>2025</p>
-        </div>
-
-        <div class="col-md-4">
-          <p style="color: var(--accent)">Tools used</p>
-          <p>Figma</p>
-        </div>
-      </div>
-   <div class="gap-40"></div>
-      <div class="gap-60"></div>
-      <h3 class="title">THE BRIEF</h3>
+      <h2 class="title">The Brief</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <p>
@@ -105,108 +108,164 @@
       </div>
 
       <div class="gap-80"></div>
-      <h3 class="title">THE DATA</h3>
+      <h3 class="title">The Data</h3>
       <div class="row g-4">
         <div class="col-md-6">
           <p>
-            During the 4-day challenge, participants would not have enough time
-            to collect and analyze the necessary personas in order to create
-            user scenarios. Fortunately, the brief gave out all the information
-            needed to have a complete picture of the app’s users personality
-            along with their profiles, behavioral patterns and preferences,
-            which really help speed up the design process.
+            The brief gave out all the information needed to have a complete
+            picture of the app’s users personality along with their profiles,
+            behavioral patterns and preferences, which really help speed up the
+            design process.
           </p>
         </div>
         <div class="col-md-6">
           <p>
-            1. Real-time, easy-to-read status updates are crucial.<br />
-            2. Fast task assignment process with proper guidance can
+            ✓ Real-time, easy-to-read status updates are crucial.<br />
+            ✓ Fast task assignment process with proper guidance can
             significantly reduce user stress.<br />
-            3. Accessible interface: Users operate in challenging physical
+            ✓ Accessible interface: Users operate in challenging physical
             conditions.<br />
-            4. Voice-activated task assignment and status checks could improve
+            ✓ Voice-activated task assignment and status checks could improve
             usability.<br />
-            5. Providing options for customization could increase engagement and
+            ✓ Providing options for customization could increase engagement and
             usability.<br />
-            6. Clearly highlighting task locations and potential overlaps can
+            ✓ Clearly highlighting task locations and potential overlaps can
             prevent confusion.
           </p>
         </div>
       </div>
-
       <div class="gap-80"></div>
-      <h3 class="title">TIMELINE</h3>
+      <h2 class="title">Timeline</h2>
       <p>
         Effective time management for project success was crucial. Hexa was
-        created under time pressure, so every decision counted. <br /><br />
-        <span class="subtitle"> Data Processing: 20% </span>
-        Thorough look at the available data.<br />Extract every bit of useful
-        information.<br />
-        Analyzing the meaning behind every sentence while grasping the whole
-        project direction.
-        <br /><br />
-        <span class="subtitle"> Results analysis: 40% </span>
-        : This was the biggest and the most important step of the whole process.
-        BendingSpoons wanted to see how designers think, analyze and finally
-        take action fast and produce results based on their cognitive abilities.
-        Also, this was the part where misinterpreting information would lead to
-        design inexpediency if the creator did not fully interpreted the data
-        the correct way. During this phase, I created conclusions based on the
-        brief, categorizing information based on importance. I dug deeper into
-        user personas in order to translate their wants and needs into design
-        solutions that adapt to each case individually. Finally, I created a
-        theoretical user flow indicating every necessary user interaction to
-        reach the end goal and complete the brief’s user journey.
-        <br /><br />
-        <span class="subtitle"> Design: 30% </span>
-        : After all the research, it was time to design. As the base was already
-        set and deeply analyzed, the design process did not take a long time. I
-        only had to connect the puzzle pieces from my own analysis visualizing
-        the conclusions of the previous step. This step included the design of
-        the Low Fidelity screens focusing solely on the user experience and
-        navigation with no colors and placeholder text. It was the time to
-        construct the base of the whole experience that would make or break the
-        design.
-        <br /><br />
-        <span class="subtitle"> Refinement: 10% </span>
-        : Finally, it was time for the High Fidelity screens. Colors, typography
-        and icons work together to elevate the Low Fidelity design and actually
-        bring it to life while it approaches the closest it can get before the
-        final production, by the programmers. In this final step, I had to
-        create the UI part: the color scheme, the typography and the icon
-        library while making sure everything fits aesthetically.
+        created under time pressure, so every decision counted.
       </p>
+      <div class="gap-20"></div>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div
+            style="background-color: var(--background_light); padding: 30px"
+            class="rounded-4"
+          >
+            <h3 class="title">Data Processing: 20%</h3>
+            <p>
+              Thorough look at the available data. Extract every bit of useful
+              information. Analyzing the meaning behind every sentence while
+              grasping the whole project direction.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div
+            style="background-color: var(--background_light); padding: 30px"
+            class="rounded-4"
+          >
+            <h3 class="title">Results analysis: 40%</h3>
+            <p>
+              Conclusions based on the brief, categorizing information based on
+              importance. I dug deeper into user personas in order to translate
+              their wants and needs into design solutions that adapt to each
+              case individually. Created a theoretical user flow indicating
+              every necessary user interaction to reach the end goal and
+              complete the brief’s user journey.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div
+            style="background-color: var(--background_light); padding: 30px"
+            class="rounded-4"
+          >
+            <h3 class="title">Design: 30%</h3>
+            <p>
+              Design of the Low Fidelity screens focusing solely on the user
+              experience and navigation with no colors and placeholder text. It
+              was the time to construct the base of the whole experience that
+              would make or break the design. Following the instructions of the
+              brief, a base was set that would solve all UX issues.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div
+            style="background-color: var(--background_light); padding: 30px"
+            class="rounded-4"
+          >
+            <h3 class="title">Refinement: 10%</h3>
+            <p>
+              Colors, typography and icons work together to elevate the Low
+              Fidelity design and actually bring it to life while it approaches
+              the closest it can get before the final production, by the
+              programmers. In this final step, I had to create the UI part: the
+              color scheme, the typography and the icon library while making
+              sure everything fits aesthetically.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="gap-80"></div>
-      <h3 class="title">LOW FIDELITY - UX</h3>
+      <h2 class="title">Low Fidelity - UX</h2>
       <div class="gap-20"></div>
       <img
         style="width: 100%; object-fit: cover"
         src="assets/products/hexa/wire.png"
         alt=""
       />
-      <div class="gap-40"></div>
-      <span class="subtitle"> Low Fidelity Goals </span>
-      <p>
-        + Efficiency and clarity before aesthetics.<br />
-        + Structured information with visual hierarchy<br />
-        + Accessible interface under harsh conditions
-      </p>
+      <div class="gap-20"></div>
+      <div class="d-flex flex-wrap">
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + Efficiency and clarity before aesthetics
+        </div>
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + Structured information with visual hierarchy
+        </div>
+
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + Accessible interface under harsh conditions
+        </div>
+      </div>
       <div class="gap-80"></div>
-      <h3 class="title">FEATURE: CODENAMES</h3>
+      <h2 class="title">Feature: Codenames</h2>
       <h1>#AD4</h1>
       <p>
         An integral part of a successful user experience in Hexa is based on
         fast Hexabot recognition and customization. Instead of using an image,
         “Codenames” uses a 3 character sequence or “Unique ID” in order to
-        identify each bot in the app and during service support.<br /><br />
-
-        + Ensures differentiality between bots (same model - same look) | UX<br />
-        + Fully customizabile & memorable names | UX<br />
-        + No distracting elements (images) | UI
+        identify each bot in the app and during service support.
       </p>
-      <div class="gap-80"></div>
-      <h3 class="title">HIGH FIDELITY - UI</h3>
+      <div class="d-flex flex-wrap">
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + Ensures differentiality between bots (same model - same look)
+        </div>
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + Fully customizabile & memorable names
+        </div>
 
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + No distracting elements (images)
+        </div>
+      </div>
+      <div class="gap-80"></div>
+      <h2 class="title">High Fidelity - UI</h2>
       <div class="gap-20"></div>
       <img
         style="max-height: 90vh; object-fit: cover"
@@ -214,13 +273,13 @@
         alt=""
       />
       <div class="gap-80"></div>
-      <h2 style="text-align: center">
+      <h4 style="text-align: center">
         Space is dark and lonely,<br />
         Hexa doesn’t have to feel like that.
-      </h2>
+      </h4>
       <div class="gap-40"></div>
+      <h2 class="title">Colors</h2>
       <p>
-        <span class="subtitle"> Colors </span><br />
         • Futuristic but not extraterrestrial and somewhere between green and
         blue, the accent color helps push out the important information while
         keeping a sleek aesthetic and neutrality. The use of gradient is in
@@ -228,23 +287,40 @@
         to indicate progress; starting from a darker hue and ending into a
         lighter tone, it implies movement and duration and since time management
         is our most important asset in this product, it should also be clear
-        inside the app.<br />
-        <b class="subtitle">Dark Mode</b>
-        <br />Blending in with the surroundings, dark mode follows the space’s
-        dark tint in order to harmonize the user's eyes with the environment.<br />+
-        Information pops out easier<br />+ Device battery consumption is
-        lower.<br />+ User focuses on taking care the most important part of the
-        colony, the almighty Hexabots.
+        inside the app.
       </p>
-      <div class="gap-40"></div>
-      <img
-        style="max-width: 400px; object-fit: cover"
-        src="assets/products/hexa/gethering.png"
-        alt=""
-      />
-      <div class="gap-40"></div>
+      <div class="gap-60"></div>
+      <h2 class="title">Dark Mode</h2>
       <p>
-        <span class="subtitle"> Typography </span><br />
+        Blending in with the surroundings, dark mode follows the space’s dark
+        tint in order to harmonize the user's eyes with the environment.
+      </p>
+      <div class="d-flex flex-wrap">
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + Information pops out easier
+        </div>
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + Lower device battery consumption
+        </div>
+
+        <div
+          style="background-color: rgb(61, 114, 92)"
+          class="rounded-2 px-3 py-2 m-1"
+        >
+          + User focuses on the most important part of the colony, the almighty
+          Hexabots.
+        </div>
+      </div>
+
+      <div class="gap-60"></div>
+      <h2 class="title">Typography</h2>
+      <p>
         The key to an effective typography is to be readable while offering some
         variety. That’s why Neue Regrade was the optimal choice combining easy
         to read glyphs suitable for all text types (title, text, button) with a
@@ -253,12 +329,12 @@
       <div class="gap-40"></div>
       <img
         style="max-width: 400px; object-fit: cover"
-        src="assets/products/hexa/icons.png"
+        src="assets/products/hexa/gethering.png"
         alt=""
       />
-      <div class="gap-40"></div>
+      <div class="gap-60"></div>
+      <h2 class="title">Iconography</h2>
       <p>
-        <span class="subtitle"> Iconography </span><br />
         Icons convey meanings without text, that’s why they have to be as exact
         as possible. An icon that misses its definition can be misinterpreted,
         leading to unwanted results. That’s why in Hexa, icons were selected
@@ -266,8 +342,15 @@
         to understand icons are effective in faster user navigation and
         satisfaction.
       </p>
-      <div class="gap-80"></div>
-      <h3 class="title">Q&A</h3>
+      <div class="gap-40"></div>
+      <img
+        style="max-width: 400px; object-fit: cover"
+        src="assets/products/hexa/icons.png"
+        alt=""
+      />
+
+      <div class="gap-60"></div>
+      <h2 class="title">Q&A</h2>
       <p>
         <span class="subtitle">
           Can you describe your experience of this small time frame? </span
