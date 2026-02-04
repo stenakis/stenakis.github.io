@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -22,7 +22,6 @@
         text-align: center;
         letter-spacing: 0;
         color: white;
-        font-size: 30pt;
       }
       h4 {
         color: #d3b932;
@@ -41,103 +40,94 @@
         .phone {
           display: none;
         }
-        h3 {
-          font-size: 20pt;
-        }
       }
     </style>
   </head>
 
   <body>
-    <img
-      class="position-absolute top-0 start-0 z-0"
-      src="assets/products/together/background.png"
-      alt="Background yellow"
-    />
-    <div class="position-relative z-1 mx-auto align-items-center">
-      <div class="gap-60"></div>
-      <div class="padding-h mx-auto" style="max-width: var(--max_width)">
-        <div class="row g-5">
-          <div class="col-md-6">
-            <img
-              style="
-                max-width: 80%;
-                max-height: 30vh;
-                margin: 0;
-                padding: 0;
-                object-fit: cover;
-              "
-              src="assets/products/together/together_logo.svg"
-              alt=""
-            />
-            <div class="gap-40"></div>
-            <h3 class="project_desc" style="text-align: initial">
-              BA Thesis about converting a fresh app idea into reality. With
-              less than 6 months to complete, this projet is a truly extended
-              approach on UI/UX. Together is all you need to gather with your
-              friends!
-            </h3>
-            <div class="gap-40"></div>
-            <div class="row">
-              <div class="col-md-4">
-                <p style="font-weight: bold">Project type</p>
-                <p>UI/UX</p>
-              </div>
-              <div class="col-md-4">
-                <p style="font-weight: bold">Timeline</p>
-                <p>2024</p>
-              </div>
-
-              <div class="col-md-4">
-                <p style="font-weight: bold">Tools used</p>
-                <p>Figma</p>
-              </div>
-            </div>
-            <div class="gap-40"></div>
-            <a
-              href="https://polynoe.lib.uniwa.gr/xmlui/handle/11400/7205"
-              target="_blank"
-              ><img
-                src="assets/products/together/action_thesis.png"
-                alt="PlayStore icon"
-                style="
-                  margin: 0;
-                  padding: 0;
-                  object-fit: cover;
-                  width: auto;
-                  height: 55px;
-                "
-            /></a>
+    <div class="row g-5 align-items-end mx-3 my-1">
+      <div class="col-md-6">
+        <iframe
+          class="cover_style rounded-4"
+          style="background-size: cover; background-position: center"
+          src="https://embed.figma.com/design/T6KSp7ImrJm6bQwkTtwPSy/TogetherApp?node-id=1378-77&embed-host=share"
+        ></iframe>
+      </div>
+      <div class="col-md-6">
+        <img
+          style="
+            width: auto;
+            max-height: 10vh;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+          "
+          src="assets/products/together/together_logo.svg"
+          alt=""
+        />
+        <div class="gap-40"></div>
+        <h3 class="project_desc" style="text-align: initial">
+          BA Thesis about converting a fresh app idea into reality. With less
+          than 6 months to complete, this projet is a truly extended approach on
+          UI/UX. Together is all you need to gather with your friends!
+        </h3>
+        <div class="gap-20"></div>
+        <div class="d-flex flex-wrap">
+          <div
+            style="background-color: var(--background_light)"
+            class="rounded-2 px-3 py-2 m-1"
+          >
+            Project type: UI/UX
           </div>
-          <div class="col-md-6">
-            <iframe
-              style="border: 1px solid rgba(0, 0, 0, 0.1)"
-              width="100%"
-              height="550px"
-              sandbox="allow-scripts allow-same-origin"
-              src="https://embed.figma.com/proto/T6KSp7ImrJm6bQwkTtwPSy/TogetherApp?node-id=1394-881&scaling=scale-down-width&content-scaling=fixed&page-id=1378%3A77&starting-point-node-id=1705%3A1137&embed-host=share"
-              allowfullscreen
-            ></iframe>
+          <div
+            style="background-color: var(--background_light)"
+            class="rounded-2 px-3 py-2 m-1"
+          >
+            Timeline: 2024
+          </div>
+          <div
+            style="background-color: var(--background_light)"
+            class="rounded-2 px-3 py-2 m-1"
+          >
+            Tools used: Figma
           </div>
         </div>
-        <div class="gap-80"></div>
-
-        <h3>The trailer</h3>
-        <div class="gap-20"></div>
-        <video class="padding-h" style="width: 100%; height: auto" controls>
-          <source
-            src="assets/products/together/output_video.mp4"
-            type="video/mp4"
+        <div class="gap-40"></div>
+        <a
+          href="https://polynoe.lib.uniwa.gr/xmlui/handle/11400/7205"
+          target="_blank"
+        >
+          <img
+            src="assets/products/together/action_thesis.png"
+            alt="Thesis button"
+            style="max-height: 50px; width: auto; object-fit: contain"
+            class="mx-0"
           />
-        </video>
-        <div class="gap-60"></div>
-        <div class="gap-60"></div>
-        <h3>Organized Meetups</h3>
-        <p style="text-align: center; opacity: 0.75">
-          Your meetups in one place, no more lost in endless group chats!
-        </p>
+        </a>
       </div>
     </div>
+
+    <div
+      class="padding-h mx-auto align-items-center"
+      style="max-width: var(--max_width)"
+    >
+      <div class="gap-80"></div>
+      <h3>The trailer</h3>
+      <div class="gap-20"></div>
+      <video class="padding-h" style="width: 100%; height: auto" controls>
+        <source
+          src="assets/products/together/output_video.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="gap-60"></div>
+      <div class="gap-60"></div>
+      <h3>Organized Meetups</h3>
+      <p style="text-align: center; opacity: 0.75">
+        Your meetups in one place, no more lost in endless group chats!
+      </p>
+    </div>
+
     <div class="gap-20"></div>
     <img
       class="together_images"
@@ -296,8 +286,11 @@
           </p>
         </div>
         <div class="col-md-4">
-          <img style="height: 70px; width: auto; margin: 0""
-          src="assets/products/together/persona_wolf.png" alt="" />
+          <img
+            style="height: 70px; width: auto; margin: 0"
+            src="assets/products/together/persona_wolf.png"
+            alt=""
+          />
           <div class="gap-20"></div>
           <p style="font-weight: bold">The Lone Wolf</p>
           <p style="text-align: justify">
@@ -639,8 +632,11 @@
       </div>
       <div class="gap-60"></div>
       <div class="col-md-8">
-        <div style="border: 1px solid white; padding: 30px">
-          <h4>CONCLUSION</h4>
+        <div
+          style="background-color: var(--background_light); padding: 30px"
+          class="rounded-4"
+        >
+          <h4>Conclusion</h4>
           <p>
             Together is a digital application that wants to solve a problem that
             is faced on a daily basis, the inability to organize meetings
