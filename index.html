@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -28,9 +28,7 @@
 
       .rotate_arrow_button {
         filter: grayscale(100%);
-        transition:
-          transform 0.2s ease-in-out,
-          filter 0.3s ease;
+        transition: transform 0.2s ease-in-out, filter 0.3s ease;
       }
 
       .rotate_arrow_button:hover {
@@ -54,7 +52,10 @@
   </head>
 
   <body>
-    <script src="./scripts.js"></script>
+    <script src="gsap_modules/gsap.min.js"></script>
+    <script src="gsap_modules/SplitText.min.js"></script>
+    <script src="gsap_modules/ScrollTrigger.min.js"></script>
+    <script type="module" src="gsap_modules/gsap.js"></script>
     <div
       style="max-width: var(--max_width); margin: 0 auto; position: relative"
     >
@@ -171,7 +172,7 @@
     <div class="gap-80"></div>
     <div class="gap-40"></div>
     <div class="container padding-h" style="max-width: var(--max_width)">
-      <h2 style="color: var(--accent)">Featured Projects</h2>
+      <h2  style="color: var(--accent)">Featured Projects</h2>
       <div class="row">
         <div class="col-md-6 rounded-4 p-4 project_box">
           <!-- Together -->
