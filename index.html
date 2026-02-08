@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -20,15 +20,11 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fonts.css" />
     <style>
-      @media (max-width: 900px) {
-        .image-profile {
-          opacity: 0;
-        }
-      }
-
       .rotate_arrow_button {
         filter: grayscale(100%);
-        transition: transform 0.2s ease-in-out, filter 0.3s ease;
+        transition:
+          transform 0.2s ease-in-out,
+          filter 0.3s ease;
       }
 
       .rotate_arrow_button:hover {
@@ -57,12 +53,65 @@
     <script src="gsap_modules/ScrollTrigger.min.js"></script>
     <script type="module" src="gsap_modules/gsap.js"></script>
     <div
+      style="
+        background: var(--background);
+        position: sticky;
+        top: 0;
+        height: 70px;
+        z-index: 100;
+      "
+    >
+      <div
+        class="d-flex justify-content-between"
+        style="max-width: var(--max_width); margin: 0 auto; height: 100%"
+      >
+   
+        <div class="row d-flex align-items-center ">
+          <img class=" hide_on_mobile" style="height: 30px; width: auto" src="assets/icons/logo.svg" />
+          <img
+            style="height: 30px; width: auto"
+            src="assets/icons/logo_2.png"
+          />
+        </div>
+        <div class="d-flex align-items-center" style="gap: 1.5rem">
+          <a href="https://github.com/stenakis" target="_blank">
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/github.svg"
+            />
+          </a>
+          <a href="https://www.behance.net/evans_stenakis" target="_blank">
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/behance.svg"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/evans-stenakis-3175ba257/"
+            target="_blank"
+          >
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/linkedin.svg"
+            />
+          </a>
+          <a href="https://www.deviantart.com/offbalancect" target="_blank">
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/deviantart.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
       style="max-width: var(--max_width); margin: 0 auto; position: relative"
     >
       <img
-        class="image-profile position-absolute z-n1 rounded-4"
+        class="hide_on_mobile position-absolute z-n1 rounded-4"
         style="
-          top: -20px;
+          top: -30px;
           right: 70px;
           width: 350px;
           height: 400px;
@@ -72,68 +121,7 @@
         src="assets/profile.jpeg"
         alt=""
       />
-      <header>
-        <div
-          class="padding-h gap-60 d-flex justify-content-between"
-          style="position: sticky; top: 0; left: 0; right: 0; z-index: 100"
-        >
-          <div class="row d-flex align-items-center">
-            <img
-              style="height: 30px; width: auto"
-              src="assets/icons/logo.svg"
-            />
-            <img
-              style="height: 30px; width: auto"
-              src="assets/icons/logo_2.png"
-            />
-          </div>
-          <div class="d-flex align-items-center" style="gap: 1.5rem">
-            <a href="https://github.com/stenakis" target="_blank">
-              <img
-                style="
-                  height: 24px;
-                  width: auto;
-                  filter: brightness(0) invert(1);
-                "
-                src="assets/icons/github.svg"
-              />
-            </a>
-            <a href="https://www.behance.net/evans_stenakis" target="_blank">
-              <img
-                style="
-                  height: 24px;
-                  width: auto;
-                  filter: brightness(0) invert(1);
-                "
-                src="assets/icons/behance.svg"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/evans-stenakis-3175ba257/"
-              target="_blank"
-            >
-              <img
-                style="
-                  height: 24px;
-                  width: auto;
-                  filter: brightness(0) invert(1);
-                "
-                src="assets/icons/linkedin.svg"
-              />
-            </a>
-            <a href="https://www.deviantart.com/offbalancect" target="_blank">
-              <img
-                style="
-                  height: 24px;
-                  width: auto;
-                  filter: brightness(0) invert(1);
-                "
-                src="assets/icons/deviantart.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </header>
+
       <div class="gap-60"></div>
       <h1
         class="padding-h"
@@ -172,7 +160,7 @@
     <div class="gap-80"></div>
     <div class="gap-40"></div>
     <div class="container padding-h" style="max-width: var(--max_width)">
-      <h2  style="color: var(--accent)">Featured Projects</h2>
+      <h2 style="color: var(--accent)">Featured Projects</h2>
       <div class="row">
         <div class="col-md-6 rounded-4 p-4 project_box">
           <!-- Together -->
@@ -299,7 +287,7 @@
           <div
             class="position-absolute"
             style="
-              top: -15px;
+              top: 0px;
               right: 0px;
               background-color: var(--accent);
               border-radius: 5px;

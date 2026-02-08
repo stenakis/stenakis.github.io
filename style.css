@@ -13,16 +13,11 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: var(--background);
-}
-
-body,
-html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 h1 {
@@ -113,6 +108,10 @@ hr {
   opacity: 100%;
 }
 
+.hide_on_mobile {
+  visibility: visible;
+}
+
 @media (max-width: 768px) {
   :root {
     --padding: 40px;
@@ -125,10 +124,14 @@ hr {
     max-height: 25vh;
     width: 100%;
   }
+  .hide_on_mobile {
+    visibility: hidden;
+  }
 }
 
 .cover_style {
   width: 100%;
-  height: auto;
+  min-height: 400px;
   max-height: 60vh;
+  object-fit: cover;
 }
