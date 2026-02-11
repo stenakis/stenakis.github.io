@@ -6,6 +6,7 @@ function enterAnimation() {
     duration: 0.6,
     stagger: 0.08,
     ease: "power2.out",
+    delay: 0.3,
   });
 }
 
