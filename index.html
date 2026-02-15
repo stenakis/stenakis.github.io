@@ -63,12 +63,12 @@
       "
     >
       <div
-        class="d-flex justify-content-between"
-        style="max-width: var(--max_width); margin: 0 auto; height: 100%"
+        class="d-flex justify-content-between px-4 mx-auto"
+        style="max-width: var(--max_width); height: 100%"
       >
         <div class="row d-flex align-items-center">
           <img
-            class="hide_on_mobile"
+            class="d-none d-md-block"
             style="height: 30px; width: auto"
             src="assets/icons/logo.svg"
           />
@@ -82,12 +82,6 @@
             <img
               style="height: 24px; width: auto; filter: brightness(0) invert(1)"
               src="assets/icons/github.svg"
-            />
-          </a>
-          <a href="https://www.behance.net/evans_stenakis" target="_blank">
-            <img
-              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
-              src="assets/icons/behance.svg"
             />
           </a>
           <a
@@ -105,15 +99,24 @@
               src="assets/icons/deviantart.svg"
             />
           </a>
+
+          <a
+            href="mailto:ervans589@gmail.com"
+            role="button"
+            class="btn btn-outline-warning"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </div>
 
     <div
-      style="max-width: var(--max_width); margin: 0 auto; position: relative"
+      class="px-4 mx-auto"
+      style="max-width: var(--max_width); position: relative"
     >
       <img
-        class="hide_on_mobile position-absolute z-n1 rounded-4"
+        class="d-none d-md-block position-absolute z-n1 rounded-4"
         style="
           top: -30px;
           right: 70px;
@@ -127,10 +130,7 @@
       />
 
       <div class="gap-60"></div>
-      <h1
-        class="padding-h"
-        style="line-height: 1; margin-bottom: 0.5rem; max-width: 700px"
-      >
+      <h1 style="line-height: 1; margin-bottom: 0.5rem; max-width: 700px">
         Creating real world interfaces.
         <span
           style="display: inline-block; position: relative; width: max-content"
@@ -152,7 +152,7 @@
         </span>
       </h1>
       <div class="gap-40"></div>
-      <p class="padding-h" style="max-width: 700px">
+      <p style="max-width: 700px">
         UI/UX designer from Aegina island, Greece, making a reality what
         <span style="color: var(--accent)">really</span> works.
         <span style="color: var(--accent)">Grounded</span> designs based on
@@ -163,7 +163,7 @@
     </div>
     <div class="gap-80"></div>
     <div class="gap-40"></div>
-    <div class="container padding-h" style="max-width: var(--max_width)">
+    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
       <h2 style="color: var(--accent)">Featured Projects</h2>
       <div class="row">
         <div class="col-md-6 rounded-4 p-4 project_box">
@@ -254,9 +254,8 @@
       </div>
       <div class="gap-80"></div>
     </div>
-    <div class="padding-h mx-auto" style="max-width: var(--max_width)">
+    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
       <h2 style="color: var(--accent)">Other Projects</h2>
-      <div class="gap-20"></div>
       <div class="row">
         <div class="col-md-4 rounded-4 p-4 project_box">
           <!-- fest -->
@@ -267,6 +266,7 @@
                 background-image: url(assets/products/fest/cover.jpg);
                 background-size: cover;
                 background-position: center;
+                --bs-aspect-ratio: 70%;
               "
             ></div>
             <div style="height: calc(var(--padding) / 3)"></div>
@@ -285,6 +285,7 @@
               background-image: url(assets/products/music_festival/cover.jpg);
               background-size: cover;
               background-position: center;
+              --bs-aspect-ratio: 70%;
             "
           ></div>
           <div class="gap-20"></div>
