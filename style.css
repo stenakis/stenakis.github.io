@@ -6,6 +6,14 @@
   --max_width: 1300px;
 }
 
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Akira;
+  src: url("assets/fonts/akira_expanded.OTF");
+}
+
 body {
   background-color: var(--background);
   margin: 0;
@@ -123,4 +131,38 @@ hr {
   min-height: 400px;
   max-height: 60vh;
   object-fit: cover;
+}
+
+/* GSAP Text Animation */
+
+.marquee-line {
+  overflow: hidden;
+  display: flex;
+  padding: 20px 0;
+}
+
+.track {
+  display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.track span {
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.line-top {
+  color: #d3a832;
+}
+
+.line-bottom {
+  color: #d3a832;
+}
+
+/* Middle line styling */
+.line-middle {
+  background: #d3a832;
+  color: black;
 }

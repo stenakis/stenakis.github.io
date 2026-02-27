@@ -32,17 +32,34 @@
         filter: grayscale(0%);
         transform: rotate(45deg);
       }
-
       .project_box {
         background-color: var(--background);
-        -webkit-transition: background-color 150ms linear;
-        -ms-transition: background-color 150ms linear;
         transition: background-color 150ms linear;
       }
 
       .project_box:hover {
         cursor: pointer;
         background-color: var(--background_light);
+      }
+
+      .image_box {
+        border-radius: 8px;
+        transition: border-radius 150ms linear;
+      }
+
+      .project_box:hover .image_box {
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      .content_box {
+        padding-left: 0px;
+        padding-right: 0px;
+        transition: padding 300ms ease;
+      }
+
+      .project_box:hover .content_box {
+        padding-left: 20px;
+        padding-right: 20px;
       }
     </style>
   </head>
@@ -165,149 +182,182 @@
     <div class="gap-40"></div>
     <div class="px-4 mx-auto" style="max-width: var(--max_width)">
       <h2 style="color: var(--accent)">Featured Projects</h2>
-      <div class="row">
-        <div class="col-md-6 rounded-3 p-4 project_box">
-          <!-- Together -->
-          <a href="together.html" style="text-decoration: none; color: inherit">
-            <div
-              class="rounded-3 ratio"
-              style="
-                background-image: url(assets/products/together/cover.gif);
-                background-size: cover;
-                background-position: center;
-                --bs-aspect-ratio: 70%;
-              "
-            ></div>
-            <div class="gap-20"></div>
-            <h3>Together</h3>
-            <p style="opacity: 0.75">
-              Thesis on UI Design and Visual Identity of a brand through a
-              mobile app.
-            </p>
-          </a>
+      <div class="gap-20"></div>
+      <div class="row g-4">
+        <!-- Together -->
+        <div class="col-md-6">
+          <div class="pb-3 rounded-3 project_box">
+            <a
+              href="together.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <div
+                class="ratio image_box"
+                style="
+                  background-image: url(assets/products/together/cover.png);
+                  background-size: cover;
+                  background-position: center;
+                  --bs-aspect-ratio: 70%;
+                "
+              ></div>
+              <div class="gap-20"></div>
+              <div class="content_box">
+                <h3>Together</h3>
+                <p style="opacity: 0.75">
+                  Thesis on UI Design and Visual Identity of a brand through a
+                  mobile app.
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6 rounded-3 p-4 project_box">
-          <!-- Phase 10 -->
-          <a href="phase_10.html" style="text-decoration: none; color: inherit">
-            <div
-              class="rounded-3 ratio"
-              style="
-                background-image: url(assets/products/phase10/cover.jpg);
-                background-size: cover;
-                background-position: center;
-                --bs-aspect-ratio: 70%;
-              "
-            ></div>
-            <div class="gap-20"></div>
-            <h3>Phase 10 Assistant</h3>
-            <p style="opacity: 0.75">
-              Mobile / web app providing Phase 10 players with extra tools to
-              enhance their gaming experience!
-            </p>
-          </a>
+        <!-- Phase 10 -->
+        <div class="col-md-6">
+          <div class="p-0 pb-3 rounded-3 project_box">
+            <a
+              href="phase_10.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <div
+                class="ratio image_box"
+                style="
+                  background-image: url(assets/products/phase10/cover.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  --bs-aspect-ratio: 70%;
+                "
+              ></div>
+              <div class="gap-20"></div>
+              <div class="content_box">
+                <h3>Phase 10 Assistant</h3>
+                <p style="opacity: 0.75">
+                  Mobile / web app providing Phase 10 players with extra tools
+                  to enhance their gaming experience!
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 rounded-3 p-4 project_box">
-          <!-- Hexa -->
-          <a href="hexa.html" style="text-decoration: none; color: inherit">
-            <div
-              class="rounded-3 ratio"
-              style="
-                background-image: url(assets/products/hexa/cover.jpg);
-                background-size: cover;
-                background-position: center;
-                --bs-aspect-ratio: 70%;
-              "
-            ></div>
-            <div class="gap-20"></div>
-            <h3>Hexa</h3>
-            <p style="opacity: 0.75">
-              DesignFlows 2025 submssion. UX design for managing intelligent
-              robots from an all-inclusive environment.
-            </p>
-          </a>
+      <div class="gap-20"></div>
+      <div class="row g-4">
+        <!-- Hexa -->
+        <div class="col-md-6">
+          <div class="p-0 pb-3 rounded-3 project_box">
+            <a href="hexa.html" style="text-decoration: none; color: inherit">
+              <div
+                class="ratio image_box"
+                style="
+                  background-image: url(assets/products/hexa/cover.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  --bs-aspect-ratio: 70%;
+                "
+              ></div>
+              <div class="gap-20"></div>
+              <div class="content_box">
+                <h3>Hexa</h3>
+                <p style="opacity: 0.75">
+                  DesignFlows 2025 submssion. UX design for managing intelligent
+                  robots from an all-inclusive environment.
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6 rounded-3 p-4 project_box">
-          <!-- Rainmeter -->
-          <a
-            href="rainmeter.html"
-            style="text-decoration: none; color: inherit"
-          >
-            <div
-              class="rounded-3 ratio"
-              style="
-                background-image: url(assets/products/rainmeter/cover.png);
-                background-size: cover;
-                background-position: center;
-                --bs-aspect-ratio: 70%;
-              "
-            ></div>
-            <div class="gap-20"></div>
-            <h3>Rainmeter Skins</h3>
-            <p style="opacity: 0.75">
-              Dynamic widgets built from code that provide a beautiful way to
-              decorate your desktop.
-            </p>
-          </a>
+        <!-- Rainmeter -->
+        <div class="col-md-6">
+          <div class="p-0 pb-3 rounded-3 project_box">
+            <a
+              href="rainmeter.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <div
+                class="ratio image_box"
+                style="
+                  background-image: url(assets/products/rainmeter/cover.png);
+                  background-size: cover;
+                  background-position: center;
+                  --bs-aspect-ratio: 70%;
+                "
+              ></div>
+              <div class="gap-20"></div>
+              <div class="content_box">
+                <h3>Rainmeter Skins</h3>
+                <p style="opacity: 0.75">
+                  Dynamic widgets built from code that provide a beautiful way
+                  to decorate your desktop.
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="gap-80"></div>
     </div>
     <div class="px-4 mx-auto" style="max-width: var(--max_width)">
       <h2 style="color: var(--accent)">Other Projects</h2>
-      <div class="row">
-        <div class="col-md-4 rounded-3 p-4 project_box">
-          <!-- fest -->
-          <a href="fest.html" style="text-decoration: none; color: inherit">
+      <div class="row g-4">
+        <!-- fest -->
+        <div class="col-md-4">
+          <div class="p-0 pb-3 rounded-3 project_box">
+            <a href="fest.html" style="text-decoration: none; color: inherit">
+              <div
+                class="ratio image_box ratio-1x1"
+                style="
+                  background-image: url(assets/products/fest/cover.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  --bs-aspect-ratio: 70%;
+                "
+              ></div>
+              <div class="gap-20"></div>
+              <div class="content_box">
+                <h3>Aegina's Fistiki Fest</h3>
+                <p style="opacity: 0.75">
+                  A refreshing visual identity for Aegina Fistiki Fest event.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Music Festival -->
+        <div class="col-md-4">
+          <div class="p-0 pb-3 rounded-3 position-relative">
             <div
-              class="rounded-3 ratio ratio-1x1"
+              class="ratio image_box ratio-1x1"
               style="
-                background-image: url(assets/products/fest/cover.jpg);
+                background-image: url(assets/products/music_festival/cover.jpg);
                 background-size: cover;
                 background-position: center;
                 --bs-aspect-ratio: 70%;
               "
             ></div>
-            <div style="height: calc(var(--padding) / 3)"></div>
-            <h3>Aegina's Fistiki Fest</h3>
-            <p style="opacity: 0.75">
-              A refreshing visual identity for Aegina Fistiki Fest event.
-            </p>
-          </a>
-        </div>
+            <div class="gap-20"></div>
+            <div
+              class="position-absolute"
+              style="
+                top: -20px;
+                right: -10px;
+                background-color: var(--accent);
+                border-radius: 5px;
+                padding-right: 12px;
+                padding-left: 12px;
+                padding-bottom: 3px;
+                padding-top: 3px;
+                display: inline-block;
+              "
+            >
+              <p>Coming soon</p>
+            </div>
 
-        <div class="col-md-4 rounded-3 p-4 position-relative">
-          <!-- Music Festival -->
-          <div
-            class="rounded-3 ratio ratio-1x1"
-            style="
-              background-image: url(assets/products/music_festival/cover.jpg);
-              background-size: cover;
-              background-position: center;
-              --bs-aspect-ratio: 70%;
-            "
-          ></div>
-          <div class="gap-20"></div>
-          <div
-            class="position-absolute"
-            style="
-              top: 0px;
-              right: 0px;
-              background-color: var(--accent);
-              border-radius: 5px;
-              padding-right: 12px;
-              padding-left: 12px;
-              display: inline-block;
-            "
-          >
-            <p>Coming soon</p>
+            <div class="content_box">
+              <h3>Aegina's Music Festival</h3>
+              <p style="opacity: 0.75">
+                Branding the biggest classical music festival of the island.
+              </p>
+            </div>
           </div>
-
-          <h3>Aegina's Music Festival</h3>
-          <p style="opacity: 0.75">
-            Branding the biggest classical music festival of the island.
-          </p>
         </div>
       </div>
       <div class="gap-80"></div>

@@ -40,3 +40,29 @@ SplitText.create(".split_delayed", {
     });
   },
 });
+
+// Line 1 and 3: Move Left
+gsap.to(".line-top .track", {
+  xPercent: -50,
+  ease: "none",
+  duration: 10,
+  repeat: -1
+});
+
+gsap.to(" .line-bottom .track", {
+  xPercent: -50,
+  ease: "none",
+  duration: 8,
+  repeat: -1
+});
+
+// Line 2: Move Right (Inverted)
+// Note: We start at -50 and move to 0
+gsap.set(".line-middle .track", { xPercent: -50 });
+
+gsap.to(".line-middle .track", {
+  xPercent: 0,
+  ease: "none",
+  duration: 18,
+  repeat: -1
+});
