@@ -34,10 +34,27 @@
         max-height: 60vh;
         object-fit: contain;
       }
+      .title_box {
+        min-height: 60px;
+        background-color: #d3b932;
+        display: flex;
+        align-items: center;
+        padding: 5px 35px;
+        overflow: hidden;
+      }
+      .meetups {
+        object-fit: contain;
+      }
 
       @media (max-width: 900px) {
-        .phone {
-          display: none;
+        .meetups {
+          object-fit: cover;
+          height: 30vh;
+        }
+      }
+      @media (min-width: 900px) {
+        .title_box {
+          height: 60px;
         }
       }
     </style>
@@ -54,7 +71,7 @@
         <iframe
           class="cover_style rounded-3"
           style="height: 500px"
-          src="https://embed.figma.com/proto/T6KSp7ImrJm6bQwkTtwPSy/TogetherApp?node-id=1705-1137&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1378%3A77&starting-point-node-id=1705%3A1137&embed-host=share"
+          src="https://embed.figma.com/proto/T6KSp7ImrJm6bQwkTtwPSy/TogetherApp?node-id=1394-881&starting-point-node-id=1705%3A1137&scaling=scale-down&content-scaling=fixed&embed-host=share"
           allowfullscreen
         ></iframe>
       </div>
@@ -66,6 +83,7 @@
             margin: 0;
             padding: 0;
             object-fit: cover;
+            max-width: 100%;
           "
           src="assets/products/together/together_logo.svg"
           alt=""
@@ -178,7 +196,7 @@
 
     <div class="gap-20"></div>
     <img
-      class="together_images"
+      class="together_images meetups"
       src="assets/products/together/meetups.png"
       alt="Card_1"
     />
@@ -230,25 +248,9 @@
       <div class="gap-60"></div>
       <div class="gap-60"></div>
       <div class="gap-60"></div>
-      <div
-        class="rounded-3"
-        style="
-          height: 60px;
-          background-color: #d3b932;
-          display: flex;
-          align-items: center;
-          padding: 0 30px;
-          overflow: hidden;
-        "
-      >
-        <h2 style="font-family: Akira; color: black">Behind the Project</h2>
-
-        <img
-          src="assets/products/together/header.png"
-          alt=""
-          style="height: 200px; object-fit: cover"
-        />
-      </div>
+      <h2 class="rounded-3 title_box" style="font-family: Akira; color: black">
+        Behind the Project
+      </h2>
       <div class="gap-60"></div>
       <div class="row g-4">
         <div class="col-md-6">
@@ -335,7 +337,7 @@
       <div class="gap-40"></div>
       <div class="row g-5">
         <div class="col-md-4">
-          <p style="font-size: 70px;">🏆</p>
+          <p style="font-size: 70px">🏆</p>
           <div class="gap-20"></div>
           <p style="font-weight: bold">The Competitor</p>
           <p style="text-align: justify">
@@ -347,7 +349,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <p style="font-size: 70px;">🐺</p>
+          <p style="font-size: 70px">🐺</p>
           <div class="gap-20"></div>
           <p style="font-weight: bold">The Lone Wolf</p>
           <p style="text-align: justify">
@@ -358,7 +360,7 @@
           </p>
         </div>
         <div class="col-md-4">
-           <p style="font-size: 70px;">🛋️</p>
+          <p style="font-size: 70px">🛋️</p>
           <div class="gap-20"></div>
           <p style="font-weight: bold">The Couch Potato</p>
           <p style="text-align: justify">
@@ -373,25 +375,9 @@
       <div class="gap-60"></div>
       <div class="gap-60"></div>
       <div class="gap-60"></div>
-      <div
-        class="rounded-3"
-        style="
-          height: 60px;
-          background-color: #d3b932;
-          display: flex;
-          align-items: center;
-          padding: 0 30px;
-          overflow: hidden;
-        "
-      >
-        <h2 style="font-family: Akira; color: black">Design</h2>
-
-        <img
-          src="assets/products/together/header.png"
-          alt=""
-          style="height: 200px; object-fit: cover"
-        />
-      </div>
+      <h2 class="rounded-3 title_box" style="font-family: Akira; color: black">
+        Design
+      </h2>
       <div class="gap-60"></div>
       <h3>Screens</h3>
       <div class="gap-20"></div>
@@ -508,28 +494,10 @@
       </div>
       <div class="gap-60"></div>
       <div class="gap-60"></div>
-      <div
-        class="rounded-3"
-        style="
-          height: 60px;
-          background-color: #d3b932;
-          display: flex;
-          align-items: center;
-          padding: 0 30px;
-          overflow: hidden;
-        "
-      >
-        <h2 style="font-family: Akira; color: black">Promotion</h2>
-
-        <img
-          src="assets/products/together/header.png"
-          alt=""
-          style="height: 200px; object-fit: cover"
-        />
-      </div>
-
+      <h2 class="rounded-3 title_box" style="font-family: Akira; color: black">
+        Promotion
+      </h2>
       <div class="gap-60"></div>
-
       <div class="row g-4">
         <div class="col-md-8">
           <h3>Character</h3>
@@ -716,21 +684,17 @@
       </div>
       <div class="gap-80"></div>
       <h3>Resources Used</h3>
-      <p>
+      <p style="word-wrap: break-word; width: 100%">
         • Atske, S. (2021, April 7). Social media use in 2021. Pew Research
         Center. https://www.pewresearch.org/
-        internet/2021/04/07/social-media-use-in-2021/<br />• Bean, D. (2019,
-        March 6). The dark side of dark mode: Is the latest app trend sucking
-        the life out of our screens? Observer.
-        https://observer.com/2019/03/dark-mode-app-trend-psychological-effects/
+        internet/2021/04/07/social-media-use-in-2021/
         <br />• Bright, L. F., Kleiser, S. B., & Grau, S. L. (2015). Too much
         Facebook? An exploratory examina tion of social media fatigue. Computers
         in Human Behavior, 44, 148–155. https://doi.org/10.1016/j.
         chb.2014.11.048 <br />• Cuello, J., & Vittone, J. (2013). Designing
         mobile apps. José Vittone. https://books.google.
         gr/books?hl=en&lr=&id=nQBJAQAAQBAJ&oi=fnd&pg=PA11&dq=visual+language+in+mobile+apps&ots=yvr8PCDyAo&sig=zsuYwIeSy9gpJRCX9WQf6Mth2lE&redir_esc=y#v=onepage&q=visu
-        al%20language%20in%20mobile%20apps&f=false Frier, S. (2021).<br />• No
-        filter: The inside story of instagram. Simon and Schuster.<br />•
+        al%20language%20in%20mobile%20apps&f=false Frier, S. (2021).<br />•
         Maybray, B. (2023, July 11). Color Psychology: How To Use it in
         Marketing and Branding. HubSpot.
         https://blog.hubspot.com/the-hustle/psychology-of-color<br />• Wheeler,
@@ -744,6 +708,14 @@
         August 19). The evolution of mobile apps: An exploratory study.
         Proceedings of the 2013 International Workshop on Software Development
         Lifecycle for Mobile. http:// dx.doi.org/10.1145/2501553.2501554
+      </p>
+      <div class="gap-40"></div>
+      <h3>Resources Used Indirectly</h3>
+      <p style="word-wrap: break-word; width: 100%">
+        • Bean, D. (2019, March 6). The dark side of dark mode: Is the latest
+        app trend sucking the life out of our screens? Observer.
+        https://observer.com/2019/03/dark-mode-app-trend-psychological-effects/<br />
+        • No filter: The inside story of instagram. Simon and Schuster.
       </p>
       <div class="gap-40"></div>
     </div>
