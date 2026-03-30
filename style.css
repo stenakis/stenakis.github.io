@@ -61,6 +61,10 @@ p {
   color: #fff;
 }
 
+.gap-10 {
+  height: 10px;
+}
+
 .gap-20 {
   height: 20px;
 }
