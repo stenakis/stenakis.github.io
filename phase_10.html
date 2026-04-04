@@ -24,6 +24,17 @@
         font-family: "Gabarito", sans-serif;
       }
 
+      .phase_10_images {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 60vh;
+        object-fit: contain;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
       .gradient-text {
         background-image: linear-gradient(45deg, #fcbc98, #989cdc);
         display: inline-block;
@@ -48,7 +59,7 @@
     <script src="gsap_modules/SplitText.min.js"></script>
     <script src="gsap_modules/ScrollTrigger.min.js"></script>
     <script type="module" src="gsap_modules/gsap.js"></script>
-    <div class="row g-5 align-items-end mx-3 my-1">
+    <div class="row g-5 align-items-end mx-1 my-1">
       <div class="col-md-6">
         <img
           src="assets/products/phase10/5000_downloads.jpg"
@@ -182,7 +193,6 @@
       </div>
       <div class="gap-60"></div>
       <div class="gap-60"></div>
-
       <h2 class="gradient-text">designed to give meaning to every game</h2>
       <p>get competitive to claim the golden medal!</p>
       <div class="gap-40"></div>
@@ -192,6 +202,38 @@
         src="assets/products/phase10/players.png"
         alt="Players"
       />
+      <div class="gap-60"></div>
+      <div class="gap-60"></div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img
+            style="
+              max-height: 10vh;
+              object-fit: contain;
+              display: block;
+              width: auto;
+              max-width: 100%;
+
+              max-height: 60vh;
+              margin-left: 0;
+              margin-right: auto;
+            "
+            src="assets/products/phase10/generated_star.png"
+            alt="Generate mdoes logo"
+          />
+          <h2>
+            Experiment with <span class="gradient-text">Generated modes</span>
+          </h2>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="w-100 img-fluid"
+            style="max-height: 30vh; object-fit: contain"
+            src="assets/products/phase10/generated_modes.png"
+            alt="Players"
+          />
+        </div>
+      </div>
     </div>
     <div class="gap-20"></div>
     <img
@@ -293,19 +335,20 @@
           <p style="font-size: 40pt; font-weight: 500">Biiiiig Title</p>
           <div class="gap-20"></div>
           <p>Input - 40pt</p>
-          <p style="line-height: 80px; font-size: 55pt; font-weight: 500">Just type anything</p>
+          <p style="line-height: 80px; font-size: 55pt; font-weight: 500">
+            Phase 10 Assistant
+          </p>
         </div>
         <div class="col-md-4">
           <div
             class="rounded-3"
             style="
               background: linear-gradient(45deg, #fcbc98, #989cdc);
-              min-height: 300px; 
+              min-height: 300px;
               height: auto;
               max-height: 60vh;
               width: 100%;
               position: relative;
-             
             "
           >
             <p style="position: absolute; bottom: 0; left: 0; margin: 20px">
@@ -318,27 +361,28 @@
         </div>
       </div>
 
-      <div class="gap-60"></div>
-    </div>
-
-    <div class="gap-60"></div>
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
-      <h2 class="gradient-text">Icons</h2>
-      <p style="width: 80%">
-        Shadow icons are used in larger scale and often alone. They can be found
-        in main pages and have a decorative means. Gradient icons work as a
-        group and are easier to read. They exist in buttons, context menus etc.
-        and complete the meaning of text..
-      </p>
-      <div class="gap-60"></div>
-      <img
-        style="max-height: 70vh; object-fit: cover"
-        src="assets/products/phase10/icons.png"
-        alt="Icons"
-      />
-    </div>
-    <div class="gap-80"></div>
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+      <div class="gap-80"></div>
+      <div class="gap-40"></div>
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h2 class="gradient-text">Icons</h2>
+          <p>
+            Shadow icons are used in larger scale and often alone. They can be
+            found in main pages and have a decorative means.<br />Gradient icons
+            work as a group and are easier to read. They exist in buttons,
+            context menus etc. and complete the meaning of text..
+          </p>
+        </div>
+        <div class="col-md-7">
+          <img
+            class="phase_10_images"
+            src="assets/products/phase10/icons.png"
+            alt="Icons"
+          />
+        </div>
+      </div>
+      <div class="gap-80"></div>
+      <div class="gap-40"></div>
       <h3 class="gradient-text">Target Audience</h3>
       <div class="col-md-8">
         <p style="text-align: justify">
@@ -354,7 +398,8 @@
           objectives.
         </p>
       </div>
-      <div class="gap-60"></div>
+      <div class="gap-80"></div>
+      <div class="gap-40"></div>
       <h3 class="gradient-text">Competition</h3>
       <div class="row g-4">
         <div class="col-md-6">
@@ -444,9 +489,20 @@
           difficulties faced by the others.
         </p>
       </div>
-      <div class="gap-60"></div>
-      <h3 class="gradient-text">Bending the rules</h3>
-      <div class="gap-20"></div>
+      <div class="gap-80"></div>
+      <div class="gap-40"></div>
+      <img
+        style="
+          max-height: 10vh;
+          margin: 0;
+          padding: 0;
+          object-fit: cover;
+          width: auto;
+        "
+        src="assets/products/phase10/keywords_logo.svg"
+        alt=""
+      />
+      <div class="gap-10"></div>
       <div class="row g-4">
         <div class="col-md-6">
           <div
@@ -472,35 +528,182 @@
           >
             <h3 class="gradient-text">Solution</h3>
             <p>
-              Every round’s objective is described by a small sentence showing
-              which cards the player has to discard. The game’s official rules
-              include a special card with small cards and numbers. While it is
-              successful on print, it can often lead to interface clutter when
-              it comes to digital applications. As humans tend scan, instead of
-              reading, it was proven necessary to find a new way to show these
-              objectives.
+              The solution came from the players’ feedback; it was focused on
+              using a single word and a number to describe a while sentence. As
+              the sentences used a special vocabulary, players were already
+              familiar with some terms which were used in the new design system
+              - called “Keywords”. These short codes break the objective is
+              smaller ones by using three things: the special vocabulary, the
+              existence or absence of color and a number.
             </p>
           </div>
         </div>
       </div>
       <div class="gap-60"></div>
+      <div class="row g-5">
+        <div class="col-md-8">
+          <div class="row g-2 justify-content-start">
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_1.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_2.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_3.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_4.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_5.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_6.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_7.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_8.png"
+              alt=""
+            />
+            <img
+              style="
+                height: 25px;
+                width: auto;
+                margin: initial;
+                padding-right: 15px;
+                margin-bottom: 15px;
+              "
+              src="assets/products/phase10/keyword_9.png"
+              alt=""
+            />
+          </div>
+          <div class="gap-20"></div>
+          <p style="text-align: justify">
+            Although at first hesitant, the players eventually got used to the
+            new “keywords” system and found it surprisingly convenient
+            especially when dealing with challenging objectives. This design
+            system also allowed the introduction of a new unofficial “keyword”
+            in the game. Instead of writing “2 numbers of each of the 4 colors”
+            which can get really messy, the players are met simply with a
+            colored “Each”.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p><i>A set of four and a row of three of the same color</i></p>
+          <div class="gap-20"></div>
+          <img
+            class="phase_10_images"
+            style="max-width: 50%"
+            src="assets/products/phase10/keywords_example.png"
+            alt=""
+          />
+          <div class="gap-20"></div>
+          <p>
+            As these sentences tend to become boring, it was necessary to depict
+            the same meaning with a different means. That’s why with these
+            “keywords”, these phrases got simplified down to a number and a
+            word. The sentence above can very easily be written as 4SET & 3COLOR
+            while maintaining the same meaning
+          </p>
+        </div>
+      </div>
+
+      <div class="gap-80"></div>
       <div class="gap-40"></div>
       <div class="row g-4">
         <div class="col-md-8">
-          <h2 class="gradient-text">Feature: Rooms</h2>
+          <img
+            style="
+              max-height: 10vh;
+              margin: 0;
+              padding: 0;
+              object-fit: cover;
+              width: auto;
+            "
+            src="assets/products/phase10/rooms_logo.svg"
+            alt=""
+          />
+          <div class="gap-20"></div>
           <div
             style="background-color: var(--background_light); padding: 30px"
             class="rounded-3"
           >
             <h3 class="gradient-text">Problem</h3>
             <p>
-              Every round’s objective is described by a small sentence showing
-              which cards the player has to discard. The game’s official rules
-              include a special card with small cards and numbers. While it is
-              successful on print, it can often lead to interface clutter when
-              it comes to digital applications. As humans tend scan, instead of
-              reading, it was proven necessary to find a new way to show these
-              objectives.
+              Before the game starts, a player has to be the one that takes down
+              the score, as in many other physical card games. In Phase 10, at
+              the end of each round, apart from points, a special variable,
+              which indicates the player’s objective for the next round and
+              counts towards their victory, has to be taken down. When many
+              players are playing the game, this can lead to errors and
+              confusion as this variable has change many times for every player
+              throughout the game.
             </p>
           </div>
           <div class="gap-20"></div>
@@ -510,13 +713,11 @@
           >
             <h3 class="gradient-text">Solution</h3>
             <p>
-              Every round’s objective is described by a small sentence showing
-              which cards the player has to discard. The game’s official rules
-              include a special card with small cards and numbers. While it is
-              successful on print, it can often lead to interface clutter when
-              it comes to digital applications. As humans tend scan, instead of
-              reading, it was proven necessary to find a new way to show these
-              objectives.
+              With the “Rooms” feature, every player can take down their score
+              from their own device. A host player can select a game mode and
+              create a Room which the other players can join through a mutual
+              server. From there, everyone can only change their own score at
+              the end of each round while seeing their co-players score.
             </p>
           </div>
         </div>
@@ -527,12 +728,12 @@
             style="max-height: 80vh; width: auto"
           />
         </div>
-
+        <div class="gap-80"></div>
         <div class="gap-40"></div>
-        <h3 class="gradient-text">An Extra Takeaway</h3>
         <div class="row g-4">
           <div class="col-md-8">
-            <p>
+            <h2 class="gradient-text">An Extra Takeaway</h2>
+            <p style="text-align: justify">
               In order to improve the overall user experience when using Rooms,
               players would first join a Room and then vote which mode they
               would like to play, instead of having a host which decides from

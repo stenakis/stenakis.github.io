@@ -1,11 +1,12 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Open index.html",
-            "file": "C:\\Users\\ervan\\Documents\\GitHub\\stenakis.github.io\\index.html"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "msedge",
+      "runtimeExecutable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "request": "launch",
+      "name": "Open index.html",
+      "file": "${userHome}\\Documents\\GitHub\\stenakis.github.io\\index.html"
+    }
+  ]
 }

@@ -32,6 +32,17 @@
         color: #79d1e6;
       }
 
+      .hexa_images {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 60vh;
+        object-fit: contain;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
       .subtitle {
         font-size: 16pt;
         font-weight: 600;
@@ -92,7 +103,7 @@
       <h2 class="title">The Brief</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <p>
+          <p style="text-align: justify">
             Participants were presented with a scenario about designing a given
             user flow showing how a user navigated through the app to complete a
             specific task.
@@ -112,7 +123,7 @@
       <h3 class="title">The Data</h3>
       <div class="row g-4">
         <div class="col-md-6">
-          <p>
+          <p style="text-align: justify">
             The brief gave out all the information needed to have a complete
             picture of the app’s users personality along with their profiles,
             behavioral patterns and preferences, which really help speed up the
@@ -137,7 +148,7 @@
       </div>
       <div class="gap-80"></div>
       <h2 class="title">Timeline</h2>
-      <p>
+      <p style="text-align: justify">
         Effective time management for project success was crucial. Hexa was
         created under time pressure, so every decision counted.
       </p>
@@ -237,35 +248,47 @@
         </div>
       </div>
       <div class="gap-80"></div>
-      <h2 class="title">Feature: Codenames</h2>
-      <h1>#AD4</h1>
-      <p>
-        An integral part of a successful user experience in Hexa is based on
-        fast Hexabot recognition and customization. Instead of using an image,
-        “Codenames” uses a 3 character sequence or “Unique ID” in order to
-        identify each bot in the app and during service support.
-      </p>
-      <div class="d-flex flex-wrap">
-        <div
-          style="background-color: rgb(61, 114, 92)"
-          class="rounded-2 px-3 py-2 m-1"
-        >
-          + Ensures differentiality between bots (same model - same look)
-        </div>
-        <div
-          style="background-color: rgb(61, 114, 92)"
-          class="rounded-2 px-3 py-2 m-1"
-        >
-          + Fully customizabile & memorable names
-        </div>
 
-        <div
-          style="background-color: rgb(61, 114, 92)"
-          class="rounded-2 px-3 py-2 m-1"
-        >
-          + No distracting elements (images)
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h2 class="title">Feature: Codenames</h2>
+          <p style="text-align: justify">
+            An integral part of a successful user experience in Hexa is based on
+            fast Hexabot recognition and customization. Instead of using an
+            image, “Codenames” uses a 3 character sequence or “Unique ID” in
+            order to identify each bot in the app and during service support.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="hexa_images rounded-3"
+            src="assets/products/hexa/bot_overview.png"
+            alt="Bot Overview"
+          />
+          <div class="d-flex flex-wrap">
+            <div
+              style="background-color: rgb(61, 114, 92)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              + Ensures visual differentiality between bots
+            </div>
+            <div
+              style="background-color: rgb(61, 114, 92)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              + Fully customizabile & memorable names
+            </div>
+
+            <div
+              style="background-color: rgb(61, 114, 92)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              + No distracting elements (images)
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="gap-80"></div>
       <h2 class="title">High Fidelity - UI</h2>
       <div class="gap-20"></div>
@@ -281,120 +304,182 @@
         Hexa doesn’t have to feel like that.
       </h4>
       <div class="gap-40"></div>
-      <h2 class="title">Colors</h2>
-      <p>
-        • Futuristic but not extraterrestrial and somewhere between green and
-        blue, the accent color helps push out the important information while
-        keeping a sleek aesthetic and neutrality. The use of gradient is in
-        style again but in a more serious and toned down style. Here, it’s used
-        to indicate progress; starting from a darker hue and ending into a
-        lighter tone, it implies movement and duration and since time management
-        is our most important asset in this product, it should also be clear
-        inside the app.
-      </p>
-      <div class="gap-60"></div>
-      <h2 class="title">Dark Mode</h2>
-      <p>
-        Blending in with the surroundings, dark mode follows the space’s dark
-        tint in order to harmonize the user's eyes with the environment.
-      </p>
-      <div class="d-flex flex-wrap">
-        <div
-          style="background-color: rgb(61, 114, 92)"
-          class="rounded-2 px-3 py-2 m-1"
-        >
-          + Information pops out easier
-        </div>
-        <div
-          style="background-color: rgb(61, 114, 92)"
-          class="rounded-2 px-3 py-2 m-1"
-        >
-          + Lower device battery consumption
-        </div>
 
-        <div
-          style="background-color: rgb(61, 114, 92)"
-          class="rounded-2 px-3 py-2 m-1"
-        >
-          + User focuses on the most important part of the colony, the almighty
-          Hexabots.
+      <div class="row g-4">
+        <div class="col-md-8">
+          <h2 class="title">Colors</h2>
+          <p style="text-align: justify">
+            Futuristic but not extraterrestrial and somewhere between green and
+            blue, the accent color helps push out the important information
+            while keeping a sleek <b>aesthetic</b> and <b>neutrality</b>. The
+            use of gradient is in style again but in a more serious and toned
+            down style. Here, it’s used to indicate progress; starting from a
+            darker hue and ending into a lighter tone, it implies
+            <b>movement</b> and duration and since time management is our most
+            important asset in this product, it should also be clear inside the
+            app.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="rounded-3"
+            style="
+              background: linear-gradient(45deg, #356074, #64c6da);
+              min-height: 300px;
+              height: auto;
+              max-height: 60vh;
+              width: 100%;
+              position: relative;
+            "
+          >
+            <p style="position: absolute; bottom: 0; left: 0; margin: 20px">
+              #356074
+            </p>
+            <p style="position: absolute; top: 0; right: 0; margin: 20px">
+              #64C6DA
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="gap-60"></div>
-      <h2 class="title">Typography</h2>
-      <p>
-        The key to an effective typography is to be readable while offering some
-        variety. That’s why Neue Regrade was the optimal choice combining easy
-        to read glyphs suitable for all text types (title, text, button) with a
-        subtle futuristic character in their design.
-      </p>
-      <div class="gap-40"></div>
-      <img
-        style="max-width: 400px; object-fit: cover"
-        src="assets/products/hexa/gethering.png"
-        alt=""
-      />
-      <div class="gap-60"></div>
-      <h2 class="title">Iconography</h2>
-      <p>
-        Icons convey meanings without text, that’s why they have to be as exact
-        as possible. An icon that misses its definition can be misinterpreted,
-        leading to unwanted results. That’s why in Hexa, icons were selected
-        based on familiarity, respecting the fast pace while using the app; easy
-        to understand icons are effective in faster user navigation and
-        satisfaction.
-      </p>
-      <div class="gap-40"></div>
-      <img
-        style="max-width: 400px; object-fit: cover"
-        src="assets/products/hexa/icons.png"
-        alt=""
-      />
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h2 class="title">Dark Mode</h2>
+          <p style="text-align: justify">
+            Blending in with the surroundings, dark mode follows the space’s
+            dark tint in order to harmonize the user's eyes with the
+            environment.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex flex-wrap">
+            <div
+              style="background-color: rgb(61, 114, 92)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              + Information pops out easier
+            </div>
+            <div
+              style="background-color: rgb(61, 114, 92)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              + Lower device battery consumption
+            </div>
 
-      <div class="gap-60"></div>
+            <div
+              style="background-color: rgb(61, 114, 92)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              + User focuses on the most important part of the colony, the
+              Hexabots.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-80"></div>
+      <div class="row g-4">
+        <div class="col-md-8">
+          <h2 class="title">Typography</h2>
+          <p style="text-align: justify">
+            The key to an effective typography is to be readable while offering
+            some variety. That’s why Neue Regrade was the optimal choice
+            combining easy to read glyphs suitable for all text types (title,
+            text, button) with a subtle futuristic character in their design.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="hexa_images"
+            style="max-width: 400px; object-fit: cover"
+            src="assets/products/hexa/gethering.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="gap-80"></div>
+      <div class="row g-4">
+        <div class="col-md-8">
+          <h2 class="title">Iconography</h2>
+          <p style="text-align: justify">
+            Icons convey meanings without text, that’s why they have to be as
+            exact as possible. An icon that misses its definition can be
+            misinterpreted, leading to unwanted results. That’s why in Hexa,
+            icons were selected based on familiarity, respecting the fast pace
+            while using the app; easy to understand icons are effective in
+            faster user navigation and satisfaction.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            style="max-width: 400px; object-fit: cover"
+            src="assets/products/hexa/icons.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="gap-80"></div>
       <h2 class="title">Q&A</h2>
-      <p>
-        <span class="subtitle">
-          Can you describe your experience of this small time frame? </span
-        ><br />
-        Four days was a really small time frame that made me value every second.
-        Focusing on all the parts of the brief was crucial while figuring out
-        the information hierarchy before everything else. I had to take
-        decisions in a short amount of time while making sure everything looked
-        and felt polished. I was anxious I wouldn’t have enough time to go
-        through my whole analysis of the brief and my design would have gaps
-        that the user could feel.<br /><br /><span class="subtitle">
-          What would you do if you had more time? </span
-        ><br />
-
-        If I had more time, I would focus more on the actual user experience.
-        Instead of taking so much time analyzing the brief, I would experiment
-        more on how the user interacts with the interface and how the user
-        scenario could become more fluent and aligned to the user’s persona. I
-        feel like the navigation has some gaps and points where the user is not
-        sure where to go next. So, having had more time, I would try to make a
-        better use of the navigation experience and what parts of the brief are
-        the most important for that.
-        <br /><br /><span class="subtitle"> What are you the proudest of? </span
-        ><br />
-
-        Being my first ever participation in a UI/UX design competition with so
-        many other honorable designers, I am proud that I even was a part of it.
-        Having the jury go through my work, actually taking time to analyze
-        every bit to see whether I would make it to top 40, made me very
-        confident about my skills. Also, I am very fond of constructing such a
-        interface is just four days! I really enjoying challenging myself for
-        things I love and I would say I felt very relieved with the final
-        results.
-        <br /><br /><span class="subtitle"> Final thoughts? </span><br />
-        Reflecting back on this project, I see myself really focused and excited
-        on this idea. Creating interfaces that are above all easy to use is
-        something I really enjoy doing. Also, the brief’s idea was something I
-        would never think of and it really pushed through my imagination.
-        Overall it was an exciting but stressful experience that challenged my
-        analyzing and designing skills to another level.
-      </p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <span class="subtitle">
+            Can you describe your experience of this small time frame? </span
+          ><br />
+          <p style="text-align: justify">
+            Four days was a really small time frame that made me value every
+            second. Focusing on all the parts of the brief was crucial while
+            figuring out the information hierarchy before everything else. I had
+            to take decisions in a short amount of time while making sure
+            everything looked and felt polished. I was anxious I wouldn’t have
+            enough time to go through my whole analysis of the brief and my
+            design would have gaps that the user could feel.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <span class="subtitle"> What would you do if you had more time? </span
+          ><br />
+          <p style="text-align: justify">
+            If I had more time, I would focus more on the actual user
+            experience. Instead of taking so much time analyzing the brief, I
+            would experiment more on how the user interacts with the interface
+            and how the user scenario could become more fluent and aligned to
+            the user’s persona. I feel like the navigation has some gaps and
+            points where the user is not sure where to go next. So, having had
+            more time, I would try to make a better use of the navigation
+            experience and what parts of the brief are the most important for
+            that.
+          </p>
+        </div>
+      </div>
+      <div class="gap-20"></div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <span class="subtitle"> What are you the proudest of? </span><br />
+          <p style="text-align: justify">
+            Being my first ever participation in a UI/UX design competition with
+            so many other honorable designers, I am proud that I even was a part
+            of it. Having the jury go through my work, actually taking time to
+            analyze every bit to see whether I would make it to top 40, made me
+            very confident about my skills. Also, I am very fond of constructing
+            such a interface is just four days! I really enjoying challenging
+            myself for things I love and I would say I felt very relieved with
+            the final results.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <span class="subtitle"> Final thoughts? </span><br />
+          <p style="text-align: justify">
+            Reflecting back on this project, I see myself really focused and
+            excited on this idea. Creating interfaces that are above all easy to
+            use is something I really enjoy doing. Also, the brief’s idea was
+            something I would never think of and it really pushed through my
+            imagination. Overall it was an exciting but stressful experience
+            that challenged my analyzing and designing skills to another level.
+          </p>
+        </div>
+      </div>
       <div class="gap-40"></div>
     </div>
   </body>
