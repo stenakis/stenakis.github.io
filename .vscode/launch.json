@@ -3,7 +3,6 @@
   "configurations": [
     {
       "type": "msedge",
-      "runtimeExecutable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
       "request": "launch",
       "name": "Open index.html",
       "file": "${userHome}\\Documents\\GitHub\\stenakis.github.io\\index.html"
