@@ -41,28 +41,49 @@ SplitText.create(".split_delayed", {
   },
 });
 
-// Line 1 and 3: Move Left
-gsap.to(".line-top .track", {
-  xPercent: -50,
-  ease: "none",
-  duration: 10,
-  repeat: -1
-});
+window.addEventListener("load", () => {
+  const masterTl = gsap.timeline();
 
-gsap.to(" .line-bottom .track", {
-  xPercent: -50,
-  ease: "none",
-  duration: 8,
-  repeat: -1
-});
+  // Transition from Loader to Content
+  masterTl
+    .to("#loader-wrapper", {
+      opacity: 0,
+      duration: 0.5,
+      onComplete: () => {
+        document.getElementById("loader-wrapper").style.display = "none";
+      },
+    })
+    .to(
+      "#main-content",
+      {
+        visibility: "visible",
+        opacity: 1,
+        duration: 0.8,
+        ease: "power2.out",
+      },
+      "-=0.3",
+    ); // Overlap slightly for smoothness
 
-// Line 2: Move Right (Inverted)
-// Note: We start at -50 and move to 0
-gsap.set(".line-middle .track", { xPercent: -50 });
+  // --- Your Existing Track Animations ---
+  gsap.to(".line-top .track", {
+    xPercent: -50,
+    ease: "none",
+    duration: 10,
+    repeat: -1,
+  });
 
-gsap.to(".line-middle .track", {
-  xPercent: 0,
-  ease: "none",
-  duration: 18,
-  repeat: -1
+  gsap.to(".line-bottom .track", {
+    xPercent: -50,
+    ease: "none",
+    duration: 8,
+    repeat: -1,
+  });
+
+  gsap.set(".line-middle .track", { xPercent: -50 });
+  gsap.to(".line-middle .track", {
+    xPercent: 0,
+    ease: "none",
+    duration: 18,
+    repeat: -1,
+  });
 });

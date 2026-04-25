@@ -48,709 +48,722 @@
     <script src="gsap_modules/SplitText.min.js"></script>
     <script src="gsap_modules/ScrollTrigger.min.js"></script>
     <script type="module" src="gsap_modules/gsap.js"></script>
-    <div class="row g-5 align-items-end mx-1 my-1">
-      <div class="col-md-6">
-        <img
-          src="assets/products/phase10/5000_downloads.jpg"
-          alt="Phase 10 Cover"
-          class="cover_style rounded-3"
-        />
-      </div>
-      <div class="col-md-6">
-        <h1 class="project_title">Phase 10 Assistant</h1>
-        <h3 class="project_desc">
-          Phase 10 Assistant is a unique approach on how you play Phase 10: the
-          physical card game. UI/UX project that turned into an Android & Web
-          app.
-        </h3>
-        <div class="gap-20"></div>
-        <div class="d-flex flex-wrap">
-          <div
-            style="background-color: var(--background_light)"
-            class="rounded-2 px-3 py-2 m-1"
-          >
-            Project type: UI/UX | Programming
-          </div>
-          <div
-            style="background-color: var(--background_light)"
-            class="rounded-2 px-3 py-2 m-1"
-          >
-            Timeline: 2021-today
-          </div>
-          <div
-            style="background-color: var(--background_light)"
-            class="rounded-2 px-3 py-2 m-1"
-          >
-            Tools used: Figma, Android Studio
-          </div>
-        </div>
 
-        <div class="gap-40"></div>
-        <div
-          class="d-flex flex-column flex-md-row gap-4 mx-auto align-items-start"
-        >
-          <a
-            href="https://play.google.com/store/apps/details?id=com.safehouse.phase10assistant"
-            target="_blank"
-          >
-            <img
-              src="assets/products/phase10/button_1.png"
-              alt="PlayStore icon"
-              style="max-height: 50px; width: 100%; object-fit: contain"
-            />
-          </a>
-
-          <a href="https://phase-10-assistant.web.app/" target="_blank">
-            <img
-              src="assets/products/phase10/button_2.png"
-              alt="PlayStore icon"
-              style="max-height: 50px; width: 100%; object-fit: contain"
-            />
-          </a>
-        </div>
-      </div>
+    <div id="loader-wrapper">
+      <div class="circular-loader"></div>
     </div>
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
-      <div class="gap-80"></div>
-      <div class="gap-80"></div>
-      <div class="row g-5 align-items-end">
-        <div class="col-md-7" style="max-height: 70vh">
-          <img
-            style="margin: 0; padding: 0; max-height: 70vh; object-fit: contain"
-            src="assets/products/phase10/card_1.png"
-            class="img-fluid"
-            alt="Card_1"
-          />
-        </div>
-        <div class="col-md-5">
-          <h2 class="gradient-text">A new approach on card games</h2>
-          <div class="gap-20"></div>
-          <p>
-            Phase 10 Assistant its all about elevating your current physical
-            card game experience. Just some extra tools to make your Friday
-            night with friends, even more fun!
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="gap-60"></div>
-    <img
-      class="w-100"
-      style="min-height: 400px; object-fit: cover"
-      src="assets/products/phase10/modes.png"
-      alt="Card_2"
-    />
 
-    <div class="gap-60"></div>
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
-      <div class="row g-4">
-        <div class="col-md-6">
-          <h2 class="gradient-text">see your score in every phase</h2>
-          <br />
-          <p>
-            See your phase, points and what you need to discard each phase. No
-            more trying to find that paper where you wrote the phases! Sabotage
-            the others by discarding cards they don’t want!
-          </p>
-        </div>
-        <div class="col-md-6" style="max-height: 70vh">
-          <img
-            class="w-100"
-            style="max-height: 70vh; object-fit: contain"
-            src="assets/products/phase10/score.png"
-            alt="Score"
-          />
-        </div>
-      </div>
-      <div class="gap-60"></div>
-      <div class="gap-60"></div>
-      <div class="row g-4">
-        <div class="col-md-6" style="max-height: 70vh">
-          <img
-            class="img-fluid w-100"
-            src="assets/products/phase10/own_modes.png"
-            alt="Own modes"
-          />
-        </div>
-        <div class="col-md-6" style="max-height: 70vh">
-          <img
-            class="img-fluid w-100"
-            src="assets/products/phase10/own_modes_2.png"
-            alt="Own modes"
-          />
-        </div>
-      </div>
-      <div class="gap-60"></div>
-      <div class="gap-60"></div>
-      <h2 class="gradient-text">designed to give meaning to every game</h2>
-      <p>get competitive to claim the golden medal!</p>
-      <div class="gap-40"></div>
-      <img
-        class="w-100 img-fluid"
-        style="max-height: 60vh; object-fit: contain"
-        src="assets/products/phase10/players.png"
-        alt="Players"
-      />
-      <div class="gap-60"></div>
-      <div class="gap-60"></div>
-      <div class="row g-4">
+    <div id="main-content">
+      <div class="row g-5 align-items-end mx-1 my-1">
         <div class="col-md-6">
           <img
-            style="
-              max-height: 10vh;
-              object-fit: contain;
-              display: block;
-              width: auto;
-              max-width: 100%;
-
-              max-height: 60vh;
-              margin-left: 0;
-              margin-right: auto;
-            "
-            src="assets/products/phase10/generated_star.png"
-            alt="Generate mdoes logo"
-          />
-          <h2>
-            Experiment with <span class="gradient-text">Generated modes</span>
-          </h2>
-        </div>
-        <div class="col-md-6">
-          <img
-            class="w-100 img-fluid"
-            style="max-height: 30vh; object-fit: contain"
-            src="assets/products/phase10/generated_modes.png"
-            alt="Players"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="gap-20"></div>
-    <img
-      class="w-100 object-fit-cover img-fluid"
-      src="assets/products/phase10/keywords.png"
-      alt="Card_2"
-    />
-    <div class="gap-60"></div>
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div
-            style="background-color: var(--background_light); padding: 30px"
-            class="rounded-3"
-          >
-            <h3 class="gradient-text">Problem</h3>
-            <p>
-              Existing Phase 10 helper apps offer only rudimentary features,
-              lacking enhancements that elevate the overall gaming experience.
-              These applications often suffer from cumbersome usability due to
-              poorly designed user interfaces and subpar user experience models.
-            </p>
-            <div class="gap-20"></div>
-            <div class="d-flex flex-wrap">
-              <div
-                style="background-color: rgb(114, 61, 61)"
-                class="rounded-2 px-3 py-2 m-1"
-              >
-                - Poor user experience
-              </div>
-              <div
-                style="background-color: rgb(114, 61, 61)"
-                class="rounded-2 px-3 py-2 m-1"
-              >
-                - Few basic features
-              </div>
-              <div
-                style="background-color: rgb(114, 61, 61)"
-                class="rounded-2 px-3 py-2 m-1"
-              >
-                - No creativity factors
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            style="background-color: var(--background_light); padding: 30px"
-            class="rounded-3"
-          >
-            <h3 class="gradient-text">Solution</h3>
-            <p>
-              Fresh and visually appealing aesthetic, incorporating game-suiting
-              colors to evoke a sense of immersion and engagement. By
-              integrating original user-focused features, the design aims to
-              enhance the overall gameplay experience, fostering greater
-              interactivity.
-            </p>
-            <div class="gap-20"></div>
-            <div class="d-flex flex-wrap">
-              <div
-                style="background-color: rgb(61, 114, 92)"
-                class="rounded-2 px-3 py-2 m-1"
-              >
-                + Creativity options
-              </div>
-              <div
-                style="background-color: rgb(61, 114, 92)"
-                class="rounded-2 px-3 py-2 m-1"
-              >
-                + Engaging interface
-              </div>
-              <div
-                style="background-color: rgb(61, 114, 92)"
-                class="rounded-2 px-3 py-2 m-1"
-              >
-                + Original features
-              </div>
-              <div
-                style="background-color: rgb(61, 114, 92)"
-                class="rounded-2 px-3 py-2 m-1"
-              >
-                + User experience improvements
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <h2 class="gradient-text">Typography & Colors</h2>
-      <div class="gap-40"></div>
-      <div class="row g-4">
-        <div class="col-md-8">
-          <p>Title - 20pt</p>
-          <p style="font-size: 20pt; font-weight: 500">This is Gabarito</p>
-          <div class="gap-20"></div>
-          <p>Heading - 30pt</p>
-          <p style="font-size: 40pt; font-weight: 500">Biiiiig Title</p>
-          <div class="gap-20"></div>
-          <p>Input - 40pt</p>
-          <p style="line-height: 80px; font-size: 55pt; font-weight: 500">
-            Phase 10 Assistant
-          </p>
-        </div>
-        <div class="col-md-4">
-          <div
-            class="rounded-3"
-            style="
-              background: linear-gradient(45deg, #fcbc98, #989cdc);
-              min-height: 300px;
-              height: auto;
-              max-height: 60vh;
-              width: 100%;
-              position: relative;
-            "
-          >
-            <p style="position: absolute; bottom: 0; left: 0; margin: 20px">
-              #FCBC98
-            </p>
-            <p style="position: absolute; top: 0; right: 0; margin: 20px">
-              #989CDC
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <div class="row g-4">
-        <div class="col-md-5">
-          <h2 class="gradient-text">Icons</h2>
-          <p>
-            Shadow icons are used in larger scale and often alone. They can be
-            found in main pages and have a decorative means.<br />Gradient icons
-            work as a group and are easier to read. They exist in buttons,
-            context menus etc. and complete the meaning of text..
-          </p>
-        </div>
-        <div class="col-md-7">
-          <img
-            class="project_images"
-            src="assets/products/phase10/icons.png"
-            alt="Icons"
-          />
-        </div>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <h3 class="gradient-text">Target Audience</h3>
-      <div class="col-md-8">
-        <p style="text-align: justify">
-          Phase 10 is a universally inclusive card game suitable for families
-          and groups of friends. While appealing to a diverse demographic, the
-          primary player base typically falls within the age range of 12 to 65
-          years. This demographic exhibits a propensity for critical thinking
-          and strategic organization, attributes integral to success in the
-          game. From a design perspective, this necessitates a user interface
-          and navigation system that seamlessly accommodates players of all
-          ages. Ensuring a universally accessible and enjoyable experience
-          across this broad age spectrum is paramount to the game's design
-          objectives.
-        </p>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <h3 class="gradient-text">Competition</h3>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="d-flex align-items-center">
-            <img
-              style="
-                height: 65px;
-                width: 65px;
-                object-fit: cover;
-                margin: 0;
-                padding: 0;
-              "
-              src="assets/products/phase10/competition_1.png"
-              alt=""
-            />
-            <div style="width: 20px"></div>
-            <div>
-              <h4>Phase10 Counter</h4>
-              <p>Giannis Alevizakis</p>
-            </div>
-          </div>
-          <p>
-            Overall a very simple app that does its job very effectively with
-            little to no bugs and is very easy to use and navigate. It doesn’t
-            feature anything fancy, but it’s very user friendly and simple for
-            new players.
-          </p>
-          <br />
-          <p>
-            + The first and simpler app for calculating game points<br />
-            + Very simple user interface<br />
-            + Offers useful tools such as sort players according to their place
-            and game rules<br />
-            ~ Everything is represented by text, can get very tiring<br />
-            ~ Limited to the original game mode<br />
-            ~ Little information hierarchy - can create visual confusion
-          </p>
-        </div>
-        <div class="col-md-6">
-          <div class="d-flex align-items-center">
-            <img
-              style="
-                height: 65px;
-                width: 65px;
-                object-fit: cover;
-                margin: 0;
-                padding: 0;
-              "
-              src="assets/products/phase10/competition_2.png"
-              alt=""
-            />
-            <div style="width: 20px"></div>
-            <div>
-              <h4>Phase 10 Scoreboard</h4>
-              <p>Matrix_Developer</p>
-            </div>
-          </div>
-          <p>
-            Well designed app but lacks in user experience. After using it a
-            couple times, I couldn’t understand how most features work, which
-            led to disatisfaction.
-          </p>
-          <br />
-          <p>
-            + Interesting visual identity with bold colors and many visual cues
-            instead of text<br />
-            + Useful tools such as edit player points, skip phase and dealer
-            indication<br />
-            ~ Confusing navigation, lagging animations and overall poor user
-            experience
-          </p>
-        </div>
-      </div>
-      <div class="gap-40"></div>
-      <div class="col-md-8">
-        <p style="text-align: justify">
-          Because the market is still not saturated by this type of apps, there
-          was still time to create a better product without sacrificing on
-          features that have already been implemented by other creators. By
-          examining the competitors, I was able to distinguish what the market
-          needed as well as what could be improved from the existing products.
-          Also, I could see their way of implementing different features and
-          whether they were successful or not from the feedback they got, from
-          Google Play reviews. In this way, a healthy competition is created
-          where every product is benefited from its competitors and each creator
-          tries to level up their product by trying to overcome problems and
-          difficulties faced by the others.
-        </p>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <img
-        style="
-          max-height: 10vh;
-          margin: 0;
-          padding: 0;
-          object-fit: cover;
-          width: auto;
-        "
-        src="assets/products/phase10/keywords_logo.svg"
-        alt=""
-      />
-      <div class="gap-10"></div>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div
-            style="background-color: var(--background_light); padding: 30px"
-            class="rounded-3"
-          >
-            <h3 class="gradient-text">Problem</h3>
-            <p>
-              Every round’s objective is described by a small sentence showing
-              which cards the player has to discard. The game’s official rules
-              include a special card with small cards and numbers. While it is
-              successful on print, it can often lead to interface clutter when
-              it comes to digital applications. As humans tend scan, instead of
-              reading, it was proven necessary to find a new way to show these
-              objectives.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            style="background-color: var(--background_light); padding: 30px"
-            class="rounded-3"
-          >
-            <h3 class="gradient-text">Solution</h3>
-            <p>
-              The solution came from the players’ feedback; it was focused on
-              using a single word and a number to describe a while sentence. As
-              the sentences used a special vocabulary, players were already
-              familiar with some terms which were used in the new design system
-              - called “Keywords”. These short codes break the objective is
-              smaller ones by using three things: the special vocabulary, the
-              existence or absence of color and a number.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="gap-60"></div>
-      <div class="row g-5">
-        <div class="col-md-8">
-          <div class="row g-2 justify-content-start">
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_1.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_2.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_3.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_4.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_5.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_6.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_7.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_8.png"
-              alt=""
-            />
-            <img
-              style="
-                height: 25px;
-                width: auto;
-                margin: initial;
-                padding-right: 15px;
-                margin-bottom: 15px;
-              "
-              src="assets/products/phase10/keyword_9.png"
-              alt=""
-            />
-          </div>
-          <div class="gap-20"></div>
-          <p style="text-align: justify">
-            Although at first hesitant, the players eventually got used to the
-            new “keywords” system and found it surprisingly convenient
-            especially when dealing with challenging objectives. This design
-            system also allowed the introduction of a new unofficial “keyword”
-            in the game. Instead of writing “2 numbers of each of the 4 colors”
-            which can get really messy, the players are met simply with a
-            colored “Each”.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <p><i>A set of four and a row of three of the same color</i></p>
-          <div class="gap-20"></div>
-          <img
-            class="project_images"
-            style="max-width: 50%"
-            src="assets/products/phase10/keywords_example.png"
-            alt=""
-          />
-          <div class="gap-20"></div>
-          <p>
-            As these sentences tend to become boring, it was necessary to depict
-            the same meaning with a different means. That’s why with these
-            “keywords”, these phrases got simplified down to a number and a
-            word. The sentence above can very easily be written as 4SET & 3COLOR
-            while maintaining the same meaning
-          </p>
-        </div>
-      </div>
-
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <div class="row g-4">
-        <div class="col-md-8">
-          <img
-            style="
-              max-height: 10vh;
-              margin: 0;
-              padding: 0;
-              object-fit: cover;
-              width: auto;
-            "
-            src="assets/products/phase10/rooms_logo.svg"
-            alt=""
-          />
-          <div class="gap-20"></div>
-          <div
-            style="background-color: var(--background_light); padding: 30px"
-            class="rounded-3"
-          >
-            <h3 class="gradient-text">Problem</h3>
-            <p>
-              Before the game starts, a player has to be the one that takes down
-              the score, as in many other physical card games. In Phase 10, at
-              the end of each round, apart from points, a special variable,
-              which indicates the player’s objective for the next round and
-              counts towards their victory, has to be taken down. When many
-              players are playing the game, this can lead to errors and
-              confusion as this variable has change many times for every player
-              throughout the game.
-            </p>
-          </div>
-          <div class="gap-20"></div>
-          <div
-            style="background-color: var(--background_light); padding: 30px"
-            class="rounded-3"
-          >
-            <h3 class="gradient-text">Solution</h3>
-            <p>
-              With the “Rooms” feature, every player can take down their score
-              from their own device. A host player can select a game mode and
-              create a Room which the other players can join through a mutual
-              server. From there, everyone can only change their own score at
-              the end of each round while seeing their co-players score.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="assets/products/phase10/screen_rooms.png"
+            src="assets/products/phase10/5000_downloads.jpg"
             alt="Phase 10 Cover"
-            style="max-height: 80vh; width: auto"
+            class="cover_style rounded-3"
           />
         </div>
+        <div class="col-md-6">
+          <h1 class="project_title">Phase 10 Assistant</h1>
+          <h3 class="project_desc">
+            Phase 10 Assistant is a unique approach on how you play Phase 10:
+            the physical card game. UI/UX project that turned into an Android &
+            Web app.
+          </h3>
+          <div class="gap-20"></div>
+          <div class="d-flex flex-wrap">
+            <div
+              style="background-color: var(--background_light)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              Project type: UI/UX | Programming
+            </div>
+            <div
+              style="background-color: var(--background_light)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              Timeline: 2021-today
+            </div>
+            <div
+              style="background-color: var(--background_light)"
+              class="rounded-2 px-3 py-2 m-1"
+            >
+              Tools used: Figma, Android Studio
+            </div>
+          </div>
+
+          <div class="gap-40"></div>
+          <div
+            class="d-flex flex-column flex-md-row gap-4 mx-auto align-items-start"
+          >
+            <a
+              href="https://play.google.com/store/apps/details?id=com.safehouse.phase10assistant"
+              target="_blank"
+            >
+              <img
+                src="assets/products/phase10/button_1.png"
+                alt="PlayStore icon"
+                style="max-height: 50px; width: 100%; object-fit: contain"
+              />
+            </a>
+
+            <a href="https://phase-10-assistant.web.app/" target="_blank">
+              <img
+                src="assets/products/phase10/button_2.png"
+                alt="PlayStore icon"
+                style="max-height: 50px; width: 100%; object-fit: contain"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+        <div class="gap-80"></div>
+        <div class="gap-80"></div>
+        <div class="row g-5 align-items-end">
+          <div class="col-md-7" style="max-height: 70vh">
+            <img
+              style="
+                margin: 0;
+                padding: 0;
+                max-height: 70vh;
+                object-fit: contain;
+              "
+              src="assets/products/phase10/card_1.png"
+              class="img-fluid"
+              alt="Card_1"
+            />
+          </div>
+          <div class="col-md-5">
+            <h2 class="gradient-text">A new approach on card games</h2>
+            <div class="gap-20"></div>
+            <p>
+              Phase 10 Assistant its all about elevating your current physical
+              card game experience. Just some extra tools to make your Friday
+              night with friends, even more fun!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="gap-60"></div>
+      <img
+        class="w-100"
+        style="min-height: 400px; object-fit: cover"
+        src="assets/products/phase10/modes.png"
+        alt="Card_2"
+      />
+
+      <div class="gap-60"></div>
+      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h2 class="gradient-text">see your score in every phase</h2>
+            <br />
+            <p>
+              See your phase, points and what you need to discard each phase. No
+              more trying to find that paper where you wrote the phases!
+              Sabotage the others by discarding cards they don’t want!
+            </p>
+          </div>
+          <div class="col-md-6" style="max-height: 70vh">
+            <img
+              class="w-100"
+              style="max-height: 70vh; object-fit: contain"
+              src="assets/products/phase10/score.png"
+              alt="Score"
+            />
+          </div>
+        </div>
+        <div class="gap-60"></div>
+        <div class="gap-60"></div>
+        <div class="row g-4">
+          <div class="col-md-6" style="max-height: 70vh">
+            <img
+              class="img-fluid w-100"
+              src="assets/products/phase10/own_modes.png"
+              alt="Own modes"
+            />
+          </div>
+          <div class="col-md-6" style="max-height: 70vh">
+            <img
+              class="img-fluid w-100"
+              src="assets/products/phase10/own_modes_2.png"
+              alt="Own modes"
+            />
+          </div>
+        </div>
+        <div class="gap-60"></div>
+        <div class="gap-60"></div>
+        <h2 class="gradient-text">designed to give meaning to every game</h2>
+        <p>get competitive to claim the golden medal!</p>
+        <div class="gap-40"></div>
+        <img
+          class="w-100 img-fluid"
+          style="max-height: 60vh; object-fit: contain"
+          src="assets/products/phase10/players.png"
+          alt="Players"
+        />
+        <div class="gap-60"></div>
+        <div class="gap-60"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              style="
+                max-height: 10vh;
+                object-fit: contain;
+                display: block;
+                width: auto;
+                max-width: 100%;
+
+                max-height: 60vh;
+                margin-left: 0;
+                margin-right: auto;
+              "
+              src="assets/products/phase10/generated_star.png"
+              alt="Generate mdoes logo"
+            />
+            <h2>
+              Experiment with <span class="gradient-text">Generated modes</span>
+            </h2>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="w-100 img-fluid"
+              style="max-height: 30vh; object-fit: contain"
+              src="assets/products/phase10/generated_modes.png"
+              alt="Players"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="gap-20"></div>
+      <img
+        class="w-100 object-fit-cover img-fluid"
+        src="assets/products/phase10/keywords.png"
+        alt="Card_2"
+      />
+      <div class="gap-60"></div>
+      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3 class="gradient-text">Problem</h3>
+              <p>
+                Existing Phase 10 helper apps offer only rudimentary features,
+                lacking enhancements that elevate the overall gaming experience.
+                These applications often suffer from cumbersome usability due to
+                poorly designed user interfaces and subpar user experience
+                models.
+              </p>
+              <div class="gap-20"></div>
+              <div class="d-flex flex-wrap">
+                <div
+                  style="background-color: rgb(114, 61, 61)"
+                  class="rounded-2 px-3 py-2 m-1"
+                >
+                  - Poor user experience
+                </div>
+                <div
+                  style="background-color: rgb(114, 61, 61)"
+                  class="rounded-2 px-3 py-2 m-1"
+                >
+                  - Few basic features
+                </div>
+                <div
+                  style="background-color: rgb(114, 61, 61)"
+                  class="rounded-2 px-3 py-2 m-1"
+                >
+                  - No creativity factors
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3 class="gradient-text">Solution</h3>
+              <p>
+                Fresh and visually appealing aesthetic, incorporating
+                game-suiting colors to evoke a sense of immersion and
+                engagement. By integrating original user-focused features, the
+                design aims to enhance the overall gameplay experience,
+                fostering greater interactivity.
+              </p>
+              <div class="gap-20"></div>
+              <div class="d-flex flex-wrap">
+                <div
+                  style="background-color: rgb(61, 114, 92)"
+                  class="rounded-2 px-3 py-2 m-1"
+                >
+                  + Creativity options
+                </div>
+                <div
+                  style="background-color: rgb(61, 114, 92)"
+                  class="rounded-2 px-3 py-2 m-1"
+                >
+                  + Engaging interface
+                </div>
+                <div
+                  style="background-color: rgb(61, 114, 92)"
+                  class="rounded-2 px-3 py-2 m-1"
+                >
+                  + Original features
+                </div>
+                <div
+                  style="background-color: rgb(61, 114, 92)"
+                  class="rounded-2 px-3 py-2 m-1"
+                >
+                  + User experience improvements
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h2 class="gradient-text">Typography & Colors</h2>
+        <div class="gap-40"></div>
+        <div class="row g-4">
+          <div class="col-md-8">
+            <p>Title - 20pt</p>
+            <p style="font-size: 20pt; font-weight: 500">This is Gabarito</p>
+            <div class="gap-20"></div>
+            <p>Heading - 30pt</p>
+            <p style="font-size: 40pt; font-weight: 500">Biiiiig Title</p>
+            <div class="gap-20"></div>
+            <p>Input - 40pt</p>
+            <p style="line-height: 80px; font-size: 55pt; font-weight: 500">
+              Phase 10 Assistant
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="rounded-3"
+              style="
+                background: linear-gradient(45deg, #fcbc98, #989cdc);
+                min-height: 300px;
+                height: auto;
+                max-height: 60vh;
+                width: 100%;
+                position: relative;
+              "
+            >
+              <p style="position: absolute; bottom: 0; left: 0; margin: 20px">
+                #FCBC98
+              </p>
+              <p style="position: absolute; top: 0; right: 0; margin: 20px">
+                #989CDC
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <div class="row g-4">
+          <div class="col-md-5">
+            <h2 class="gradient-text">Icons</h2>
+            <p>
+              Shadow icons are used in larger scale and often alone. They can be
+              found in main pages and have a decorative means.<br />Gradient
+              icons work as a group and are easier to read. They exist in
+              buttons, context menus etc. and complete the meaning of text..
+            </p>
+          </div>
+          <div class="col-md-7">
+            <img
+              class="project_images"
+              src="assets/products/phase10/icons.png"
+              alt="Icons"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3 class="gradient-text">Target Audience</h3>
+        <div class="col-md-8">
+          <p style="text-align: justify">
+            Phase 10 is a universally inclusive card game suitable for families
+            and groups of friends. While appealing to a diverse demographic, the
+            primary player base typically falls within the age range of 12 to 65
+            years. This demographic exhibits a propensity for critical thinking
+            and strategic organization, attributes integral to success in the
+            game. From a design perspective, this necessitates a user interface
+            and navigation system that seamlessly accommodates players of all
+            ages. Ensuring a universally accessible and enjoyable experience
+            across this broad age spectrum is paramount to the game's design
+            objectives.
+          </p>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3 class="gradient-text">Competition</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center">
+              <img
+                style="
+                  height: 65px;
+                  width: 65px;
+                  object-fit: cover;
+                  margin: 0;
+                  padding: 0;
+                "
+                src="assets/products/phase10/competition_1.png"
+                alt=""
+              />
+              <div style="width: 20px"></div>
+              <div>
+                <h4>Phase10 Counter</h4>
+                <p>Giannis Alevizakis</p>
+              </div>
+            </div>
+            <p>
+              Overall a very simple app that does its job very effectively with
+              little to no bugs and is very easy to use and navigate. It doesn’t
+              feature anything fancy, but it’s very user friendly and simple for
+              new players.
+            </p>
+            <br />
+            <p>
+              + The first and simpler app for calculating game points<br />
+              + Very simple user interface<br />
+              + Offers useful tools such as sort players according to their
+              place and game rules<br />
+              ~ Everything is represented by text, can get very tiring<br />
+              ~ Limited to the original game mode<br />
+              ~ Little information hierarchy - can create visual confusion
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center">
+              <img
+                style="
+                  height: 65px;
+                  width: 65px;
+                  object-fit: cover;
+                  margin: 0;
+                  padding: 0;
+                "
+                src="assets/products/phase10/competition_2.png"
+                alt=""
+              />
+              <div style="width: 20px"></div>
+              <div>
+                <h4>Phase 10 Scoreboard</h4>
+                <p>Matrix_Developer</p>
+              </div>
+            </div>
+            <p>
+              Well designed app but lacks in user experience. After using it a
+              couple times, I couldn’t understand how most features work, which
+              led to disatisfaction.
+            </p>
+            <br />
+            <p>
+              + Interesting visual identity with bold colors and many visual
+              cues instead of text<br />
+              + Useful tools such as edit player points, skip phase and dealer
+              indication<br />
+              ~ Confusing navigation, lagging animations and overall poor user
+              experience
+            </p>
+          </div>
+        </div>
+        <div class="gap-40"></div>
+        <div class="col-md-8">
+          <p style="text-align: justify">
+            Because the market is still not saturated by this type of apps,
+            there was still time to create a better product without sacrificing
+            on features that have already been implemented by other creators. By
+            examining the competitors, I was able to distinguish what the market
+            needed as well as what could be improved from the existing products.
+            Also, I could see their way of implementing different features and
+            whether they were successful or not from the feedback they got, from
+            Google Play reviews. In this way, a healthy competition is created
+            where every product is benefited from its competitors and each
+            creator tries to level up their product by trying to overcome
+            problems and difficulties faced by the others.
+          </p>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <img
+          style="
+            max-height: 10vh;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+            width: auto;
+          "
+          src="assets/products/phase10/keywords_logo.svg"
+          alt=""
+        />
+        <div class="gap-10"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3 class="gradient-text">Problem</h3>
+              <p>
+                Every round’s objective is described by a small sentence showing
+                which cards the player has to discard. The game’s official rules
+                include a special card with small cards and numbers. While it is
+                successful on print, it can often lead to interface clutter when
+                it comes to digital applications. As humans tend scan, instead
+                of reading, it was proven necessary to find a new way to show
+                these objectives.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3 class="gradient-text">Solution</h3>
+              <p>
+                The solution came from the players’ feedback; it was focused on
+                using a single word and a number to describe a while sentence.
+                As the sentences used a special vocabulary, players were already
+                familiar with some terms which were used in the new design
+                system - called “Keywords”. These short codes break the
+                objective is smaller ones by using three things: the special
+                vocabulary, the existence or absence of color and a number.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gap-60"></div>
+        <div class="row g-5">
+          <div class="col-md-8">
+            <div class="row g-2 justify-content-start">
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_1.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_2.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_3.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_4.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_5.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_6.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_7.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_8.png"
+                alt=""
+              />
+              <img
+                style="
+                  height: 25px;
+                  width: auto;
+                  margin: initial;
+                  padding-right: 15px;
+                  margin-bottom: 15px;
+                "
+                src="assets/products/phase10/keyword_9.png"
+                alt=""
+              />
+            </div>
+            <div class="gap-20"></div>
+            <p style="text-align: justify">
+              Although at first hesitant, the players eventually got used to the
+              new “keywords” system and found it surprisingly convenient
+              especially when dealing with challenging objectives. This design
+              system also allowed the introduction of a new unofficial “keyword”
+              in the game. Instead of writing “2 numbers of each of the 4
+              colors” which can get really messy, the players are met simply
+              with a colored “Each”.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p><i>A set of four and a row of three of the same color</i></p>
+            <div class="gap-20"></div>
+            <img
+              class="project_images"
+              style="max-width: 50%"
+              src="assets/products/phase10/keywords_example.png"
+              alt=""
+            />
+            <div class="gap-20"></div>
+            <p>
+              As these sentences tend to become boring, it was necessary to
+              depict the same meaning with a different means. That’s why with
+              these “keywords”, these phrases got simplified down to a number
+              and a word. The sentence above can very easily be written as 4SET
+              & 3COLOR while maintaining the same meaning
+            </p>
+          </div>
+        </div>
+
         <div class="gap-80"></div>
         <div class="gap-40"></div>
         <div class="row g-4">
           <div class="col-md-8">
-            <h2 class="gradient-text">An Extra Takeaway</h2>
-            <p style="text-align: justify">
-              In order to improve the overall user experience when using Rooms,
-              players would first join a Room and then vote which mode they
-              would like to play, instead of having a host which decides from
-              the start, and has to re-create a room if the player’s choose
-              another mode.<br /><br />While in paper, this sounds a great idea,
-              in reality it creates some major user experience issues. The app’s
-              structure focuses on the different types of available game modes,
-              each of them belonging to a specific group according to ts
-              creation parameters (who created it, how long it will be
-              available, mode familiarity etc.).<br /><br />In order for the
-              players to select a mode after entering a Room, all modes would
-              have to be unified into one page where the players would select
-              their desired one. Problem rises in the unification model which
-              would confuse users about each mode’s category. All modes would
-              look the same and the users would find it extremely hard to find
-              their desired mode.
-            </p>
+            <img
+              style="
+                max-height: 10vh;
+                margin: 0;
+                padding: 0;
+                object-fit: cover;
+                width: auto;
+              "
+              src="assets/products/phase10/rooms_logo.svg"
+              alt=""
+            />
+            <div class="gap-20"></div>
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3 class="gradient-text">Problem</h3>
+              <p>
+                Before the game starts, a player has to be the one that takes
+                down the score, as in many other physical card games. In Phase
+                10, at the end of each round, apart from points, a special
+                variable, which indicates the player’s objective for the next
+                round and counts towards their victory, has to be taken down.
+                When many players are playing the game, this can lead to errors
+                and confusion as this variable has change many times for every
+                player throughout the game.
+              </p>
+            </div>
+            <div class="gap-20"></div>
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3 class="gradient-text">Solution</h3>
+              <p>
+                With the “Rooms” feature, every player can take down their score
+                from their own device. A host player can select a game mode and
+                create a Room which the other players can join through a mutual
+                server. From there, everyone can only change their own score at
+                the end of each round while seeing their co-players score.
+              </p>
+            </div>
           </div>
           <div class="col-md-4">
             <img
-              src="assets/products/phase10/extra_takeaway.png"
+              src="assets/products/phase10/screen_rooms.png"
               alt="Phase 10 Cover"
-              class="rounded-3"
               style="max-height: 80vh; width: auto"
             />
           </div>
+          <div class="gap-80"></div>
+          <div class="gap-40"></div>
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h2 class="gradient-text">An Extra Takeaway</h2>
+              <p style="text-align: justify">
+                In order to improve the overall user experience when using
+                Rooms, players would first join a Room and then vote which mode
+                they would like to play, instead of having a host which decides
+                from the start, and has to re-create a room if the player’s
+                choose another mode.<br /><br />While in paper, this sounds a
+                great idea, in reality it creates some major user experience
+                issues. The app’s structure focuses on the different types of
+                available game modes, each of them belonging to a specific group
+                according to ts creation parameters (who created it, how long it
+                will be available, mode familiarity etc.).<br /><br />In order
+                for the players to select a mode after entering a Room, all
+                modes would have to be unified into one page where the players
+                would select their desired one. Problem rises in the unification
+                model which would confuse users about each mode’s category. All
+                modes would look the same and the users would find it extremely
+                hard to find their desired mode.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="assets/products/phase10/extra_takeaway.png"
+                alt="Phase 10 Cover"
+                class="rounded-3"
+                style="max-height: 80vh; width: auto"
+              />
+            </div>
+          </div>
+          <div class="gap-40"></div>
         </div>
-        <div class="gap-40"></div>
       </div>
     </div>
   </body>
