@@ -65,25 +65,27 @@ window.addEventListener("load", () => {
     ); // Overlap slightly for smoothness
 
   // --- Your Existing Track Animations ---
-  gsap.to(".line-top .track", {
-    xPercent: -50,
-    ease: "none",
-    duration: 10,
-    repeat: -1,
+  document.querySelectorAll(".track").forEach((track) => {
+    track.innerHTML += track.innerHTML;
   });
+  // Top line: scrolls left
+  gsap.fromTo(
+    ".line-top .track",
+    { xPercent: 0 },
+    { xPercent: -50, ease: "none", duration: 12, repeat: -1 },
+  );
 
-  gsap.to(".line-bottom .track", {
-    xPercent: -50,
-    ease: "none",
-    duration: 8,
-    repeat: -1,
-  });
+  // Bottom line: scrolls left, different speed
+  gsap.fromTo(
+    ".line-bottom .track",
+    { xPercent: 0 },
+    { xPercent: -50, ease: "none", duration: 16, repeat: -1 },
+  );
 
-  gsap.set(".line-middle .track", { xPercent: -50 });
-  gsap.to(".line-middle .track", {
-    xPercent: 0,
-    ease: "none",
-    duration: 18,
-    repeat: -1,
-  });
+  // Middle line: scrolls RIGHT (opposite direction)
+  gsap.fromTo(
+    ".line-middle .track",
+    { xPercent: -50 },
+    { xPercent: 0, ease: "none", duration: 24, repeat: -1 },
+  );
 });
