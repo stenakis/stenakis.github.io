@@ -61,6 +61,62 @@
         padding-left: 20px;
         padding-right: 20px;
       }
+
+      .card {
+        perspective: 1000px;
+        cursor: pointer;
+        position: absolute; /* NEW: establishes containing block */
+        width: 350px; /* moved from .card-front */
+        height: 400px; /* moved from .card-front */
+        top: -70px; /* moved from .card-front */
+        right: 70px; /* moved from .card-front */
+        transform: rotate(5deg);
+        background-color: var(--background);
+      }
+
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .card-front,
+      .card-back {
+        position: absolute;
+        inset: 0; /* NEW: replaces width/height 100% + fills all 4 edges */
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        overflow: hidden; /* NEW: clips image to card shape */
+      }
+
+      .card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* moved here — object-fit only works on img/video */
+        border-radius: 0.5rem;
+        position: static; /* removed position: absolute and z-n1 */
+      }
+
+      .card-back {
+        background: var(--background_light);
+        color: white;
+        transform: rotateY(180deg);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 1.5rem;
+      }
     </style>
   </head>
 
@@ -75,73 +131,17 @@
       <div class="circular-loader"></div>
     </div>
     <div id="main-content">
+      <div class="gap-20"></div>
       <div
-        style="
-          background: var(--background);
-          position: sticky;
-          top: 0;
-          height: 70px;
-          z-index: 100;
-        "
+        class="d-flex justify-content-between px-4 mx-auto"
+        style="max-width: var(--max_width); height: 100%"
       >
-        <div
-          class="d-flex justify-content-between px-4 mx-auto"
-          style="max-width: var(--max_width); height: 100%"
-        >
-          <div class="row d-flex align-items-center">
-            <img
-              class="d-none d-md-block"
-              style="height: 30px; width: auto"
-              src="assets/icons/logo.svg"
-            />
-            <img
-              style="height: 30px; width: auto"
-              src="assets/icons/logo_2.png"
-            />
-          </div>
-          <div class="d-flex align-items-center" style="gap: 1.5rem">
-            <a href="https://github.com/stenakis" target="_blank">
-              <img
-                style="
-                  height: 24px;
-                  width: auto;
-                  filter: brightness(0) invert(1);
-                "
-                src="assets/icons/github.svg"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/evans-stenakis-3175ba257/"
-              target="_blank"
-            >
-              <img
-                style="
-                  height: 24px;
-                  width: auto;
-                  filter: brightness(0) invert(1);
-                "
-                src="assets/icons/linkedin.svg"
-              />
-            </a>
-            <a href="https://www.deviantart.com/offbalancect" target="_blank">
-              <img
-                style="
-                  height: 24px;
-                  width: auto;
-                  filter: brightness(0) invert(1);
-                "
-                src="assets/icons/deviantart.svg"
-              />
-            </a>
-
-            <a
-              href="mailto:ervans589@gmail.com"
-              role="button"
-              class="btn btn-outline-warning"
-            >
-              Contact
-            </a>
-          </div>
+        <div class="row d-flex align-items-center">
+          <img style="height: 30px; width: auto" src="assets/icons/logo.svg" />
+          <img
+            style="height: 30px; width: auto"
+            src="assets/icons/logo_2.png"
+          />
         </div>
       </div>
 
@@ -149,20 +149,25 @@
         class="px-4 mx-auto"
         style="max-width: var(--max_width); position: relative"
       >
-        <img
-          class="d-none d-md-block position-absolute z-n1 rounded-3"
-          style="
-            top: -30px;
-            right: 70px;
-            width: 350px;
-            height: 400px;
-            object-fit: cover;
-            transform: rotate(5deg);
-          "
-          src="assets/profile.jpeg"
-          alt=""
-        />
-
+        <div class="card d-none d-md-block">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                class="position-absolute z-n1 rounded-3"
+                src="assets/profile.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="card-back">
+              <h2>👀</h2>
+              <p>
+                <br />
+                Me presenting my university thesis about Together: Meetups made
+                effortless!
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="gap-60"></div>
         <h1 style="line-height: 1; margin-bottom: 0.5rem; max-width: 700px">
           Creating real world interfaces.
@@ -198,10 +203,47 @@
           <span style="color: var(--accent)">innovation</span> while applying
           <span style="color: var(--accent)">common sense</span>.
         </p>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+        <div class="gap-40"></div>
+        <div class="d-flex align-items-center" style="gap: 1.5rem">
+          <a
+            href="mailto:ervans589@gmail.com"
+            role="button"
+            class="btn btn-warning"
+            style="background-color: var(--accent)"
+          >
+            <div class="d-flex gap-2">
+              <img
+                src="assets/icons/email.svg"
+                style="height: 24px; width: auto; filter: brightness(0)"
+              />
+              
+              <p>Let's work together!</p>
+            </div>
+          </a>
+          <a href="https://github.com/stenakis" target="_blank">
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/github.svg"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/evans-stenakis-3175ba257/"
+            target="_blank"
+          >
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/linkedin.svg"
+            />
+          </a>
+          <a href="https://www.deviantart.com/offbalancect" target="_blank">
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/deviantart.svg"
+            />
+          </a>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
         <h2 style="color: var(--accent)">Featured Projects</h2>
         <div class="gap-20"></div>
         <div class="row g-4">
@@ -434,7 +476,7 @@
             </div>
           </div>
         </div>
-        <div class="gap-80"></div>
+        <div class="gap-60"></div>
         <div class="gap-40"></div>
         <div class="row g-5">
           <div class="col-md-8">
