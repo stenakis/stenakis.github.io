@@ -1,175 +1,191 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evans Stenakis</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fonts.css" />
+    <style>
+      .rotate_arrow_button {
+        filter: grayscale(100%);
+        transition:
+          transform 0.2s ease-in-out,
+          filter 0.3s ease;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Evans Stenakis</title>
-  <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./fonts.css" />
-  <style>
-    .rotate_arrow_button {
-      filter: grayscale(100%);
-      transition:
-        transform 0.2s ease-in-out,
-        filter 0.3s ease;
-    }
+      .rotate_arrow_button:hover {
+        cursor: pointer;
+        filter: grayscale(0%);
+        transform: rotate(45deg);
+      }
 
-    .rotate_arrow_button:hover {
-      cursor: pointer;
-      filter: grayscale(0%);
-      transform: rotate(45deg);
-    }
+      .project_box {
+        background-color: var(--background);
+        transition: background-color 150ms linear;
+      }
 
-    .project_box {
-      background-color: var(--background);
-      transition: background-color 150ms linear;
-    }
+      .project_box:hover {
+        cursor: pointer;
+        background-color: var(--background_light);
+      }
 
-    .project_box:hover {
-      cursor: pointer;
-      background-color: var(--background_light);
-    }
+      .image_box {
+        border-radius: 8px;
+        transition: border-radius 150ms linear;
+      }
 
-    .image_box {
-      border-radius: 8px;
-      transition: border-radius 150ms linear;
-    }
+      .project_box:hover .image_box {
+        border-radius: 8px 8px 0px 0px;
+      }
 
-    .project_box:hover .image_box {
-      border-radius: 8px 8px 0px;
-    }
+      .content_box {
+        padding-left: 0px;
+        padding-right: 0px;
+        transition: padding 300ms ease;
+      }
 
-    .content_box {
-      padding-left: 0px;
-      padding-right: 0px;
-      transition: padding 300ms ease;
-    }
+      .project_box:hover .content_box {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
 
-    .project_box:hover .content_box {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+      .card {
+        perspective: 1000px;
+        cursor: pointer;
+        position: absolute;
+        /* NEW: establishes containing block */
+        width: 350px;
+        /* moved from .card-front */
+        height: 400px;
+        /* moved from .card-front */
+        top: -70px;
+        /* moved from .card-front */
+        right: 70px;
+        /* moved from .card-front */
+        transform: rotate(5deg);
+        background-color: var(--background);
+      }
 
-    .card {
-      perspective: 1000px;
-      cursor: pointer;
-      position: absolute;
-      /* NEW: establishes containing block */
-      width: 350px;
-      /* moved from .card-front */
-      height: 400px;
-      /* moved from .card-front */
-      top: -70px;
-      /* moved from .card-front */
-      right: 70px;
-      /* moved from .card-front */
-      transform: rotate(5deg);
-      background-color: var(--background);
-    }
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
 
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-    }
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
 
-    .card:hover .card-inner {
-      transform: rotateY(180deg);
-    }
+      .card-front,
+      .card-back {
+        position: absolute;
+        inset: 0;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
 
-    .card-front,
-    .card-back {
-      position: absolute;
-      inset: 0;
-      /* NEW: replaces width/height 100% + fills all 4 edges */
-      backface-visibility: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0.5rem;
-      overflow: hidden;
-      /* NEW: clips image to card shape */
-    }
+      .card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        position: static;
+      }
 
-    .card-front img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      /* moved here — object-fit only works on img/video */
-      border-radius: 0.5rem;
-      position: static;
-      /* removed position: absolute and z-n1 */
-    }
+      .card-back {
+        background: var(--background_light);
+        color: white;
+        transform: rotateY(180deg);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 1.5rem;
+      }
+    </style>
+  </head>
 
-    .card-back {
-      background: var(--background_light);
-      color: white;
-      transform: rotateY(180deg);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-end;
-      padding: 1.5rem;
-    }
-  </style>
-</head>
+  <body>
+    <script src="gsap_modules/page-transition.js"></script>
+    <script src="gsap_modules/gsap.min.js"></script>
+    <script src="gsap_modules/SplitText.min.js"></script>
+    <script src="gsap_modules/ScrollTrigger.min.js"></script>
+    <script type="module" src="gsap_modules/gsap.js"></script>
 
-<body>
-  <script src="gsap_modules/page-transition.js"></script>
-  <script src="gsap_modules/gsap.min.js"></script>
-  <script src="gsap_modules/SplitText.min.js"></script>
-  <script src="gsap_modules/ScrollTrigger.min.js"></script>
-  <script type="module" src="gsap_modules/gsap.js"></script>
-
-  <div id="loader-wrapper">
-    <div class="circular-loader"></div>
-  </div>
-  <div id="main-content">
-    <div class="gap-20"></div>
-    <div class="d-flex justify-content-between px-4 mx-auto" style="max-width: var(--max_width); height: 100%">
-      <div class="row d-flex align-items-center">
-        <img style="height: 30px; width: auto" src="assets/icons/logo.svg" />
-        <img style="height: 30px; width: auto" src="assets/icons/logo_2.png" />
-      </div>
+    <div id="loader-wrapper">
+      <div class="circular-loader"></div>
     </div>
-
-    <div class="px-4 mx-auto" style="max-width: var(--max_width); position: relative">
-      <div class="card d-none d-md-block">
-        <div class="card-inner">
-          <div class="card-front">
-            <img class="position-absolute z-n1 rounded-3" src="assets/profile.jpeg" alt="" />
-          </div>
-          <div class="card-back">
-            <h2>👀</h2>
-            <p>
-              <br />
-              Me presenting my university thesis about Together: Meetups made
-              effortless!
-            </p>
-          </div>
+    <div id="main-content">
+      <div class="gap-40"></div>
+      <div
+        class="d-flex justify-content-between px-4 mx-auto"
+        style="max-width: var(--max_width); height: 100%"
+      >
+        <div class="row d-flex align-items-center">
+          <img style="height: 30px; width: auto" src="assets/icons/logo.svg" />
+          <img
+            style="height: 30px; width: auto"
+            src="assets/icons/logo_2.png"
+          />
         </div>
       </div>
-      <div class="gap-60"></div>
-      <h1 style="line-height: 1; margin-bottom: 0.5rem; max-width: 700px">
-        Creating real world experiences.
-        <span style="
+
+      <div
+        class="px-4 mx-auto"
+        style="max-width: var(--max_width); position: relative"
+      >
+        <div class="card d-none d-md-block">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                class="position-absolute z-n1 rounded-3"
+                src="assets/profile.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="card-back">
+              <h2>👀</h2>
+              <p>
+                <br />
+                Me presenting my university thesis about Together: Meetups made
+                effortless!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gap-60"></div>
+        <h1 style="line-height: 1; margin-bottom: 0.5rem; max-width: 700px">
+          Creating real world experiences.
+          <span
+            style="
               display: inline-block;
               position: relative;
               width: max-content;
-            ">
-          <span style="
+            "
+          >
+            <span
+              style="
                 position: absolute;
                 top: 0;
                 left: 40px;
@@ -177,245 +193,278 @@
                 text-align: center;
                 font-family: NF-Blanc Seing;
                 color: var(--accent);
-              ">
-            design
+              "
+            >
+              design
+            </span>
+            <span>by design</span>
           </span>
-          <span>by design</span>
-        </span>
-      </h1>
-      <div class="gap-40"></div>
-      <p style="max-width: 700px">
-        UI/UX designer from Aegina island, Greece, making a reality what
-        <span style="color: var(--accent)">really</span> works.
-        <span style="color: var(--accent)">Grounded</span> designs based on
-        feasibility and interfaces that spark
-        <span style="color: var(--accent)">innovation</span> while applying
-        <span style="color: var(--accent)">common sense</span>.
-      </p>
-      <div class="gap-40"></div>
-      <div class="d-flex align-items-center" style="gap: 1.5rem">
-        <a href="mailto:ervans589@gmail.com" class="btn" style="background-color: var(--accent)">
-          <div class="d-flex gap-2">
-            <img src="assets/icons/email.svg" style="
+        </h1>
+        <div class="gap-40"></div>
+        <p style="max-width: 700px">
+          UI/UX designer from Aegina island, Greece, making a reality what
+          <span style="color: var(--accent)">really</span> works.
+          <span style="color: var(--accent)">Grounded</span> designs based on
+          feasibility and interfaces that spark
+          <span style="color: var(--accent)">innovation</span> while applying
+          <span style="color: var(--accent)">common sense</span>.
+        </p>
+        <div class="gap-40"></div>
+        <div class="d-flex align-items-center" style="gap: 1.5rem">
+          <a
+            href="mailto:ervans589@gmail.com"
+            class="btn"
+            style="background-color: var(--accent)"
+          >
+            <div class="d-flex gap-2">
+              <img
+                src="assets/icons/email.svg"
+                style="
                   height: 24px;
                   width: auto;
                   filter: brightness(0) invert(1);
-                " />
-            <p style="color: white">Let's work together!</p>
-          </div>
-        </a>
-        <a href="https://github.com/stenakis" target="_blank">
-          <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/github.svg" />
-        </a>
-        <a href="https://www.linkedin.com/in/evans-stenakis-3175ba257/" target="_blank">
-          <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/linkedin.svg" />
-        </a>
-        <a href="https://www.deviantart.com/offbalancect" target="_blank">
-          <img style="height: 24px; width: auto; filter: brightness(0) invert(1)" src="assets/icons/deviantart.svg" />
-        </a>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <h2 style="color: var(--accent)">Featured Projects</h2>
-      <div class="gap-20"></div>
-      <div class="row g-4">
-        <!-- Together -->
-        <div class="col-md-6">
-          <div class="pb-3 rounded-3 project_box">
-            <a href="together.html" style="text-decoration: none; color: inherit">
-              <div class="ratio image_box" style="
+                "
+              />
+              <p style="color: white">Let's work together!</p>
+            </div>
+          </a>
+          <a href="https://github.com/stenakis" target="_blank">
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/github.svg"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/evans-stenakis-3175ba257/"
+            target="_blank"
+          >
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/linkedin.svg"
+            />
+          </a>
+          <a href="https://www.deviantart.com/offbalancect" target="_blank">
+            <img
+              style="height: 24px; width: auto; filter: brightness(0) invert(1)"
+              src="assets/icons/deviantart.svg"
+            />
+          </a>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h2 style="color: var(--accent)">Featured Projects</h2>
+        <div class="gap-20"></div>
+        <div class="row g-4">
+          <!-- Together -->
+          <div class="col-md-6">
+            <div class="pb-3 rounded-3 project_box">
+              <a
+                href="together.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <div
+                  class="ratio image_box"
+                  style="
                     background-image: url(assets/products/together/cover.jpg);
                     background-size: cover;
                     background-position: center;
                     --bs-aspect-ratio: 70%;
-                  "></div>
-              <div class="gap-20"></div>
-              <div class="content_box">
-                <h3>Together</h3>
-                <p style="opacity: 0.75">
-                  Thesis on UI Design and Visual Identity of a brand through a
-                  mobile app.
-                </p>
-              </div>
-            </a>
+                  "
+                ></div>
+                <div class="gap-20"></div>
+                <div class="content_box">
+                  <h3>Together</h3>
+                  <p style="opacity: 0.75">
+                    Thesis on UI Design and Visual Identity of a brand through a
+                    mobile app.
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- Phase 10 -->
-        <div class="col-md-6">
-          <div class="p-0 pb-3 rounded-3 project_box">
-            <a href="phase_10.html" style="text-decoration: none; color: inherit">
-              <div class="ratio image_box" style="
+          <!-- Phase 10 -->
+          <div class="col-md-6">
+            <div class="p-0 pb-3 rounded-3 project_box">
+              <a
+                href="phase_10.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <div
+                  class="ratio image_box"
+                  style="
                     background-image: url(assets/products/phase10/cover.jpg);
                     background-size: cover;
                     background-position: center;
                     --bs-aspect-ratio: 70%;
-                  "></div>
-              <div class="gap-20"></div>
-              <div class="content_box">
-                <h3>Phase 10 Assistant</h3>
-                <p style="opacity: 0.75">
-                  Mobile / web app providing Phase 10 players with extra tools
-                  to enhance their gaming experience!
-                </p>
-              </div>
-            </a>
+                  "
+                ></div>
+                <div class="gap-20"></div>
+                <div class="content_box">
+                  <h3>Phase 10 Assistant</h3>
+                  <p style="opacity: 0.75">
+                    Mobile / web app providing Phase 10 players with extra tools
+                    to enhance their gaming experience!
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="gap-20"></div>
-      <div class="row g-4">
-        <!-- Hexa -->
-        <div class="col-md-6">
-          <div class="p-0 pb-3 rounded-3 project_box">
-            <a href="hexa.html" style="text-decoration: none; color: inherit">
-              <div class="ratio image_box" style="
+        <div class="gap-20"></div>
+        <div class="row g-4">
+          <!-- Hexa -->
+          <div class="col-md-6">
+            <div class="p-0 pb-3 rounded-3 project_box">
+              <a href="hexa.html" style="text-decoration: none; color: inherit">
+                <div
+                  class="ratio image_box"
+                  style="
                     background-image: url(assets/products/hexa/cover.jpg);
                     background-size: cover;
                     background-position: center;
                     --bs-aspect-ratio: 70%;
-                  "></div>
-              <div class="gap-20"></div>
-              <div class="content_box">
-                <h3>Hexa</h3>
-                <p style="opacity: 0.75">
-                  DesignFlows 2025 submssion. UX design for managing
-                  intelligent robots from an all-inclusive environment.
-                </p>
-              </div>
-            </a>
+                  "
+                ></div>
+                <div class="gap-20"></div>
+                <div class="content_box">
+                  <h3>Hexa</h3>
+                  <p style="opacity: 0.75">
+                    DesignFlows 2025 submssion. UX design for managing
+                    intelligent robots from an all-inclusive environment.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Rainmeter -->
+          <div class="col-md-6">
+            <div class="p-0 pb-3 rounded-3 project_box">
+              <a
+                href="milibase.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <div
+                  class="ratio image_box"
+                  style="
+                    background-image: url(assets/products/milibase/cover.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    --bs-aspect-ratio: 70%;
+                  "
+                ></div>
+                <div class="gap-20"></div>
+                <div class="content_box">
+                  <h3>Milibase</h3>
+                  <p style="opacity: 0.75">
+                    A soldier management desktop app. Focused on fluent user
+                    experience.
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <!-- Rainmeter -->
-        <div class="col-md-6">
-          <div class="p-0 pb-3 rounded-3 project_box">
-            <a href="rainmeter.html" style="text-decoration: none; color: inherit">
-              <div class="ratio image_box" style="
+        <div class="gap-80"></div>
+      </div>
+
+      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+        <h2 style="color: var(--accent)">Other Projects</h2>
+        <div class="gap-20"></div>
+        <div class="row g-4">
+          <!-- Rainmeter -->
+          <div class="col-md-4">
+            <div class="p-0 pb-3 rounded-3 project_box">
+              <a
+                href="rainmeter.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <div
+                  class="ratio image_box"
+                  style="
                     background-image: url(assets/products/rainmeter/cover.png);
                     background-size: cover;
                     background-position: center;
                     --bs-aspect-ratio: 70%;
-                  "></div>
-              <div class="gap-20"></div>
-              <div class="content_box">
-                <h3>Rainmeter Skins</h3>
-                <p style="opacity: 0.75">
-                  Dynamic widgets built from code that provide a beautiful way
-                  to decorate your desktop.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="gap-80"></div>
-    </div>
-
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
-      <h2 style="color: var(--accent)">Other Projects</h2>
-      <div class="gap-20"></div>
-      <div class="row g-4">
-        <!-- Milibase -->
-        <div class="col-md-4">
-          <div class="p-0 pb-3 rounded-3 position-relative">
-            <div class="ratio image_box ratio-1x1" style="
-                  background-image: url(assets/products/milibase/cover.jpg);
-                  background-size: cover;
-                  background-position: center;
-                  --bs-aspect-ratio: 70%;
-                "></div>
-            <div class="gap-20"></div>
-            <div class="d-flex gap-2">
-              <div style="
-                    background-color: var(--accent);
-                    border-radius: 5px;
-                    padding-right: 12px;
-                    padding-left: 12px;
-                    padding-bottom: 3px;
-                    padding-top: 3px;
-                  ">
-                <p>Coming soon</p>
-              </div>
-              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7443323653582364673/?originTrackingId=6fwirn58stAbAZ1%2FWXfMuA%3D%3D"
-                target="_blank" style="text-decoration: none; color: inherit">
-                <div class="d-flex gap-2" style="
-                      background-color: var(--background_light);
-                      border-radius: 5px;
-                      padding-right: 12px;
-                      padding-left: 12px;
-                      padding-bottom: 3px;
-                      padding-top: 3px;
-                      width: 100%;
-                      white-space: nowrap;
-                    ">
-                  <p>See teaser</p>
-                  <img class="rotate_arrow_button" style="height: 20px" src="assets/button_arrow.svg" />
+                  "
+                ></div>
+                <div class="gap-20"></div>
+                <div class="content_box">
+                  <h3>Rainmeter Skins</h3>
+                  <p style="opacity: 0.75">
+                    Dynamic widgets built from code that provide a beautiful way
+                    to decorate your desktop.
+                  </p>
                 </div>
               </a>
             </div>
-            <div class="gap-10"></div>
-            <div class="content_box">
-              <h3>Milibase</h3>
-              <p style="opacity: 0.75">
-                A soldier management desktop app. Focused on fluent user
-                experience.
-              </p>
-            </div>
           </div>
-        </div>
-        <!-- fest -->
-        <div class="col-md-4">
-          <div class="p-0 pb-3 rounded-3 project_box">
-            <a href="fest.html" style="text-decoration: none; color: inherit">
-              <div class="ratio image_box ratio-1x1" style="
+
+          <!-- fest -->
+          <div class="col-md-4">
+            <div class="p-0 pb-3 rounded-3 project_box">
+              <a href="fest.html" style="text-decoration: none; color: inherit">
+                <div
+                  class="ratio image_box ratio-1x1"
+                  style="
                     background-image: url(assets/products/fest/cover.jpg);
                     background-size: cover;
                     background-position: center;
                     --bs-aspect-ratio: 70%;
-                  "></div>
-              <div class="gap-20"></div>
-              <div class="content_box">
-                <h3>Aegina's Fistiki Fest</h3>
-                <p style="opacity: 0.75">
-                  A refreshing visual identity for Aegina Fistiki Fest event.
-                </p>
-              </div>
-            </a>
+                  "
+                ></div>
+                <div class="gap-20"></div>
+                <div class="content_box">
+                  <h3>Aegina's Fistiki Fest</h3>
+                  <p style="opacity: 0.75">
+                    A refreshing visual identity for Aegina Fistiki Fest event.
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- Music Festival -->
-        <div class="col-md-4">
-          <div class="p-0 pb-3 rounded-3 project_box">
-            <a href="music_festival.html" style="text-decoration: none; color: inherit">
-              <div class="ratio image_box ratio-1x1" style="
+          <!-- Music Festival -->
+          <div class="col-md-4">
+            <div class="p-0 pb-3 rounded-3 project_box">
+              <a
+                href="music_festival.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <div
+                  class="ratio image_box ratio-1x1"
+                  style="
                     background-image: url(assets/products/music_festival/cover.jpg);
                     background-size: cover;
                     background-position: center;
                     --bs-aspect-ratio: 70%;
-                  "></div>
+                  "
+                ></div>
 
-              <div class="gap-20"></div>
-              <div class="content_box">
-                <h3>Aegina's Music Festival</h3>
-                <p style="opacity: 0.75">
-                  Branding the biggest classical music festival of the island.
-                </p>
-              </div>
-            </a>
+                <div class="gap-20"></div>
+                <div class="content_box">
+                  <h3>Aegina's Music Festival</h3>
+                  <p style="opacity: 0.75">
+                    Branding the biggest classical music festival of the island.
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="gap-60"></div>
-      <div class="gap-40"></div>
-      <div class="row g-5">
-        <div class="col-md-8">
-          <h2>
-            Ready to create
-            <span style="
+        <div class="gap-60"></div>
+        <div class="gap-40"></div>
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h2>
+              Ready to create
+              <span
+                style="
                   display: inline-block;
                   position: relative;
                   width: max-content;
-                ">
-              <span style="
+                "
+              >
+                <span
+                  style="
                     position: absolute;
                     top: 5px;
                     right: 55px;
@@ -423,33 +472,44 @@
                     text-align: right;
                     font-family: NF-Blanc Seing;
                     color: var(--accent);
-                  ">
-                fresh
+                  "
+                >
+                  fresh
+                </span>
+                <span>something fresh?</span>
               </span>
-              <span>something fresh?</span>
-            </span>
-          </h2>
+            </h2>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end">
+            <a href="mailto:ervans589@gmail.com">
+              <img
+                class="h-100 rotate_arrow_button"
+                style="max-height: 15vh"
+                src="assets/button_arrow.svg"
+            /></a>
+          </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-end">
-          <a href="mailto:ervans589@gmail.com">
-            <img class="h-100 rotate_arrow_button" style="max-height: 15vh" src="assets/button_arrow.svg" /></a>
-        </div>
+        <div class="gap-40"></div>
+        <p style="opacity: 0.5">
+          <i
+            >*Projects presented above are only a summary of the whole research.
+            This is an effort to reduce the amount of information AI scrapes and
+            uses unknowingly.</i
+          >
+        </p>
+        <div class="gap-10"></div>
+        <hr style="opacity: 0.5" />
+        <p style="opacity: 0.5">
+          Website created with ❤️ by Evans Stenakis with pure HTML & CSS
+        </p>
+
+        <div class="gap-20"></div>
       </div>
-      <div class="gap-40"></div>
-      <p style="opacity: 0.5"><i>*Projects presented above are only a summary of the whole research. This is an effort to reduce the
-        amount of information AI scrapes and uses unknowingly. Further explanation can be offered in an online meeting.</i></p>
-      <div class="gap-20"></div>
-      <hr style="opacity: 0.5" />
-      <p style="opacity: 0.5">
-        Website created with ❤️ by Evans Stenakis with pure HTML & CSS
-      </p>
-
-      <div class="gap-20"></div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,473 @@
+{
+  "table_sailors": [
+    {
+      "id": "69a594c5-2ea7-4cba-88f2-22d53266d956",
+      "name": "Νικόλαος",
+      "surname": "Παπαδόπουλος",
+      "agm": "97611",
+      "rank": "naftis",
+      "specialty": "diax",
+      "address": "Αγίου Νικολάου 5, Πειραιάς",
+      "mobile": "6941234501",
+      "landline": "2104512301",
+      "education": "Λύκειο",
+      "serving_months": 9,
+      "date_insert": 1746057600,
+      "date_arrival": 1747094400,
+      "date_removal": 1770940800,
+      "avardiotos": 0
+    },
+    {
+      "id": "32f1af48-ed39-4de6-96f3-1cf72a610df8",
+      "name": "Δημήτριος",
+      "surname": "Αλεξίου",
+      "agm": "97622",
+      "rank": "naftis",
+      "specialty": "hl",
+      "address": "Σαλαμίνος 22, Κερατσίνι",
+      "mobile": "6952345602",
+      "landline": "",
+      "education": "",
+      "serving_months": 12,
+      "date_insert": 1746057600,
+      "date_arrival": 1747094400,
+      "date_removal": 1778630400,
+      "avardiotos": 0
+    },
+    {
+      "id": "07a6dccd-5b2b-444b-9da5-717178b55582",
+      "name": "Κωνσταντίνος",
+      "surname": "Μαυρίδης",
+      "agm": "97633",
+      "rank": "diopos",
+      "specialty": "t_hn",
+      "address": "Ηρακλείου 8, Νίκαια",
+      "mobile": "6963456703",
+      "landline": "2104523702",
+      "education": "Ναυτικές Επιστήμες",
+      "serving_months": 12,
+      "date_insert": 1746057600,
+      "date_arrival": 1747094400,
+      "date_removal": 1778630400,
+      "avardiotos": 0
+    },
+    {
+      "id": "982c83b3-c2c5-4d28-87f7-218a5be7cfd0",
+      "name": "Παναγιώτης",
+      "surname": "Σταύρου",
+      "agm": "97644",
+      "rank": "naftis",
+      "specialty": "arm",
+      "address": "Λεωφόρος Αθηνών 100, Χαϊδάρι",
+      "mobile": "6974567804",
+      "landline": "",
+      "education": "Λύκειο",
+      "serving_months": 9,
+      "date_insert": 1754006400,
+      "date_arrival": 1754956800,
+      "date_removal": 1778544000,
+      "avardiotos": 0
+    },
+    {
+      "id": "69684a9f-5417-4ed6-a32e-6d41ad26617a",
+      "name": "Αντώνιος",
+      "surname": "Καραγιάννης",
+      "agm": "97655",
+      "rank": "naftis",
+      "specialty": "t_mhx",
+      "address": "Δήμητρας 33, Μοσχάτο",
+      "mobile": "6985678905",
+      "landline": "2109785603",
+      "education": "",
+      "serving_months": 12,
+      "date_insert": 1754006400,
+      "date_arrival": 1754956800,
+      "date_removal": 1786492800,
+      "avardiotos": 0
+    },
+    {
+      "id": "3caaee00-b294-4743-8cd0-d9e2d9d38713",
+      "name": "Σταύρος",
+      "surname": "Νικολάου",
+      "agm": "97666",
+      "rank": "diopos",
+      "specialty": "dioik",
+      "address": "Πατησίων 17, Αθήνα",
+      "mobile": "6996789006",
+      "landline": "",
+      "education": "Διοίκηση Επιχειρήσεων",
+      "serving_months": 12,
+      "date_insert": 1754006400,
+      "date_arrival": 1754956800,
+      "date_removal": 1786492800,
+      "avardiotos": 0
+    },
+    {
+      "id": "ed8708f4-54cc-4cc4-8982-93bb8fa59e5c",
+      "name": "Ευάγγελος",
+      "surname": "Κωνσταντίνου",
+      "agm": "97677",
+      "rank": "naftis",
+      "specialty": "t_opl",
+      "address": "Κηφισίας 45, Μαρούσι",
+      "mobile": "6907890107",
+      "landline": "2106234504",
+      "education": "Λύκειο",
+      "serving_months": 6,
+      "date_insert": 1761955200,
+      "date_arrival": 1762732800,
+      "date_removal": 1778371200,
+      "avardiotos": 0
+    },
+    {
+      "id": "e1faa24e-e5f8-46cb-b9cf-a806591185a2",
+      "name": "Γεώργιος",
+      "surname": "Ιωαννίδης",
+      "agm": "97688",
+      "rank": "naftis",
+      "specialty": "diax",
+      "address": "Βενιζέλου 12, Γλυφάδα",
+      "mobile": "6918901208",
+      "landline": "",
+      "education": "",
+      "serving_months": 9,
+      "date_insert": 1761955200,
+      "date_arrival": 1762732800,
+      "date_removal": 1786320000,
+      "avardiotos": 0
+    },
+    {
+      "id": "45e74d3e-ae47-42a3-a899-d7e65c154cec",
+      "name": "Χρήστος",
+      "surname": "Αναστασίου",
+      "agm": "97699",
+      "rank": "diopos",
+      "specialty": "hn_hy",
+      "address": "Μεσογείων 78, Χολαργός",
+      "mobile": "6929012309",
+      "landline": "2106512305",
+      "education": "Ηλεκτρολόγος Μηχανικός ΤΕΙ",
+      "serving_months": 12,
+      "date_insert": 1761955200,
+      "date_arrival": 1762732800,
+      "date_removal": 1794268800,
+      "avardiotos": 0
+    },
+    {
+      "id": "fee8cd3e-4788-49cf-addf-8a24d4fc49c3",
+      "name": "Ιωάννης",
+      "surname": "Γεωργίου",
+      "agm": "97700",
+      "rank": "naftis",
+      "specialty": "t_syn",
+      "address": "Ναυαρίνου 3, Καλλιθέα",
+      "mobile": "6930123410",
+      "landline": "",
+      "education": "Λύκειο",
+      "serving_months": 6,
+      "date_insert": 1761955200,
+      "date_arrival": 1762732800,
+      "date_removal": 1778371200,
+      "avardiotos": 0
+    }
+  ],
+  "table_adeies": [
+    {
+      "id": "4f7d8177-3cdb-4c2d-b242-aa8b2a97ca50",
+      "date_start": 1752022370,
+      "date_end": 1752281570,
+      "type": "aimodotiki",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "69a594c5-2ea7-4cba-88f2-22d53266d956"
+    },
+    {
+      "id": "2038f922-36e9-4188-b8c6-49b682ee274c",
+      "date_start": 1756503927,
+      "date_end": 1757022327,
+      "type": "anarrotiki",
+      "sima": "WAF",
+      "sailor_id": "69a594c5-2ea7-4cba-88f2-22d53266d956"
+    },
+    {
+      "id": "95889c8e-8c71-4058-a32a-ca8a0452e22b",
+      "date_start": 1766586184,
+      "date_end": 1766931784,
+      "type": "oikos_nosileias",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "69a594c5-2ea7-4cba-88f2-22d53266d956"
+    },
+    {
+      "id": "5d14f188-c061-4f27-9781-3936301d106f",
+      "date_start": 1756478004,
+      "date_end": 1756737204,
+      "type": "oikos_nosileias",
+      "sima": "WAF 150930Z MAY 25/ΔΝΕ",
+      "sailor_id": "32f1af48-ed39-4de6-96f3-1cf72a610df8"
+    },
+    {
+      "id": "53bd8945-acd3-4dc6-b848-4f3ea531e65f",
+      "date_start": 1768443675,
+      "date_end": 1769048475,
+      "type": "kanoniki",
+      "sima": "WAF 150930Z MAY 25/ΔΝΕ",
+      "sailor_id": "07a6dccd-5b2b-444b-9da5-717178b55582"
+    },
+    {
+      "id": "adf0dc90-9b7b-4689-a2d3-c17be51afda6",
+      "date_start": 1772096870,
+      "date_end": 1772874470,
+      "type": "timitiki",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "07a6dccd-5b2b-444b-9da5-717178b55582"
+    },
+    {
+      "id": "f12ea073-05b0-4a2c-adbf-cbd55515f00a",
+      "date_start": 1765012007,
+      "date_end": 1765271207,
+      "type": "aimodotiki",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "982c83b3-c2c5-4d28-87f7-218a5be7cfd0"
+    },
+    {
+      "id": "cc925c98-4bc7-48d7-b36f-1c2cd4265e11",
+      "date_start": 1774128989,
+      "date_end": 1774474589,
+      "type": "proforiki",
+      "sima": "WAF",
+      "sailor_id": "982c83b3-c2c5-4d28-87f7-218a5be7cfd0"
+    },
+    {
+      "id": "9ea5bc84-2fa5-4d8a-847c-65ab175621c9",
+      "date_start": 1777863630,
+      "date_end": 1778554830,
+      "type": "anarrotiki",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "69684a9f-5417-4ed6-a32e-6d41ad26617a"
+    },
+    {
+      "id": "70d218de-39f8-4cbf-a889-de3ab567d92d",
+      "date_start": 1768454506,
+      "date_end": 1768972906,
+      "type": "aimodotiki",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "69684a9f-5417-4ed6-a32e-6d41ad26617a"
+    },
+    {
+      "id": "8982d29d-167b-457d-bd59-6d27e4a9735b",
+      "date_start": 1764219177,
+      "date_end": 1764478377,
+      "type": "timitiki",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "3caaee00-b294-4743-8cd0-d9e2d9d38713"
+    },
+    {
+      "id": "805eff2b-560b-4a2a-9c67-19bec89d645d",
+      "date_start": 1775559322,
+      "date_end": 1776250522,
+      "type": "anarrotiki",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "ed8708f4-54cc-4cc4-8982-93bb8fa59e5c"
+    },
+    {
+      "id": "d0e94e3f-a572-4a0e-8d5e-f393c14f6887",
+      "date_start": 1770152321,
+      "date_end": 1771016321,
+      "type": "anarrotiki",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "ed8708f4-54cc-4cc4-8982-93bb8fa59e5c"
+    },
+    {
+      "id": "009c7ade-5997-4d2d-b949-632939aac3ac",
+      "date_start": 1765857328,
+      "date_end": 1766375728,
+      "type": "aimodotiki",
+      "sima": "",
+      "sailor_id": "ed8708f4-54cc-4cc4-8982-93bb8fa59e5c"
+    },
+    {
+      "id": "3bd02131-decb-42d5-b9b0-eeef46ae1043",
+      "date_start": 1778077497,
+      "date_end": 1778423097,
+      "type": "proforiki",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "e1faa24e-e5f8-46cb-b9cf-a806591185a2"
+    },
+    {
+      "id": "a15b8858-8957-4884-8af5-63e0ee296325",
+      "date_start": 1779617308,
+      "date_end": 1780222108,
+      "type": "oikos_nosileias",
+      "sima": "WAF",
+      "sailor_id": "e1faa24e-e5f8-46cb-b9cf-a806591185a2"
+    },
+    {
+      "id": "e1526dae-d9f2-471e-942c-6a9e4f40f8e5",
+      "date_start": 1767755878,
+      "date_end": 1768360678,
+      "type": "aimodotiki",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "e1faa24e-e5f8-46cb-b9cf-a806591185a2"
+    },
+    {
+      "id": "3047b00a-9fa7-4c7e-9d85-61b2629f4359",
+      "date_start": 1767880154,
+      "date_end": 1768484954,
+      "type": "aimodotiki",
+      "sima": "",
+      "sailor_id": "45e74d3e-ae47-42a3-a899-d7e65c154cec"
+    },
+    {
+      "id": "e13acdb5-8138-4f6b-8fbc-b3d3739ef95c",
+      "date_start": 1784743249,
+      "date_end": 1785261649,
+      "type": "anarrotiki",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "45e74d3e-ae47-42a3-a899-d7e65c154cec"
+    },
+    {
+      "id": "8e1f22db-8622-4c2b-8e2d-702ed95c8940",
+      "date_start": 1769730286,
+      "date_end": 1769989486,
+      "type": "oikos_nosileias",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "45e74d3e-ae47-42a3-a899-d7e65c154cec"
+    },
+    {
+      "id": "80224745-f78e-42c9-8f2b-1c2c313f4880",
+      "date_start": 1767555874,
+      "date_end": 1767901474,
+      "type": "kanoniki",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "fee8cd3e-4788-49cf-addf-8a24d4fc49c3"
+    }
+  ],
+  "table_metavoles": [
+    {
+      "id": "2edd9fce-e1ee-480f-8509-60d7e9f820cb",
+      "date": 1762014280,
+      "type": "ekkremei",
+      "sima": "WAF 010543Z NOV 25/ΔΝΕ",
+      "sailor_id": "32f1af48-ed39-4de6-96f3-1cf72a610df8",
+      "duration": 12
+    },
+    {
+      "id": "a3a8ef78-6899-4a76-9986-36cb5bc186c1",
+      "date": 1767862345,
+      "type": "ekkremei",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "982c83b3-c2c5-4d28-87f7-218a5be7cfd0",
+      "duration": 9
+    },
+    {
+      "id": "18ed3504-347c-4e91-9045-a52e879935e9",
+      "date": 1769578426,
+      "type": "ekkremei",
+      "sima": "WAF 150930Z MAY 25/ΔΝΕ",
+      "sailor_id": "69684a9f-5417-4ed6-a32e-6d41ad26617a",
+      "duration": 12
+    },
+    {
+      "id": "e1f1ae48-90dc-4a33-b502-ca69eb71281a",
+      "date": 1770563046,
+      "type": "ekkremei",
+      "sima": "WAF 010543Z NOV 25/ΔΝΕ",
+      "sailor_id": "ed8708f4-54cc-4cc4-8982-93bb8fa59e5c",
+      "duration": 6
+    },
+    {
+      "id": "8ee72fba-ac04-4f2d-8cfc-805b15490ba6",
+      "date": 1767763228,
+      "type": "exagora",
+      "sima": "WAF 200700Z AUG 25/ΔΝΕ",
+      "sailor_id": "45e74d3e-ae47-42a3-a899-d7e65c154cec",
+      "duration": 12
+    },
+    {
+      "id": "30ba6436-2c9a-41b8-b41b-4fbf2f5152ef",
+      "date": 1770677033,
+      "type": "ekkremei",
+      "sima": "WAF 010800Z JUN 25/ΔΝΕ",
+      "sailor_id": "fee8cd3e-4788-49cf-addf-8a24d4fc49c3",
+      "duration": 6
+    }
+  ],
+  "table_apomakrynseis": [
+    {
+      "id": "68798ab1-c30a-4d5d-957f-41086370b09c",
+      "date_start": 1752100807,
+      "date_end": 1752532807,
+      "type": "metathesi",
+      "sima": "WAF 091135Z APR 25/ΓΕΝ",
+      "ypiresia": "ΣΝΔ",
+      "sailor_id": "07a6dccd-5b2b-444b-9da5-717178b55582"
+    },
+    {
+      "id": "0e4c9715-4a99-445e-80cb-ff8de1d8a086",
+      "date_start": 1759362227,
+      "date_end": 1759794227,
+      "type": "apospasi",
+      "sima": "WAF 171241Z JUL 25/ΓΕΝ",
+      "ypiresia": "ΣΝΔ",
+      "sailor_id": "982c83b3-c2c5-4d28-87f7-218a5be7cfd0"
+    },
+    {
+      "id": "3e37f40e-ad0a-4bbe-97e5-793f116c5cc1",
+      "date_start": 1757474847,
+      "date_end": 1758338847,
+      "type": "apospasi",
+      "sima": "WAF 231221Z OCT 25/ΓΕΝ",
+      "ypiresia": "ΣΝΔ",
+      "sailor_id": "982c83b3-c2c5-4d28-87f7-218a5be7cfd0"
+    },
+    {
+      "id": "556e2515-069d-465b-b819-60d1757aab37",
+      "date_start": 1762276060,
+      "date_end": 1764004060,
+      "type": "diathesi",
+      "sima": "WAF 171241Z JUL 25/ΓΕΝ",
+      "ypiresia": "ΝΒ ΚΑΝΕΛΛΟΠΟΥΛΟΣ",
+      "sailor_id": "69684a9f-5417-4ed6-a32e-6d41ad26617a"
+    },
+    {
+      "id": "22e562b5-6b8c-40b8-9535-8546bea9b6d2",
+      "date_start": 1772044478,
+      "date_end": 1773340478,
+      "type": "metathesi",
+      "sima": "WAF 171241Z JUL 25/ΓΕΝ",
+      "ypiresia": "ΣΝΔ",
+      "sailor_id": "69684a9f-5417-4ed6-a32e-6d41ad26617a"
+    },
+    {
+      "id": "a1a8d8b6-fa6e-492c-b009-6fae7910ec06",
+      "date_start": 1770215548,
+      "date_end": 1771425148,
+      "type": "apospasi",
+      "sima": "WAF 171241Z JUL 25/ΓΕΝ",
+      "ypiresia": "ΑΒΕΡΩΦ",
+      "sailor_id": "ed8708f4-54cc-4cc4-8982-93bb8fa59e5c"
+    },
+    {
+      "id": "930d35ae-f83f-44dc-b365-89ad4b72d9c6",
+      "date_start": 1765039926,
+      "date_end": 1765385526,
+      "type": "apospasi",
+      "sima": "WAF 171241Z JUL 25/ΓΕΝ",
+      "ypiresia": "ΝΒ ΚΑΝΕΛΛΟΠΟΥΛΟΣ",
+      "sailor_id": "ed8708f4-54cc-4cc4-8982-93bb8fa59e5c"
+    },
+    {
+      "id": "1d903108-f74a-4bc3-81e0-450a03eca5d9",
+      "date_start": 1766565606,
+      "date_end": 1768034406,
+      "type": "apospasi",
+      "sima": "WAF 050603Z MAR 26/ΓΕΝ",
+      "ypiresia": "ΝΒ ΚΑΝΕΛΛΟΠΟΥΛΟΣ",
+      "sailor_id": "e1faa24e-e5f8-46cb-b9cf-a806591185a2"
+    }
+  ],
+  "vars": [
+    {
+      "prothema_shmatos": "WAF"
+    }
+  ]
+}

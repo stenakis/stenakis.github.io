@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+    <title>Rainmeter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h4 {
+        font-weight: bold;
+        letter-spacing: -1px;
+      }
+      .gradient-text {
+        background: linear-gradient(
+          154deg,
+          #1d9aff 0%,
+          #aab2ff 61%,
+          #425ccb 100%
+        );
+        display: inline-block;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="gsap_modules/page-transition.js"></script>
+    <script src="gsap_modules/gsap.min.js"></script>
+    <script src="gsap_modules/SplitText.min.js"></script>
+    <script src="gsap_modules/ScrollTrigger.min.js"></script>
+    <script type="module" src="gsap_modules/gsap.js"></script>
+
+    <div id="loader-wrapper">
+      <div class="circular-loader"></div>
+    </div>
+
+    <div id="main-content">
+      <div class="gap-20"></div>
+      <div class="gap-10"></div>
+      <div class="row g-5 align-items-end mx-1">
+        <div class="col-md-6">
+          <img
+            src="assets/products/milibase/cover.jpg"
+            alt="Milibase cover"
+            class="cover_style rounded-3"
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="project_title">Milibase</h1>
+          <h3 class="project_desc" style="text-align: initial">
+            A complete database for managing soldiers — records, leaves, and
+            service history, all in one place.
+          </h3>
+          <div class="gap-20"></div>
+          <div class="d-flex flex-wrap">
+            <div
+              style="background-color: var(--background_light)"
+              class="rounded-2 px-3 py-2 my-1 me-2"
+            >
+              Project type: UI/UX | Programming
+            </div>
+            <div
+              style="background-color: var(--background_light)"
+              class="rounded-2 px-3 py-2 my-1 me-2"
+            >
+              Timeline: 2026
+            </div>
+            <div
+              style="background-color: var(--background_light)"
+              class="rounded-2 px-3 py-2 my-1 me-2"
+            >
+              Tools used: Figma, Android Studio
+            </div>
+          </div>
+          <div class="gap-40"></div>
+          <a href="https://github.com/stenakis/Milibase" target="_blank">
+            <img
+              src="assets/products/milibase/action_github.png"
+              alt="DeviantArt button"
+              style="max-height: 50px; width: auto; object-fit: contain"
+              class="mx-0"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="gap-80"></div>
+      <div class="gap-80"></div>
+      <div class="gap-40"></div>
+      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+        <img
+          src="assets/products/milibase/logo.svg"
+          style="max-height: 100px; width: auto"
+          alt="Milibase Logo"
+        />
+        <div class="gap-20"></div>
+        <h1 class="gradient-text" style="text-align: center">
+          Seamless companion for soldier management
+        </h1>
+        <div class="gap-80"></div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              class="project_images rounded-3"
+              style="height: 175px; width: auto; margin: 0"
+              src="assets/products/milibase/screen_0.png"
+              alt="Name card"
+            />
+            <div class="gap-40"></div>
+            <h3 class="gradient-text">Manage soldier information</h3>
+            <div class="gap-10"></div>
+            <p style="text-align: justify">
+              Every soldier's profile brings together everything you need in one
+              place — service dates including introduction, arrival, and
+              removal, a unique General Registry Number for fast identification,
+              military specialty, and a full set of personal data covering phone
+              numbers, address, educational background, family status, and more.
+              Complete records, always at your fingertips.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/products/milibase/screen_1.png"
+              alt="Soldier data"
+              class="project_images rounded-3"
+              style="max-height: 75vh"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-80"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              src="assets/products/milibase/screen_2.png"
+              alt="Soldier leaves table"
+              class="project_images rounded-3"
+              style="max-height: 75vh"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3 class="gradient-text">Set leaves. Sort by date and type</h3>
+            <div class="gap-10"></div>
+            <p style="text-align: justify">
+              Milibase's leave management system organizes absences by type —
+              regular, sick, emergency, and more — and automatically calculates
+              the total days used per category. With a built-in date tracking
+              system, every leave entry is counted and logged, giving commanders
+              a clear, accurate picture of each soldier's leave history and
+              remaining balance at a glance. Need to reflect a reassignment or
+              status change? Open any record and edit it directly through a
+              simple, distraction-free window — fast, accurate, and always in
+              sync.
+            </p>
+            <div class="gap-40"></div>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <img
+                  class="project_images rounded-3"
+                  style="
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                  "
+                  src="assets/products/milibase/screen_3.png"
+                  alt="Card_1"
+                />
+              </div>
+              <div class="col-md-6">
+                <img
+                  class="project_images rounded-3"
+                  style="
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                  "
+                  src="assets/products/milibase/screen_4.png"
+                  alt="Card_1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-80"></div>
+        <div class="row g-5">
+          <div class="col-md-4">
+            <img
+              class="project_images rounded-3"
+              style="
+                max-height: 30vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+              "
+              src="assets/products/milibase/screen_7.png"
+              alt="Card_1"
+            />
+            <div class="gap-20"></div>
+            <h4 class="gradient-text">Monthly calendar view</h4>
+            <p style="text-align: justify">
+              A built-in monthly calendar view maps out leaves, absences, and
+              key dates across the unit — providing a clear, visual overview of
+              soldier availability without having to search through individual
+              records.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="project_images rounded-3"
+              style="
+                max-height: 30vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+              "
+              src="assets/products/milibase/screen_5.png"
+              alt="Card_1"
+            />
+            <div class="gap-20"></div>
+            <h4 class="gradient-text">
+              Dedicated single-file offline database
+            </h4>
+            <p style="text-align: justify">
+              All data is stored in a single local file — no internet
+              connection, no cloud dependency, no external servers. Milibase
+              works fully offline, keeping sensitive military records fast,
+              portable, and entirely under your control.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="project_images rounded-3"
+              style="
+                max-height: 30vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+              "
+              src="assets/products/milibase/screen_6.png"
+              alt="Card_1"
+            />
+            <div class="gap-20"></div>
+            <h4 class="gradient-text">Automatic OTA updates</h4>
+            <p style="text-align: justify">
+              Milibase updates itself automatically via GitHub. When a new
+              version is available, the app notifies you and applies the update
+              on the spot — no manual downloads, no stores, no hassle. Always up
+              to date, always reliable.
+            </p>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <h2 class="gradient-text">Design</h2>
+        <div class="gap-40"></div>
+        <div class="row g-5">
+          <div class="col-md-4">
+            <p style="text-align: justify">
+              Created with Flutter inspired by Microsoft's Fluent UI kit, it
+              ensures the design is expressive across all devices and gives out
+              a native Windows feeling. Since Milibase is a simple database app
+              for limited use there was no need to come up with a new attractive
+              design, all it was needed was
+            </p>
+            <div class="gap-10"></div>
+            <h4>Simplicity & Efficiency</h4>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="project_images rounded-3"
+              style="
+                max-height: 30vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+              "
+              src="assets/products/milibase/screen_9.png"
+              alt="Card_1"
+            />
+            <div class="gap-20"></div>
+            <h4>Colors</h4>
+            <p style="text-align: justify">
+              The color palette focuses on the color of the navy: blue. A native
+              feeling is crucial to match all the other assets and general
+              aesthetic of the military. Two shades of blue, main and accent
+              color, they work together to provide the necessary contrast and
+              hierarchy.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="project_images rounded-3"
+              style="
+                max-height: 30vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+              "
+              src="assets/products/milibase/screen_8.png"
+              alt="Card_1"
+            />
+            <div class="gap-20"></div>
+            <h4>Lists</h4>
+            <p style="text-align: justify">
+              The lists follow a simple - and a bit generic - design, nothing
+              fancy. This is because user experience is everything, the user has
+              to be able to find everything at a glance
+            </p>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <h2 class="gradient-text">Wanna try it yourself?</h2>
+        <div class="gap-40"></div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              style="
+                background-color: #515151;
+                height: 200px;
+                position: relative;
+              "
+              class="p-4 rounded-3"
+            >
+              <h4>1. Download and install Milibase</h4>
+              <a
+                href="https://github.com/stenakis/Milibase/releases/"
+                target="_blank"
+              >
+                <img
+                  src="assets/products/milibase/arrow.svg"
+                  alt=""
+                  style="
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 50px;
+                    height: auto;
+                  "
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              style="
+                background-color: #515151;
+                height: 200px;
+                position: relative;
+              "
+              class="p-4 rounded-3"
+            >
+              <h4>2. Download backup.json</h4>
+              <a
+                href="assets/products/milibase/backup.json"
+                target="_blank"
+                style="color: inherit; text-decoration: none"
+                download
+              >
+                <div
+                  class="p-2"
+                  style="
+                    border: 2px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 8px;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                  "
+                >
+                  <p>backup.json</p>
+
+                  <img
+                    src="assets/products/milibase/arrow.svg"
+                    alt=""
+                    style="width: 25px; height: auto; transform: rotate(135deg)"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              style="background-color: #515151; height: 200px"
+              class="p-4 rounded-3"
+            >
+              <h4>3. Place backup.json in your Documents folder</h4>
+            </div>
+          </div>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              style="background-color: #515151; height: 200px"
+              class="p-4 rounded-3"
+            >
+              <h4>4. In Milibase, navigate to Settings</h4>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              style="background-color: #515151; height: 200px"
+              class="p-4 rounded-3"
+            >
+              <h4>5. Select “Εισαγωγή από .json”</h4>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              style="background-color: #515151; height: 200px"
+              class="p-4 rounded-3"
+            >
+              <h4>6. Close and re-open the app</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gap-40"></div>
+  </body>
+</html>
