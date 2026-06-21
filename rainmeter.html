@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./style.css" />
     <style>
       h2 {
-        color: #d39f7b;
+        color: rgb(211, 159, 123);
       }
 
       h3 {
@@ -38,329 +38,364 @@
     <script src="gsap_modules/SplitText.min.js"></script>
     <script src="gsap_modules/ScrollTrigger.min.js"></script>
     <script type="module" src="gsap_modules/gsap.js"></script>
-    <div class="row g-5 align-items-end mx-1 my-1">
-      <div class="col-md-6">
-        <img
-          src="assets/products/rainmeter/cover.png"
-          alt="Phase 10 Cover"
-          class="cover_style rounded-3"
-        />
-      </div>
-      <div class="col-md-6">
-        <h1 class="project_title">Rainmeter Skins</h1>
-        <h3 class="project_desc" style="text-align: initial">
-          Desktop customization widgets made purely from code.
-        </h3>
-        <div class="gap-20"></div>
-        <div class="d-flex flex-wrap">
-          <div
-            style="background-color: var(--background_light)"
-            class="rounded-2 px-3 py-2 my-1 me-2"
-          >
-            Project type: UI/UX | Programming
-          </div>
-          <div
-            style="background-color: var(--background_light)"
-            class="rounded-2 px-3 py-2 my-1 me-2"
-          >
-            Timeline: 2019-2024
-          </div>
-          <div
-            style="background-color: var(--background_light)"
-            class="rounded-2 px-3 py-2 my-1 me-2"
-          >
-            Tools used: Rainmeter
-          </div>
-        </div>
-        <div class="gap-40"></div>
-        <a href="https://www.deviantart.com/offbalancect" target="_blank">
-          <img
-            src="assets/products/rainmeter/action_devianrt.png"
-            alt="DeviantArt button"
-            style="max-height: 50px; width: auto; object-fit: contain"
-            class="mx-0"
-          />
-        </a>
-      </div>
+
+    <div id="loader-wrapper">
+      <div class="circular-loader"></div>
     </div>
-    <div class="gap-80"></div>
-    <div class="gap-20"></div>
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
-      <div class="row g-4">
-        <div class="col-md-8">
-          <h3>Distribution</h3>
-          <p style="text-align: justify">
-            Rainmeter skins are shared on DeviantArt under the alias “OffBalance
-            Creative Team.” DeviantArt is a key platform for digital and
-            handmade art, and it's where most Rainmeter skins are found. While
-            made individually, they’re shaped by others’ work—through design,
-            features, or shared code while Rainmeter’s open-source nature allows
-            creators to build upon one another.
-          </p>
-        </div>
-        <div class="col-md-4">
+
+    <div id="main-content">
+      <div class="row g-5 align-items-end mx-1 my-1">
+        <div class="col-md-6">
           <img
-            src="assets/products/rainmeter/OffBalanceXDeviant.gif"
-            alt="OffBalance Logo"
-            class="img-fluid w-100"
-            style="max-width: 300px"
+            src="assets/products/rainmeter/cover.png"
+            alt="Phase 10 Cover"
+            class="cover_style rounded-3"
           />
+        </div>
+        <div class="col-md-6">
+          <h1 class="project_title">Rainmeter Skins</h1>
+          <h3 class="project_desc" style="text-align: initial">
+            Desktop customization widgets made purely from code.
+          </h3>
+          <div class="gap-20"></div>
+          <div class="d-flex flex-wrap">
+            <div
+              class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
+            >
+              <span
+                class="px-3 py-2"
+                style="background-color: var(--background_light)"
+                >Project type</span
+              >
+              <span
+                class="px-3 py-2"
+                style="background-color: rgba(211, 159, 123, 0.75)"
+                >UI/UX | Programming</span
+              >
+            </div>
+
+            <div
+              class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
+            >
+              <span
+                class="px-3 py-2"
+                style="background-color: var(--background_light)"
+                >Timeline</span
+              >
+              <span
+                class="px-3 py-2"
+                style="background-color: rgba(211, 159, 123, 0.75)"
+                >2019-2024</span
+              >
+            </div>
+
+            <div
+              class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
+            >
+              <span
+                class="px-3 py-2"
+                style="background-color: var(--background_light)"
+                >Tools used</span
+              >
+              <span
+                class="px-3 py-2"
+                style="background-color: rgba(211, 159, 123, 0.75)"
+                >Rainmeter</span
+              >
+            </div>
+          </div>
+          <div class="gap-40"></div>
+          <a href="https://www.deviantart.com/offbalancect" target="_blank">
+            <img
+              src="assets/products/rainmeter/action_devianrt.png"
+              alt="DeviantArt button"
+              style="max-height: 50px; width: auto; object-fit: contain"
+              class="mx-0"
+            />
+          </a>
         </div>
       </div>
       <div class="gap-80"></div>
-      <h3>The Skins</h3>
       <div class="gap-20"></div>
-      <div>
-        <img
-                alt="ClockWorld"
-          src="assets/products/rainmeter/clockworld.jpg"
-          class="rounded-3"
-          style="max-height: 75vh"
-        />
-        <br />
+      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
         <div class="row g-4">
           <div class="col-md-8">
-            <h2>ClockWorld</h2>
-            <p>
-              Peaceful colors with smooth graphics and a "tropical" feeling
-              provide comfort and calmness while working on your computer.
+            <h3>Distribution</h3>
+            <p style="text-align: justify">
+              Rainmeter skins are shared on DeviantArt under the alias
+              “OffBalance Creative Team.” DeviantArt is a key platform for
+              digital and handmade art, and it's where most Rainmeter skins are
+              found. While made individually, they’re shaped by others’
+              work—through design, features, or shared code while Rainmeter’s
+              open-source nature allows creators to build upon one another.
             </p>
           </div>
           <div class="col-md-4">
-            <div class="d-flex justify-content-end gap-4">
-              <div>
-                <h4>750k+</h4>
-                <p>views</p>
-              </div>
-              <div>
-                <h4>1.5k+</h4>
-                <p>favorites</p>
-              </div>
-
-              <div>
-                <h4>40+</h4>
-                <p>badges</p>
-              </div>
-            </div>
+            <img
+              src="assets/products/rainmeter/OffBalanceXDeviant.gif"
+              alt="OffBalance Logo"
+              class="img-fluid w-100"
+              style="max-width: 300px"
+            />
           </div>
         </div>
-      </div>
-      <div class="gap-80"></div>
-      <div>
-        <img
-          src="assets/products/rainmeter/meenimal.jpg"
-          class="rounded-3 img-fluid"
-          style="max-height: 75vh; object-fit: cover"
-        />
-        <br />
-        <div class="row g-4">
-          <div class="col-md-8">
-            <h2>Meenimal</h2>
-            <p>
-              Meenimal was designed with the user in mind. Everything you will
-              need is in front of your eyes. Meenimal is a simple skin for those
-              who don't care so much about productivity but for elegance.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <div class="d-flex justify-content-end gap-4">
-              <div>
-                <h4>70k+</h4>
-                <p>views</p>
-              </div>
-              <div>
-                <h4>250+</h4>
-                <p>favorites</p>
-              </div>
-              <div>
-                <h4>5+</h4>
-                <p>badges</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gap-80"></div>
-      <div>
-        <img
-          src="assets/products/rainmeter/sparse.jpg"
-          class="rounded-3 img-fluid"
-          style="max-height: 75vh; object-fit: cover"
-        />
-        <br />
-        <div class="row g-4">
-          <div class="col-md-8">
-            <h2>Sparse</h2>
-            <p>
-              Sparse is our simplest skin yet. Elegant design featuring
-              Rainmeter's basic functions - Clock, Date - Time, Weather and Song
-              display. All these accompanied with a user-friendly Settings menu
-              and Over the Air updates!
-            </p>
-          </div>
-          <div class="col-md-4">
-            <div class="d-flex justify-content-end gap-4">
-              <div>
-                <h4>75k+</h4>
-                <p>views</p>
-              </div>
-              <div>
-                <h4>200+</h4>
-                <p>favorites</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gap-80"></div>
-    </div>
-    <img
-      style="min-height: 300px; object-fit: cover; margin: auto"
-      src="assets/products/rainmeter/Settings.png"
-      alt
-      class="img-fluid w-100"
-    />
-    <div class="px-4 mx-auto" style="max-width: var(--max_width)">
-      <div class="row g-4">
-        <div class="col-md-7">
-          <h3>Settings</h3>
-          <p style="text-align: justify">
-            The settings menu is the best example of a good user experience in
-            every application. In clockworld, it enables the customization of
-            the skin in various ways, split into categories. it manages to
-            display a big amount of information organized in a very convenient
-            way. Just like that, clockworld settings menu features consistency
-            along with sleek and user friendly environment despite rainmeter’s
-            restrictions. By using packages created by the community and with
-            the advice of its people, this interface came to life and it’s
-            praised as one of he best Rainmeter settings menus out there.
-          </p>
-        </div>
-        <div class="col-md-5">
+        <div class="gap-80"></div>
+        <h3>The Skins</h3>
+        <div class="gap-20"></div>
+        <div>
           <img
-            class="img-fluid w-100"
-            src="assets/products/rainmeter/Settings_Windows.png"
-            alt="Windows Settings"
-          />
-        </div>
-      </div>
-      <div class="gap-80"></div>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <img
-            src="assets/products/rainmeter/Settings_Single.png"
-            alt
-            class="img-fluid w-100"
-          />
-        </div>
-        <div class="col-md-6">
-          <img
-            src="assets/products/rainmeter/Settings_Single_2.png"
-            alt
-            class="img-fluid w-100"
-          />
-        </div>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <h3>Design Language</h3>
-      <p style="text-align: justify">
-        The Settings menu is heavily inspired by he windows 10 Fluent design
-        system which was a successful story when it came out. The design is
-        simple and is focused on usability without compromising on design
-        familiarity, creating a user friendly design. The view window is split
-        into two parts, the settings categories and the settings options. Its
-        way of usage is really simple as users are already accustomed with this
-        type of design from their operating system. First, the categories are
-        easily recognizable by the corresponding icon in front of the text for
-        fast reading. The wallpaper color, described before, works as the main
-        (accent) color declaring which category is selected. After navigating to
-        one, users can access the Settings on the right side of the window.
-        There, depending on the type, can users interact with all kinds of
-        interface elements such as buttons, text fields and toggles, Each one of
-        them follows common design rules as follows: <br />
-        <br />
-        Action buttons: Filled with a light black color with rounded corners.
-        Provide some kind of action when clicked.
-        <br />
-        Text boxes: Outlined boxes with the accent color as border. Enables
-        clicking for entering information. <br />
-        Toggles: Colored with the accent color when turned on, outlined with
-        white when turned off.
-        <br />
-        <br />
-        Every skin has very similar style of Settings menu. This is done in
-        order to effectively manage adaptability and scalability for the long
-        term. Despite that, every skin has its own special settings and thus the
-        Settings changes its content but with keeping the overall design
-        parameters the same.
-      </p>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-
-      <h3>Feature: Automatic Updates</h3>
-      <div style="height: 10px"></div>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div
-            style="background-color: var(--background_light); padding: 30px"
+            alt="ClockWorld"
+            src="assets/products/rainmeter/clockworld.jpg"
             class="rounded-3"
-          >
-            <h3>Problem</h3>
-            <p>
-              Users have to check for skin updates manually every couple days or
-              weeks, missing out on potential new features.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            style="background-color: var(--background_light); padding: 30px"
-            class="rounded-3"
-          >
-            <h3>Solution</h3>
-            <p>
-              Every skin is equipped with an update check system, where users
-              can check if there is an available update and download it through
-              the integrated skin installer just by pressing the Download button
-              in the skin’s Settings menu.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <h3>How It Works</h3>
-      <p style="text-align: justify">
-        To enable automatic updates, I stored new files in an online
-        database—GitHub—since it manages version history and supports open
-        source projects. I created a PowerShell script that downloads the GitHub
-        repository as a .zip, extracts it, and replaces the old files in
-        Rainmeter’s skin folder. An update checker in the settings compares the
-        current skin version (from a local file) with the latest version (from
-        an online file). If they differ, an update is available. When the “Check
-        for updates” button is pressed, both versions are read, stripped of
-        dots, converted to integers, and compared. This simple system was part
-        of a broader exploration of Rainmeter’s features and scripting with
-        languages like Lua.
-      </p>
-      <div class="gap-80"></div>
-      <div class="gap-40"></div>
-      <h3>The Future</h3>
-      <p style="text-align: justify">
-        The goal of this feature for the future is to create fully automatic
-        updates that happen when users open their computer. This will make the
-        user experience even more seamless, removing the need to check for
-        updates manually. Due to some limitations of Rainmeter, progress is slow
-        as I continue researching other ways to integrate this feature. <br />
+            style="max-height: 75vh"
+          />
+          <br />
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h2>ClockWorld</h2>
+              <p>
+                Peaceful colors with smooth graphics and a "tropical" feeling
+                provide comfort and calmness while working on your computer.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-end gap-4">
+                <div>
+                  <h4>750k+</h4>
+                  <p>views</p>
+                </div>
+                <div>
+                  <h4>1.5k+</h4>
+                  <p>favorites</p>
+                </div>
 
-        Another possible idea is to create a skin distribution platform (like
-        the Google Play Store) where developers can upload their skins and be
-        eligible for OTA updates. There has been a test in the past creating a
-        platform like this, but it didn’t move forward due to its workload and
-        platform limitations.
-      </p>
-      <div class="gap-60"></div>
+                <div>
+                  <h4>40+</h4>
+                  <p>badges</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div>
+          <img
+            src="assets/products/rainmeter/meenimal.jpg"
+            class="rounded-3 img-fluid"
+            style="max-height: 75vh; object-fit: cover"
+          />
+          <br />
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h2>Meenimal</h2>
+              <p>
+                Meenimal was designed with the user in mind. Everything you will
+                need is in front of your eyes. Meenimal is a simple skin for
+                those who don't care so much about productivity but for
+                elegance.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-end gap-4">
+                <div>
+                  <h4>70k+</h4>
+                  <p>views</p>
+                </div>
+                <div>
+                  <h4>250+</h4>
+                  <p>favorites</p>
+                </div>
+                <div>
+                  <h4>5+</h4>
+                  <p>badges</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div>
+          <img
+            src="assets/products/rainmeter/sparse.jpg"
+            class="rounded-3 img-fluid"
+            style="max-height: 75vh; object-fit: cover"
+          />
+          <br />
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h2>Sparse</h2>
+              <p>
+                Sparse is our simplest skin yet. Elegant design featuring
+                Rainmeter's basic functions - Clock, Date - Time, Weather and
+                Song display. All these accompanied with a user-friendly
+                Settings menu and Over the Air updates!
+              </p>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-end gap-4">
+                <div>
+                  <h4>75k+</h4>
+                  <p>views</p>
+                </div>
+                <div>
+                  <h4>200+</h4>
+                  <p>favorites</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+      </div>
+      <img
+        style="min-height: 300px; object-fit: cover; margin: auto"
+        src="assets/products/rainmeter/Settings.png"
+        alt
+        class="img-fluid w-100"
+      />
+      <div class="px-4 mx-auto" style="max-width: var(--max_width)">
+        <div class="row g-4">
+          <div class="col-md-7">
+            <h3>Settings</h3>
+            <p style="text-align: justify">
+              The settings menu is the best example of a good user experience in
+              every application. In clockworld, it enables the customization of
+              the skin in various ways, split into categories. it manages to
+              display a big amount of information organized in a very convenient
+              way. Just like that, clockworld settings menu features consistency
+              along with sleek and user friendly environment despite rainmeter’s
+              restrictions. By using packages created by the community and with
+              the advice of its people, this interface came to life and it’s
+              praised as one of he best Rainmeter settings menus out there.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="img-fluid w-100"
+              src="assets/products/rainmeter/Settings_Windows.png"
+              alt="Windows Settings"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              src="assets/products/rainmeter/Settings_Single.png"
+              alt
+              class="img-fluid w-100"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/products/rainmeter/Settings_Single_2.png"
+              alt
+              class="img-fluid w-100"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3>Design Language</h3>
+        <p style="text-align: justify">
+          The Settings menu is heavily inspired by he windows 10 Fluent design
+          system which was a successful story when it came out. The design is
+          simple and is focused on usability without compromising on design
+          familiarity, creating a user friendly design. The view window is split
+          into two parts, the settings categories and the settings options. Its
+          way of usage is really simple as users are already accustomed with
+          this type of design from their operating system. First, the categories
+          are easily recognizable by the corresponding icon in front of the text
+          for fast reading. The wallpaper color, described before, works as the
+          main (accent) color declaring which category is selected. After
+          navigating to one, users can access the Settings on the right side of
+          the window. There, depending on the type, can users interact with all
+          kinds of interface elements such as buttons, text fields and toggles,
+          Each one of them follows common design rules as follows: <br />
+          <br />
+          Action buttons: Filled with a light black color with rounded corners.
+          Provide some kind of action when clicked.
+          <br />
+          Text boxes: Outlined boxes with the accent color as border. Enables
+          clicking for entering information. <br />
+          Toggles: Colored with the accent color when turned on, outlined with
+          white when turned off.
+          <br />
+          <br />
+          Every skin has very similar style of Settings menu. This is done in
+          order to effectively manage adaptability and scalability for the long
+          term. Despite that, every skin has its own special settings and thus
+          the Settings changes its content but with keeping the overall design
+          parameters the same.
+        </p>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+
+        <h3>Feature: Automatic Updates</h3>
+        <div style="height: 10px"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3>Problem</h3>
+              <p>
+                Users have to check for skin updates manually every couple days
+                or weeks, missing out on potential new features.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              style="background-color: var(--background_light); padding: 30px"
+              class="rounded-3"
+            >
+              <h3>Solution</h3>
+              <p>
+                Every skin is equipped with an update check system, where users
+                can check if there is an available update and download it
+                through the integrated skin installer just by pressing the
+                Download button in the skin’s Settings menu.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3>How It Works</h3>
+        <p style="text-align: justify">
+          To enable automatic updates, I stored new files in an online
+          database—GitHub—since it manages version history and supports open
+          source projects. I created a PowerShell script that downloads the
+          GitHub repository as a .zip, extracts it, and replaces the old files
+          in Rainmeter’s skin folder. An update checker in the settings compares
+          the current skin version (from a local file) with the latest version
+          (from an online file). If they differ, an update is available. When
+          the “Check for updates” button is pressed, both versions are read,
+          stripped of dots, converted to integers, and compared. This simple
+          system was part of a broader exploration of Rainmeter’s features and
+          scripting with languages like Lua.
+        </p>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3>The Future</h3>
+        <p style="text-align: justify">
+          The goal of this feature for the future is to create fully automatic
+          updates that happen when users open their computer. This will make the
+          user experience even more seamless, removing the need to check for
+          updates manually. Due to some limitations of Rainmeter, progress is
+          slow as I continue researching other ways to integrate this feature.
+          <br />
+
+          Another possible idea is to create a skin distribution platform (like
+          the Google Play Store) where developers can upload their skins and be
+          eligible for OTA updates. There has been a test in the past creating a
+          platform like this, but it didn’t move forward due to its workload and
+          platform limitations.
+        </p>
+        <div class="gap-60"></div>
+      </div>
     </div>
   </body>
 </html>
