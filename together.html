@@ -27,6 +27,16 @@
         color: #d3a832;
       }
 
+      .card {
+        position: absolute;
+        width: 35vh;
+        aspect-ratio: 370 / 289; /* match your image's natural ratio, or whatever ratio you want */
+        top: -100px;
+        right: 20px;
+        transform: rotate(5deg);
+        background-color: transparent;
+      }
+
       .title_box {
         min-height: 60px;
         background-color: #d3a832;
@@ -417,27 +427,35 @@
         </div>
         <div class="gap-40"></div>
         <div class="gap-80"></div>
-        <h2
-          class="title_box rounded-top"
-          style="font-family: Akira; color: black"
-        >
-          Design
-        </h2>
-        <img
-          src="assets/products/together/figma.png"
-          class="project_images rounded-bottom w-100"
-          style="object-fit: cover; max-height: 50vh"
-          alt="Desgin Figma Preview"
-        />
-        <div class="gap-80"></div>
+        <div style="position: relative">
+          <h2
+            class="title_box rounded-3"
+            style="font-family: Akira; color: black"
+          >
+            Design
+          </h2>
+          <div class="card d-none d-md-block">
+            <img
+              class="position-absolute z-n1 w-100 h-100"
+              style="object-fit: cover"
+              src="assets/products/together/checkin_social.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="gap-40"></div>
         <h3>Screens</h3>
-        <p>
-          Between the Thesis and today there have been many iterations that
-          ultimately improved the user interfae. After deep research on UX, some
-          necessary changes where made in order to meet better the expectations
-          of the user for the app.
-        </p>
-        <div class="gap-10"></div>
+        <div class="col-md-8">
+          <p style="text-align: justify">
+            Between the Thesis and today there have been many iterations that
+            ultimately improved the user interface. After deep research on UX,
+            some necessary changes where made in order to meet better the
+            expectations of the user for the app.
+          </p>
+        </div>
+
+        <div class="gap-20"></div>
         <h4 style="font-family: Akira">First iterations on paper</h4>
 
         <div class="row g-5">
@@ -495,56 +513,146 @@
           </div>
         </div>
         <div class="gap-80"></div>
+        <h3 style="font-family: Akira">UX: Friends & Safety</h3>
+        <div class="col-md-8">
+          <p style="text-align: justify">
+            When creating an app that allows users to create live meetups
+            through phone there is always a degree of danger. Through
+            impersonation, a user can trick another into meeting them pretending
+            to be their friend. That's why 3 approaches were studied, each one
+            with the own benefits and drawbacks with the goal being to ensure
+            maximum safety and as less danger as possible. After careful study
+            the "Contacts only" option pffers the maximum safety but also aligns
+            with the app's direction and goal.
+          </p>
+        </div>
+
+        <div class="gap-40"></div>
         <div class="row g-4">
-          <div class="col-md-6">
-            <h3>UX Tactic: Dynamic Navigation Bar</h3>
+          <div class="col-md-4">
+            <div class="ratio ratio-1x1">
+              <img
+                class="project_images rounded-3 h-100"
+                style="object-fit: cover"
+                src="assets/products/together/buddies_1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="gap-20"></div>
+            <h3>In-app Requests</h3>
+            <p style="text-align: justify">
+              Social-media-like befriending tactics that works successfully when
+              the user wasnts to expand their social circle inside the app by a
+              large factor. useful when adding people in general but ineffective
+              for selective adds of a closer circle and highly unsafe.
+            </p>
+            <div class="gap-10"></div>
             <div class="d-flex flex-wrap">
               <div
-                style="background-color: var(--background_light)"
+                style="background-color: rgb(61, 114, 92)"
                 class="rounded-2 px-3 py-2 my-1 me-2"
               >
-                Each page has a set of specific important functions that due to
-                the information hierarchy cannot be integrated into a dropdown
-                menu or submenu
+                + Easy, fast and non-restrictive Buddies adding
+              </div>
+
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - High risk of impersonation
               </div>
               <div
-                style="background-color: var(--background_light)"
+                style="background-color: rgb(165, 119, 51)"
                 class="rounded-2 px-3 py-2 my-1 me-2"
               >
-                There are no pages that need to be accessible from any screen at
-                any time
+                - Does not align with the purpose of the app
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ratio ratio-1x1">
+              <img
+                class="project_images rounded-3 h-100"
+                style="object-fit: cover"
+                src="assets/products/together/buddies_2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="gap-20"></div>
+            <h3>Link invites</h3>
+            <p style="text-align: justify">
+              Link based adding friends works well as users can share a link
+              through messages or by scanning a QR. Much private and
+              controllable method but still lacks impersonation safety.
+            </p>
+            <div class="gap-10"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + User controls which users they will add
+              </div>
+
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Medium risk of impersonation
+              </div>
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - May be difficult to access some users
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ratio ratio-1x1">
+              <img
+                class="project_images rounded-3 h-100"
+                style="object-fit: cover"
+                src="assets/products/together/buddies_3.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="gap-20"></div>
+            <h3>Contacts only</h3>
+            <p style="text-align: justify">
+              Adding friends through contacts is inspired by messaging apps like
+              Viber and WhatsApp and only allows user to discover their contacts
+              inside the app. This ensures a user finds only the people they
+              also interact in real life while adding the safety of a phone
+              number which makes defrauding extremely difficult.
+            </p>
+            <div class="gap-10"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Only trusted people will be visible inside the app
               </div>
               <div
                 style="background-color: rgb(61, 114, 92)"
                 class="rounded-2 px-3 py-2 my-1 me-2"
               >
-                + An always accessible menu adapted according to the page
+                + No initial interaction to add Buddies.
               </div>
-            </div>
-            <br />
-            <p>
-              <b><i>Dropped in later designs due to unnecessity.</i></b>
-            </p>
-          </div>
-          <div class="col-md-6">
-            <div class="d-flex gap-2">
-              <img
-                class="project_images"
-                style="width: 50%; object-fit: contain"
-                src="assets/products/together/dynamic_bar_1.png"
-                alt="dynamic_bar_1"
-              />
-              <img
-                class="project_images"
-                style="width: 50%; object-fit: contain"
-                src="assets/products/together/dynamic_bar_2.png"
-                alt="dynamic_bar_2"
-              />
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Users may feel they have limited freedom
+              </div>
             </div>
           </div>
         </div>
         <div class="gap-80"></div>
-        <h3>Meetup Screen Sequence</h3>
+        
+        <h3 style="font-family: Akira">Meetup Screen Sequence</h3>
         <p>
           <b>Goal-Gradient Effect</b><br />
           “Provide a clear indication of progress in order to motivate users to
