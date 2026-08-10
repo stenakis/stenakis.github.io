@@ -166,21 +166,6 @@ hr {
   padding: 0 10px;
 }
 
-.line-top {
-  color: #d3a832;
-}
-
-.line-bottom {
-  color: #d3a832;
-}
-
-/* Middle line styling */
-.line-middle {
-  background: #d3a832;
-  color: black;
-}
-
-/* Full screen loader overlay */
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -195,11 +180,23 @@ hr {
 }
 
 .circular-loader {
+  position: relative;
   width: 50px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.circular-loader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   border: 3px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  border-top-color: #ffc107; /* Matches your warning/accent color */
+  border-top-color: #e19743;
   animation: spin 1s ease-in-out infinite;
 }
 
@@ -207,10 +204,4 @@ hr {
   to {
     transform: rotate(360deg);
   }
-}
-
-/* Hide content initially to prevent flicker */
-#main-content {
-  opacity: 0;
-  visibility: hidden;
 }
