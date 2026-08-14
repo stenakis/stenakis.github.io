@@ -94,7 +94,7 @@
               >
             </div>
 
-             <div
+            <div
               class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
             >
               <span
@@ -137,8 +137,6 @@
                 >Figma | Android Studio</span
               >
             </div>
-
-            
           </div>
           <div class="gap-40"></div>
           <a href="https://github.com/stenakis/Milibase" target="_blank">
@@ -178,13 +176,12 @@
             <div class="gap-40"></div>
             <h3 class="gradient-text">Manage soldier information</h3>
             <div class="gap-10"></div>
-            <p style="text-align: justify">
+            <p>
               Every soldier's profile brings together everything you need in one
               place — service dates including introduction, arrival, and
-              removal, a unique General Registry Number for fast identification,
-              military specialty, and a full set of personal data covering phone
-              numbers, address, educational background, family status, and more.
-              Complete records, always at your fingertips.
+              removal, a unique General Registry Number, specialty, and a full
+              set of personal data. All the basic information to handle service
+              requests accross the board.
             </p>
           </div>
           <div class="col-md-6">
@@ -210,16 +207,13 @@
           <div class="col-md-6">
             <h3 class="gradient-text">Set leaves. Sort by date and type</h3>
             <div class="gap-10"></div>
-            <p style="text-align: justify">
+            <p>
               Milibase's leave management system organizes absences by type —
               regular, sick, emergency, and more — and automatically calculates
               the total days used per category. With a built-in date tracking
               system, every leave entry is counted and logged, giving commanders
               a clear, accurate picture of each soldier's leave history and
-              remaining balance at a glance. Need to reflect a reassignment or
-              status change? Open any record and edit it directly through a
-              simple, distraction-free window — fast, accurate, and always in
-              sync.
+              remaining balance at a glance.
             </p>
             <div class="gap-40"></div>
             <div class="row g-4">
@@ -269,7 +263,7 @@
             />
             <div class="gap-20"></div>
             <h4 class="gradient-text">Monthly calendar view</h4>
-            <p style="text-align: justify">
+            <p>
               A built-in monthly calendar view maps out leaves, absences, and
               key dates across the unit — providing a clear, visual overview of
               soldier availability without having to search through individual
@@ -292,11 +286,11 @@
             <h4 class="gradient-text">
               Dedicated single-file offline database
             </h4>
-            <p style="text-align: justify">
-              All data is stored in a single local file — no internet
-              connection, no cloud dependency, no external servers. Milibase
-              works fully offline, keeping sensitive military records fast,
-              portable, and entirely under your control.
+            <p>
+              All data is stored in a single local file providing both safety
+              and portability. This ensures Milibase works in low-end machines
+              and allows users to transfer or export data easily, just by
+              copying a single file.
             </p>
           </div>
           <div class="col-md-4">
@@ -313,7 +307,7 @@
             />
             <div class="gap-20"></div>
             <h4 class="gradient-text">Automatic OTA updates</h4>
-            <p style="text-align: justify">
+            <p>
               Milibase updates itself automatically via GitHub. When a new
               version is available, the app notifies you and applies the update
               on the spot — no manual downloads, no stores, no hassle. Always up
@@ -322,20 +316,52 @@
           </div>
         </div>
         <div class="gap-80"></div>
-          <div class="gap-80"></div>
-        <h2 class="gradient-text">Design</h2>
         <div class="gap-40"></div>
+        <h2 class="gradient-text">Functionality limitations</h2>
+        <div class="gap-20"></div>
         <div class="row g-5">
           <div class="col-md-4">
-            <p style="text-align: justify">
+            <p>
+              During the early concept thinking, there were 2 limitations that
+              had to be taken account for when deciding how Milibase would work:
+              The device that the software would be installed was
+              <b>low-end</b> and had
+              <b>no internet access</b>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Low-end machine</h4>
+            <p>
+              The solution was not to overload the system with fancy animations
+              and heavy dependencies when creating the software. Depending on an
+              existing design system ensures everything works smoothly with no
+              unecessary asset loading.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>No internet connection</h4>
+            <p>
+              In order to protect sensitive data, only selected devices had
+              access to the internet. To solve that, a local database would
+              create both a safe and offline way to store data without the need
+              to download data from an external server.
+            </p>
+          </div>
+        </div>
+
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h2 class="gradient-text">Design</h2>
+        <div class="gap-20"></div>
+        <div class="row g-5">
+          <div class="col-md-4">
+            <p>
               Created with Flutter inspired by Microsoft's Fluent UI kit, it
               ensures the design is expressive across all devices and gives out
               a native Windows feeling. Since Milibase is a simple database app
               for limited use there was no need to come up with a new attractive
-              design, all it was needed was
+              design, all it was needed was <b>Simplicity & Efficiency</b>
             </p>
-            <div class="gap-10"></div>
-            <h4>Simplicity & Efficiency</h4>
           </div>
           <div class="col-md-4">
             <img
@@ -351,7 +377,7 @@
             />
             <div class="gap-20"></div>
             <h4>Colors</h4>
-            <p style="text-align: justify">
+            <p>
               The color palette focuses on the color of the navy: blue. A native
               feeling is crucial to match all the other assets and general
               aesthetic of the military. Two shades of blue, main and accent
@@ -373,7 +399,7 @@
             />
             <div class="gap-20"></div>
             <h4>Lists</h4>
-            <p style="text-align: justify">
+            <p>
               The lists follow a simple - and a bit generic - design, nothing
               fancy. This is because user experience is everything, the user has
               to be able to find everything at a glance
@@ -381,9 +407,174 @@
           </div>
         </div>
         <div class="gap-80"></div>
-             <div class="gap-80"></div>
-        <h2 class="gradient-text">Wanna try it yourself?</h2>
         <div class="gap-40"></div>
+        <h2 class="gradient-text">Design solutions</h2>
+        <div class="gap-20"></div>
+        <div class="row g-5">
+          <div class="col-md-6">
+            <img
+              class="project_images rounded-3"
+              style="
+                height: 40vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+              "
+              src="assets/products/milibase/info_old.jpg"
+              alt="Soldier leaves table"
+            />
+            <div class="gap-10"></div>
+            <p><i>Early prototype</i></p>
+            <div class="gap-20"></div>
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h4>Problem</h4>
+              <p>
+                Early concepts grouped all info together in a single page for
+                simpler navigation and an all-in-one view of all soldier's
+                information. The problem with this approach was that, as the
+                amount of information was starting to get bigger and bigger,
+                there was not enough room for everything. Some sections got
+                off-screen and the whole experience created a visual clutter.
+              </p>
+            </div>
+            <div class="gap-10"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Grouped information - everything at a glance
+              </div>
+
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Large amount of information creates visual clutter
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="project_images rounded-3"
+              style="
+                height: 40vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+              "
+              src="assets/products/milibase/info_new.jpg"
+              alt="Soldier leaves table"
+            />
+            <div class="gap-10"></div>
+            <p><i>Final design</i></p>
+            <div class="gap-20"></div>
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h4>Solution</h4>
+              <p>
+                Creating sub-categories created a more visually controlled
+                environment where user would only see a certain amount of
+                information. This approach solves the problem of information
+                clutter and categorizes elements based on their relationship.
+                The added navigation complexity to navigate each category is a
+                much needed sacrifice but delivers more usability than it costs.
+              </p>
+            </div>
+            <div class="gap-10"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Categroies create order and manage information more easily
+              </div>
+
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Adds navigation complexity
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h2 class="gradient-text">Feature: Vardies</h2>
+        <div class="gap-20"></div>
+        <div class="row g-4">
+          
+          <div class="col-md-8">
+            <p>
+              "Vardies" was a feature that got cancelled due to time limitations
+              and implementation complexity. Despite that, some early designs
+              focus a lot on usability and show the experimental side of the
+              project. Originally, soldiers' names on daily guard service
+              (vardies) are written down on a spreadsheet for easy information,
+              which can be very useful when dealing with a large number of
+              soliders. As an integrated feature, Vardies would assist in
+              automatic creation of the schedule, easier sharing to other
+              soldiers along with easy database migration to other devices.
+              Future plans would include AI chatbot inegration for easy
+              adjusting schedule with natural language. (Names on photos are
+              ficitonal for identity safety)
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <p>
+                The idea was to create a familiar interface with added
+                functionality such as algorithmic vardies creation, support for
+                external obligations (agimata) and easy integration with the
+                existing solider database.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gap-20"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              class="project_images rounded-3"
+              style="
+                max-height: 60vh;
+
+                object-fit: cover;
+                object-position: bottom;
+              "
+              src="assets/products/milibase/vardies_2.jpeg"
+              alt="Old vardies screen"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              class="project_images rounded-3"
+              style="
+                max-height: 60vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+              "
+              src="assets/products/milibase/vardies_1.jpg"
+              alt="New vardies screen"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h2 class="gradient-text">Wanna try it yourself?</h2>
+        <div class="gap-20"></div>
         <div class="row g-4">
           <div class="col-md-4">
             <div
@@ -394,7 +585,7 @@
               "
               class="p-4 rounded-3"
             >
-              <h4>1. Download and install Milibase</h4>
+              <h4>1. Download and install Milibase (Windows OS only)</h4>
               <a
                 href="https://github.com/stenakis/Milibase/releases/"
                 target="_blank"
