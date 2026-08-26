@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+    <title>Maisuno+1's Website Redesign</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h4 {
+        font-weight: bold;
+        letter-spacing: -1px;
+      }
+      h2 {
+        color: #ffcc00;
+      }
+
+      h3 {
+        color: #ffcc00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="gsap_modules/page-transition.js"></script>
+    <script src="gsap_modules/gsap.min.js"></script>
+    <script src="gsap_modules/SplitText.min.js"></script>
+    <script src="gsap_modules/ScrollTrigger.min.js"></script>
+    <script type="module" src="gsap_modules/gsap.js"></script>
+
+    <div id="loader-wrapper">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="circular-loader">
+          <img src="assets/icons/logo.svg" style="width: 30px; height: 30px" />
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content">
+      <div class="gap-20"></div>
+      <div class="gap-10"></div>
+      <div class="row g-5 align-items-end mx-1">
+        <div class="col-md-6">
+          <img
+            src="assets/products/maisuno/home_screen.jpg"
+            alt="Milibase cover"
+            class="cover_style rounded-3"
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="project_title">Maisuno+1's Website Redesign</h1>
+          <h3 class="project_desc" style="text-align: initial">
+            My way of thinking into MaisUno+1's task to improve the arrangement
+            of infomration into their website.
+          </h3>
+          <div class="gap-20"></div>
+          <div class="d-flex flex-wrap">
+            <div
+              class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
+            >
+              <span
+                class="px-3 py-2"
+                style="background-color: var(--background_light)"
+                >Timeline</span
+              >
+              <span
+                class="px-3 py-2"
+                style="background-color: #ffcc00; color: #000"
+                >2024-2025</span
+              >
+            </div>
+
+            <div
+              class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
+            >
+              <span
+                class="px-3 py-2"
+                style="background-color: var(--background_light)"
+                >Tools used</span
+              >
+              <span
+                class="px-3 py-2"
+                style="background-color: #ffcc00; color: #000"
+                >Cargo</span
+              >
+            </div>
+          </div>
+          <div class="gap-40"></div>
+          <a href="https://maisunomaisum.pt/" target="_blank">
+            <img
+              src="assets/products/maisuno/action_website.png"
+              alt="DeviantArt button"
+              style="max-height: 50px; width: auto; object-fit: contain"
+              class="mx-0"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="px-4 mx-auto align-items-center"
+        style="max-width: var(--max_width)"
+      >
+        <div class="gap-80"></div>
+        <div class="col-md-8">
+          <div
+            class="rounded-3"
+            style="background-color: var(--background_light); padding: 30px"
+          >
+            <h3>About</h3>
+            <p>
+              MaisUno+1 is a curatorial non-profit collective that specializes
+              in helping artists show off their work. As their website is their
+              primary source of engagement, it was necessary to provide the best
+              experience possible with organized information in a clear
+              structure that speaks flawlessly on its own. MaisUno has a wide
+              variety of projects, publications and media all focused on making
+              art accessible to all no matter the background, knowledge or
+              status. That’s why their re-designed website features an organized
+              catalog of their work split up in sections so that it is both
+              usable and artistic, a value that is the core of the collective’s
+              moto.
+            </p>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3>Organizing information</h3>
+        <div class="row g-5">
+          <div class="col-md-8">
+            <div class="gap-10"></div>
+            <p>
+              During the time I was working with MaisUno+1 my main task was to
+              make sure the website was updated with all the completed projects.
+              The biggest challenge in this project was to organize the enormous
+              amount of information available on the website about the
+              collective’s projects. Together with interns from other fields, we
+              gathered all the available material and synthesized descriptions,
+              the real work for me began. Started with notes on the wall, we
+              added more and more, moved them around until we found a first
+              draft of what the architecture would look like. Me and Nicole, the
+              manager, thought about the process of the way would implement them
+              into the website for an effective navigation and general user
+              experience. Finally, after many iterations we got the final layout
+              that would consist of 5 categories and that would affect the whole
+              navigation of the website.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              1. Gathered information on the completed projects<br />
+              2. Split them by time, location, duration and type<br />
+              3. Realized there are more things to include than projects alone.
+              Organized them by media<br />
+              4. Refined information architecture
+            </p>
+          </div>
+        </div>
+        <div class="gap-40"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              src="assets/products/maisuno/work_picoas.jpg"
+              alt="Designing and testing again and again"
+              class="project_images rounded-3"
+              style="max-height: 60vh"
+            />
+            <div class="gap-10"></div>
+            <p><i>Designing and testing again and again</i></p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/products/maisuno/IMG20241127155329.jpg"
+              alt="Organizing information starts from sticky notes on the wall"
+              class="project_images rounded-3"
+              style="max-height: 60vh"
+            />
+            <div class="gap-10"></div>
+            <p>
+              <i>Organizing information starts from sticky notes on the wall</i>
+            </p>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <div class="row g-5">
+          <div class="col-md-7">
+            <h3>The Cargo Platform</h3>
+            <div class="gap-10"></div>
+            <h4>“Cargo is a site builder for designers and artists”</h4>
+            <p><i>- cargo.site</i></p>
+            <div class="gap-20"></div>
+            <p>
+              MaisUno+1’s website was already built in Cargo, a website builder
+              for those who care about the visuals, not just the information.
+              This was a huge plus when it comes to the site’s character as it
+              aids promoting the visual information over text. Cargo had a fast
+              learning curve overall as it differed from other website builders
+              like Wix or Weebly as it had far less features and capabilities
+              that ultimately made the design easier and reduced clutter by not
+              including parts that portfolio creators would find redundant (such
+              as setting up payment methods).
+            </p>
+            <div class="gap-20"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Platform built for artists
+              </div>
+
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Easy learning curve
+              </div>
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Missing features require harcoding
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="project_images rounded-3"
+              src="assets/products/maisuno/cargo_working.jpg"
+              alt="Working on the Cargo website"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3>Navigation</h3>
+        <div class="gap-10"></div>
+
+        <img
+          class="project_images rounded-3"
+          src="assets/products/maisuno/navigation.jpg"
+          alt="New navigation menu"
+        />
+        <div class="gap-10"></div>
+        <p><i>New navigation menu</i></p>
+        <div class="gap-20"></div>
+        <div class="row g-5">
+          <div class="col-md-5">
+            <img
+              class="project_images rounded-3"
+              src="assets/products/maisuno/old_menu.jpg"
+              alt="Old navigation menu"
+            />
+            <p><i>Old navigation menu</i></p>
+          </div>
+          <div class="col-md-7">
+            <h4>Chagning the type</h4>
+            <p>
+              The old navigation system did not manage information well. There
+              was no importance hierarchy and some options did not even work
+              (loja - store). Visually, a vertical menu was original but it
+              failed to blend it with the other information of the website as it
+              had the same optical value as other elements on the page.
+            </p>
+            <div class="gap-20"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Weak information hierarchy
+              </div>
+
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Non-functioning / unused categories
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gap-80"></div>
+
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h4>Dropdown menus</h4>
+            <p>
+              A tested design we tried to implement was dropdowns in the main
+              navigation categories. It is a simple but effective way for the
+              user to glimpse what they will see inside this category if they
+              will decide to click it or not. From a UX perspective, this was
+              the perfect solution but production-wise this was not possible as
+              Cargo didn’t have the option to create dropdowns of any kind.
+              Despite that, we decided to hardcode a menu in to the page’s HTML,
+              just to try its effectiveness. We were very pleased with the
+              result but this solution had a major issue: It wasn’t scalable and
+              maintainable. If the main designer (in this case, me) left the
+              collective, it would be very difficult to make changes to the code
+              without breaking the whole webpage.
+            </p>
+            <div class="gap-20"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Effective way to navigate
+              </div>
+
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Difficult to implement and maintain
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="project_images rounded-3"
+              src="assets/products/maisuno/design_test.jpg"
+              alt="New navigation menu"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+
+        <div class="row g-5">
+          <div class="col-md-7">
+            <h4>Category pages</h4>
+            <p>
+              Breaking away from dropdowns, we had to find a way to display
+              information in categories. That’s why the next approach was
+              creating a transitioning page inside each category in the top bar
+              that would split the title into sub-categories. This in-between
+              page let us dive in deeper with images and text, providing a brief
+              introduction to each general category.
+            </p>
+            <div class="gap-20"></div>
+            <div class="d-flex flex-wrap">
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Provides visual representation of each category
+              </div>
+
+              <div
+                style="background-color: rgb(61, 114, 92)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                + Includes a brief category description
+              </div>
+              <div
+                style="background-color: rgb(165, 119, 51)"
+                class="rounded-2 px-3 py-2 my-1 me-2"
+              >
+                - Creates navigation bottleneck
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="project_images rounded-3"
+              src="assets/products/maisuno/projects_screen.jpg"
+              alt="New navigation menu"
+            />
+          </div>
+        </div>
+        <div class="gap-80"></div>
+ <div class="gap-40"></div>
+        <div class="row g-5">
+          <div class="col-md-7">
+            <h3>Layout</h3>
+            <p>
+              Every project page follows the same information hierarchy with the
+              same layout. This ensures the user is familiar with where to find
+              the information they need. It is organized into categories based
+              on each project’s needs such as duration, curators, location and
+              partners. After some design concepts we came into conclusion that
+              4 is the sweet number of columns (for desktop - horizontal
+              screens) for the information to have enough space to be readable.
+              Also, this number ensures the user is not overwhelmed with
+              information on the same page and can read everything without
+              getting confused or lost.
+            </p>
+           
+          </div>
+          <div class="col-md-5">
+            <img
+              class="project_images rounded-3"
+              src="assets/products/maisuno/home_project_ui.jpg"
+              alt="New navigation menu"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gap-40"></div>
+  </body>
+</html>
