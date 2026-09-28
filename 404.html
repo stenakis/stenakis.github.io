@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
     <title>Aegina Fistiki Fest</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
@@ -17,7 +18,20 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <h1 class="text-center">404</h1>
+  <body class="text-center p-5">
+    <lottie-player
+    class="mx-auto"
+      src="assets/404.json"
+      autoplay
+      loop
+      style="width: 320px; height: 320px"
+    ></lottie-player>
+    <h1 class="text-center">
+      Lost between the projects?<br />Let me help you.
+    </h1>
+    <div class="gap-40"></div>
+    <a href="/" class="btn" style="background-color: var(--accent)">
+      <p style="color: white">Go back home</p>
+    </a>
   </body>
 </html>
