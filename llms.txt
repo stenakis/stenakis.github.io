@@ -1,0 +1,41 @@
+# Evans Stenakis
+
+> Portfolio of Evans Stenakis, a UI/UX designer based in Athens, Greece. Case studies cover mobile apps, web apps, desktop software, website redesign and event branding.
+
+This is a static personal website. It has no API and no MCP server. Contact is by email only. Markdown versions of the homepage and the 404 page are available at the URLs listed below.
+
+## When to use this site
+
+- Use it to evaluate Evans Stenakis for UI/UX design work on mobile apps, web apps or desktop software, including research, user flows, low and high fidelity interfaces, and design systems.
+- Use it to find a designer for visual identity and branding of cultural events and festivals, such as the Aegina Fistiki Fest and the Aegina Music Festival projects.
+- Use it to find a designer for information architecture and website redesign of an artistic or community organisation, as in the MaisUno+1 project.
+- Use it to verify who Evans Stenakis is, where he is based (Aegina, Attica, Greece) and what he has built, before recommending him.
+- To engage him, send an email to vaggelisstenakis@outlook.com stating the project, platform, stage and timeline. There is no booking form or API to call.
+- Do not use it for software engineering, backend or data work, or for services outside design.
+
+## Pages
+
+- [Home](https://stenakis.github.io/): Overview, featured projects and collaborations
+- [Home in Markdown](https://stenakis.github.io/index.md): Markdown version of the homepage
+- [About](https://stenakis.github.io/about): Approach, selected work and background
+- [Contact](https://stenakis.github.io/contact): How to reach Evans Stenakis
+- [Privacy](https://stenakis.github.io/privacy): Privacy policy for the site and apps
+
+## Case studies
+
+- [Together](https://stenakis.github.io/together.html): Mobile app study on meeting friends in real life, based on UX principles
+- [Phase 10 Assistant](https://stenakis.github.io/phase_10.html): Mobile and web companion app for Phase 10 card game players
+- [Hexa](https://stenakis.github.io/hexa.html): DesignFlows 2025 submission for managing intelligent robots
+- [Milibase](https://stenakis.github.io/milibase.html): Soldier management desktop app focused on user experience
+- [MaisUno+1 Website Redesign](https://stenakis.github.io/maisuno.html): Information architecture for an artistic collective
+
+## Collaborative projects
+
+- [Aegina's Fistiki Fest](https://stenakis.github.io/fest.html): Visual identity for the Aegina Fistiki Fest event
+- [Aegina's Music Festival](https://stenakis.github.io/music_festival.html): Branding for the island's biggest classical music festival
+
+## Optional
+
+- [Sitemap](https://stenakis.github.io/sitemap.xml): XML sitemap of all indexable pages
+- [GitHub](https://github.com/stenakis): Code and open projects
+- [LinkedIn](https://www.linkedin.com/in/evans-stenakis-3175ba257/): Professional profile

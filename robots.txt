@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stenakis.github.io/sitemap.xml
