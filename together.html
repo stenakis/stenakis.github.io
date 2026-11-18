@@ -57,36 +57,16 @@
         object-fit: contain;
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 768px) {
         .meetups {
           object-fit: cover;
           height: 30vh;
         }
-        .scroll-x > [class*="col-"] {
-          min-width: ​160px;
-        }
       }
-      @media (min-width: 900px) {
+      @media (min-width: 768px) {
         .title_box {
           height: 60px;
         }
-      }
-
-      .scroll-x {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .scroll-x > [class*="col-"] img {
-        width: 100%;
-        height: auto;
-        max-height: none;
-        object-fit: cover;
-      }
-
-      .scroll-x > [class*="col-"] {
-        min-width: 160px;
       }
     </style>
   </head>

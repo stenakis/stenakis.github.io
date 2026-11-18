@@ -129,6 +129,9 @@ hr {
     max-height: 25vh;
     width: 100%;
   }
+  .scroll-x > [class*="col-"] {
+    min-width: ​160px;
+  }
 }
 
 .project_images {
@@ -205,4 +208,21 @@ hr {
   to {
     transform: rotate(360deg);
   }
+}
+
+.scroll-x {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-x > [class*="col-"] img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+}
+
+.scroll-x > [class*="col-"] {
+  min-width: 160px;
 }

@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project Mako</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h4 {
+        font-weight: bold;
+      }
+      h2 {
+        color: #00c0e8;
+      }
+
+      h3 {
+        color: #00c0e8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="gsap_modules/page-transition.js"></script>
+    <script src="gsap_modules/gsap.min.js"></script>
+    <script src="gsap_modules/SplitText.min.js"></script>
+    <script src="gsap_modules/ScrollTrigger.min.js"></script>
+    <script type="module" src="gsap_modules/gsap.js"></script>
+
+    <div id="loader-wrapper">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="circular-loader">
+          <img src="assets/icons/logo.svg" style="width: 30px; height: 30px" />
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content">
+      <div class="gap-20"></div>
+      <div class="gap-10"></div>
+      <div class="row g-5 align-items-end mx-1">
+        <div class="col-md-6">
+          <img
+            src="assets/products/mako/cover.jpg"
+            alt="Milibase cover"
+            class="cover_style rounded-3"
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="project_title">Project Mako</h1>
+          <h3 class="project_desc" style="text-align: initial">
+            A Social Design UX study on Greek bureaucracy for legal immigrants.
+            A project of Social Design & UX during MA in Digital Design
+          </h3>
+          <div class="gap-20"></div>
+          <div class="d-flex flex-wrap">
+            <div
+              class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
+            >
+              <span
+                class="px-3 py-2"
+                style="background-color: var(--background_light)"
+                >Timeline</span
+              >
+              <span
+                class="px-3 py-2"
+                style="background-color: #00c0e8; color: #000"
+                >2026</span
+              >
+            </div>
+
+            <div
+              class="d-flex align-items-center rounded-2 my-1 me-2 overflow-hidden"
+            >
+              <span
+                class="px-3 py-2"
+                style="background-color: var(--background_light)"
+                >Tools used</span
+              >
+              <span
+                class="px-3 py-2"
+                style="background-color: #00c0e8; color: #000"
+                >Figma</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="px-4 mx-auto align-items-center"
+        style="max-width: var(--max_width)"
+      >
+        <div class="gap-80"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h3>Social Group</h3>
+              <h4 style="color: white">
+                Legal immigrants from Asian countries that live and work in
+                Athens, Greece
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h3>Social Issue</h3>
+              <h4 style="color: white">
+                They do not know how to navigate Greek bureaucracy, preventing
+                them from feeling integrated into the native community.
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+
+        <h3>Research</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              class="project_images"
+              src="assets/products/mako/news.png"
+              alt="From Telegram to the basement of Athens: The netwok of inform hypnotics"
+            />
+          </div>
+          <div class="col-md-6">
+            <h4>From headline to a full study</h4>
+            <p>
+              A news article on housing crisis for immigrants and refugees was
+              the first thing I read that hooked my attention into the subject
+              of immigrants. I had to read 35+ articles and research papers to
+              understand better the situation this social groups faces. After
+              iterating on their problems, I tried to get to the source, all
+              leading to an unsuccessful integration due to origin and income
+              bias.
+            </p>
+            <div class="gap-20"></div>
+            <h4>
+              The main issue holding them back from integrating is the complex
+              Greek bureaucracy
+            </h4>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <h3>Personas</h3>
+        <div class="gap-20"></div>
+        <div class="row g-5">
+          <div class="col-md-4">
+            <img
+              style="height: 70px"
+              src="assets/products/mako/persona_a.png"
+              alt="Persona A"
+            />
+            <div class="gap-20"></div>
+            <h4 style="text-align: center">Emre</h4>
+            <p style="text-align: center">
+              <b>Who:</b> Pakistani man living in Greece for 3 years<br />
+              <b>Wants:</b> Find affordable housing<br />
+              <b>Barrier:</b> Missing legal papers<br />
+              <b>Workaround:</b> Connects with communities online<br />
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              style="height: 70px"
+              src="assets/products/mako/persona_b.png"
+              alt="Persona B"
+            />
+            <div class="gap-20"></div>
+            <h4 style="text-align: center">Makati</h4>
+            <p style="text-align: center">
+              <b>Who:</b> Filipino woman living in Greece working as a domestic
+              worker<br />
+              <b>Wants:</b> Return to her country<br />
+              <b>Barrier:</b> Doesn’t know the pension requirements<br />
+              <b>Workaround:</b> Relies on others for information <br />
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              style="height: 70px"
+              src="assets/products/mako/persona_c.png"
+              alt="Persona C"
+            />
+            <div class="gap-20"></div>
+            <h4 style="text-align: center">Emre</h4>
+            <p style="text-align: center">
+              <b>Who:</b> Bangladeshi man living for 20 years in Athens,
+              Greece<br />
+              <b>Wants:</b> Wants to bring his family with him<br />
+              <b>Barrier:</b> Has difficulty identifying reliable information<br />
+              <b>Workaround:</b> Seeks information through social networks<br />
+            </p>
+          </div>
+        </div>
+        <div class="gap-60"></div>
+        <div class="rounded-3" style="background-color: #00c0e8; padding: 30px">
+          <h3 style="color: black">Problem Statement</h3>
+          <p style="color: black">Based on Persona B</p>
+          <div class="gap-20"></div>
+          <h4 style="color: black">
+            Makati needs a way to find out start collecting missing papers,
+            because she needs access to benefits and pension.
+          </h4>
+        </div>
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3>Crazy 8s</h3>
+        <div class="gap-10"></div>
+        <img
+          class="project_images"
+          src="assets/products/mako/crazy_8.png"
+          alt="Crazy 8s"
+        />
+        <div class="gap-80"></div>
+        <div class="gap-40"></div>
+        <h3>Concept A (Idea 7)</h3>
+        <div class="col-md-8">
+          <p>
+            Forum where users can leave tips and experiences on legal issues
+            backed by and tested by experts.<br />A: Finds communities online<br />B:
+            Contacts her friends for advice<br />C: Looks for migration-related
+            procedures online
+          </p>
+        </div>
+        <div class="gap-40"></div>
+        <h4 style="color: white">Why this idea may not work</h4>
+        <p style="color: white">
+          Forums include unverified, incomplete or outdated information and
+          personal experiences<br />Very situational to find personalized
+          information<br />
+          Older people are not familiar to using forums due to accessibility
+          reasons.<br />They don’t always trust information by strangers
+        </p>
+        <div class="gap-80"></div>
+
+        <h3>Concept B (Idea 1)</h3>
+        <div class="col-md-8">
+          <p>
+            App that enables finding required papers for legal procedures and
+            assigning lawyers to settle them while checking their progress.<br />
+            A: Lawyers may help against discrimination<br />
+            B: Doesn’t know her pension rights<br />
+            C: Cannot easily find trusted information
+          </p>
+        </div>
+        <div class="gap-40"></div>
+        <img
+          class="project_images"
+          src="assets/products/mako/concept_b.png"
+          alt="Concept B user journey"
+        />
+        <div class="gap-80"></div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h3>Issue</h3>
+              <p>
+                Important information is spread across government platforms,
+                documents, emails and administrative services.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h3>Goal</h3>
+              <p>
+                The reduction of the uncertainty surrounding the process, not a
+                promise of faster government decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="row g-5">
+          <div class="col-md-4">
+            <h4 style="text-align: center">Informative & Assistive</h4>
+            <p style="text-align: center">
+              A good place to start and get official advice while offered the
+              tools to solve the problem.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 style="text-align: center">Clean & Focused</h4>
+            <p style="text-align: center">
+              Made to do one thing each time. Information overload can lead to
+              hesitance.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 style="text-align: center">Transparent</h4>
+            <p style="text-align: center">
+              Lawyers: Who is the representative? How they will get compensated?
+              People don’t trust them anyway. Talking directly with official
+              representatives leaves no room for mistrust.
+            </p>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h3>Accessibility</h3>
+              <div class="gap-20"></div>
+              <h4>Open content</h4>
+              <p>
+                Users should be able to access all screens from the start of the
+                navigation and fast
+              </p>
+              <div class="gap-20"></div>
+              <h4>Adaptability</h4>
+              <p>
+                A useful app should adapt to the needs of the user, not the
+                opposite
+              </p>
+              <div class="gap-20"></div>
+              <img
+                style="height: 60px"
+                src="assets/products/mako/arrow.png"
+                alt="Arrow"
+              />
+              <div class="gap-20"></div>
+              <h4>No account</h4>
+              <p>
+                User may not always have resources (email) to begin with. All
+                data is stored on device, users can migrate their data between
+                devices offline
+              </p>
+              <div class="gap-20"></div>
+              <h4>Language support</h4>
+              <p>
+                Many people don’t speak English, they should feel comfortable
+                when using the app By default, the app’s language is their
+                country’s (most common) language
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h3>Comprehension</h3>
+              <div class="gap-20"></div>
+              <h4>Clear steps</h4>
+              <p>
+                Accessibility is key so that users do not confuse steps or miss
+                required actions
+              </p>
+              <div class="gap-20"></div>
+              <h4>Help everywhere</h4>
+              <p>
+                Immigrants don’t know much about their new country. Everything
+                they don’t understand has to be explained like they are 5 years
+                old
+              </p>
+              <div class="gap-20"></div>
+              <img
+                style="height: 60px"
+                src="assets/products/mako/arrow.png"
+                alt="Arrow"
+              />
+              <div class="gap-20"></div>
+              <h4>Contrast / Scale</h4>
+              <p>
+                Basic UX principles that make content easy to find, especially
+                when navigating content users aren’t familiar with
+              </p>
+              <div class="gap-20"></div>
+              <h4>Tooltips / Links</h4>
+              <p>
+                Every legal term should include a description, explained as if
+                the user is 5 years old
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              <h3>Trust</h3>
+              <div class="gap-20"></div>
+              <h4>Safety</h4>
+              <p>
+                User must feel safe using the app, from uploading documents to
+                calling support.
+              </p>
+              <div class="gap-20"></div>
+              <h4>Familiarity</h4>
+              <p>
+                User should follow a process they are used to in the real world
+              </p>
+              <div class="gap-20"></div>
+              <img
+                style="height: 60px"
+                src="assets/products/mako/arrow.png"
+                alt="Arrow"
+              />
+              <div class="gap-20"></div>
+              <h4>Simple language</h4>
+              <p>
+                In order to trust something you have to understand what it is
+                trying to say
+              </p>
+              <div class="gap-20"></div>
+              <h4>Speak with humans</h4>
+              <p>
+                Speaking with humans feels more safe than finding information
+                online, especially in order adults
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <h3>Version 1</h3>
+        <div class="row scroll-x justify-content-evenly">
+          <img
+            class="project_images"
+            src="assets/products/mako/v1_1.png"
+            alt="version 1 1"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v1_2.png"
+            alt="version 1 2"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v1_3.png"
+            alt="version 1 3"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v1_4.png"
+            alt="version 1 4"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v1_5.png"
+            alt="version 1 5"
+          />
+        </div>
+        <div class="gap-80"></div>
+        <h4>Problems</h4>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <p
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              User did not find what they needed and was confused on what to
+              pick from the Popular Categories section.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              User’s phone was too short, so they could see the “Call” button.
+              They could not continue their journey
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              User made a mistake in his words and could not correct what they
+              were saying
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p
+              class="rounded-3"
+              style="background-color: var(--background_light); padding: 30px"
+            >
+              The user was lost in the large amount of text presented
+            </p>
+          </div>
+        </div>
+        <div class="gap-80"></div>
+        <h3>Version 2</h3>
+        <div class="row scroll-x justify-content-evenly">
+          <img
+            class="project_images"
+            src="assets/products/mako/v2_1.png"
+            alt="version 1 1"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v2_2.png"
+            alt="version 1 2"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v2_3.png"
+            alt="version 1 3"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v2_4.png"
+            alt="version 1 4"
+          />
+          <img
+            class="project_images"
+            src="assets/products/mako/v2_5.png"
+            alt="version 1 5"
+          />
+        </div>
+        <div class="gap-40"></div>
+        <div class="row">
+          <h4 class="col-md-4">Recommended</h4>
+          <p class="col-md-8">
+            Renamed “Popular Categories” to “Recommended”<br />• Old Popular
+            category was not personalized and was hard to read<br />•
+            Recommended section now displays suggested categories based on the
+            user
+          </p>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <h4 class="col-md-4">In Progress</h4>
+          <p class="col-md-8">
+            Added a progress indicator for active applications with a link to a
+            dedicated page<br />• Users should be able to see their recent
+            applications fast
+          </p>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <h4 class="col-md-4">Required information</h4>
+          <p class="col-md-8">
+            Required info is displayed using dropdowns<br />• Users can become
+            overwhelmed with a large amount of information driving them not to
+            leave the task.<br />• Dropdowns limit the visible amount of
+            information a user has to digest at the same time.
+          </p>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <h4 class="col-md-4">Alerts</h4>
+          <p class="col-md-8">
+            Moved the ineligibility alert to the search page<br />• Users should
+            be informed before making an action. They should not be directed to
+            another page than the selected one<br />• Ability to visit alert is
+            now a question. Users are now clearly instructed on the changes in
+            the procedure
+          </p>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <h4 class="col-md-4">Actions</h4>
+          <p class="col-md-8">
+            Added a new “Test Call” option<br />• Some users may not feel
+            comfortable talking directly to a representative. Providing an
+            option to test their confidence will incline them to call
+            regularly<br />• Call number was removed. Seeing a phone number
+            would immediately make the user call it from another calling app.
+            For optimal results, the user should call directly through the app
+          </p>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <h4 class="col-md-4">Call</h4>
+          <p class="col-md-8">
+            Redesigned the pre-call logic<br />• Before calling, users will be
+            shown a modal with instructions and reminders about how to use the
+            screen and their safety<br />• Call controls were moved to the top
+            of the screen<br />• Users would click “End Call” by accident
+            instead of the intended “Send” button. Moving the controls on the
+            top separates the typing box from the call actions grouping content
+            into call and message controls.
+          </p>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <h4 class="col-md-4">Ready made answers</h4>
+          <p class="col-md-8">
+            “What to ask” and “Suggested answer” integrated into one<br />•
+            Suggested answers are now integrated into the typing box where the
+            user can direly send them without having to repeat them out loud<br />•
+            “What to ask” would be used once per session, so there was no need
+            for a prominent box. Instead, when needed, it would be used as a
+            Suggested Answer
+          </p>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <h4 class="col-md-4">Transparency</h4>
+          <p class="col-md-8">
+            Added a “Secure session” message<br />• Users should now the
+            information they provide will be used and opt out whenever they want
+          </p>
+        </div>
+        <div class="gap-80"></div>
+        <h3>Reflection</h3>
+        <p class="col-md-8">
+          Designing for social good requires a lot of research and careful
+          consideration of the people affected by the issue. My process included
+          moving between research and product design, trying to personalize the
+          final solution based on validated user characteristics. Research and
+          statistics highlighted the unbiased side of their problems and helped
+          me understand the needs of my target audience more clearly. Reflecting
+          on the process, I am confident that the final product has the
+          capability to make their problem easier to tackle.
+        </p>
+      </div>
+    </div>
+    <div class="gap-40"></div>
+  </body>
+</html>
